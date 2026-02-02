@@ -1,0 +1,408 @@
+[00:00:00.957] Server  LOG     ✓ Ready in 740ms
+[00:00:06.088] Server  ERROR   ⨯ RangeError: Maximum call stack size exceeded
+[00:00:06.322] Browser ERROR   uncaughtError: RangeError: Maximum call stack size exceeded
+[00:01:45.502] Server  LOG     ✓ Compiled in 191ms
+[00:01:46.567] Browser WARN    Image with src "/logo.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:02:09.969] Server  ERROR   ⨯ RangeError: Maximum call stack size exceeded
+[00:02:10.168] Browser ERROR   uncaughtError: RangeError: Maximum call stack size exceeded
+[00:02:23.611] Browser WARN    Image with src "/logo.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:03:17.492] Server  ERROR   ⨯ ReferenceError: css is not defined
+[00:03:17.931] Browser ERROR   uncaughtError: ReferenceError: css is not defined
+[00:03:36.493] Server  LOG     ✓ Compiled in 151ms
+[00:03:37.598] Browser WARN    Image with src "/logo.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:04:51.169] Server  LOG     ✓ Compiled in 29ms
+[00:05:03.054] Server  LOG     ✓ Compiled in 14ms
+[00:05:52.506] Server  LOG     ✓ Compiled in 21ms
+[00:08:06.936] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:41:25
+Parsing ecmascript source code failed
+  39 |       <ul className={css.carsList}>
+  40 |         <li>
+> 41 |           <Image src={} width={} height={}></Image>
+     |                         ^^^^^
+  42 |         </li>
+  43 |         <li>
+  44 |           <Image src={} width={} height={}></Image>
+
+Expected '</', got 'ident'
+[00:08:24.932] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:41:25
+Parsing ecmascript source code failed
+  39 |       <ul className={css.carsList}>
+  40 |         <li>
+> 41 |           <Image src={} width={276} height={}></Image>
+     |                         ^^^^^
+  42 |         </li>
+  43 |         <li>
+  44 |           <Image src={} width={276} height={}></Image>
+
+Expected '</', got 'ident'
+[00:08:34.937] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:41:25
+Parsing ecmascript source code failed
+  39 |       <ul className={css.carsList}>
+  40 |         <li>
+> 41 |           <Image src={} width={276} height={268}></Image>
+     |                         ^^^^^
+  42 |         </li>
+  43 |         <li>
+  44 |           <Image src={} width={276} height={268}></Image>
+
+Expected '</', got 'ident'
+[00:10:09.931] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:41:25
+Parsing ecmascript source code failed
+  39 |       <ul className={css.carsList}>
+  40 |         <li>
+> 41 |           <Image src={} width={276} height={268}></Image>
+     |                         ^^^^^
+  42 |           <p></p>
+  43 |           <p></p>
+  44 |         </li>
+
+Expected '</', got 'ident'
+[00:10:14.931] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:41:25
+Parsing ecmascript source code failed
+  39 |       <ul className={css.carsList}>
+  40 |         <li>
+> 41 |           <Image src={} width={276} height={268}></Image>
+     |                         ^^^^^
+  42 |           <p></p>
+  43 |           <p></p>
+  44 |         </li>
+
+Expected '</', got 'ident'
+[00:11:04.932] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:41:25
+Parsing ecmascript source code failed
+  39 |       <ul className={css.carsList}>
+  40 |         <li>
+> 41 |           <Image src={} width={276} height={268}></Image>
+     |                         ^^^^^
+  42 |           <p></p>
+  43 |           <p></p>
+  44 |         </li>
+
+Expected '</', got 'ident'
+[00:11:38.933] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:41:25
+Parsing ecmascript source code failed
+  39 |       <ul className={css.carsList}>
+  40 |         <li>
+> 41 |           <Image src={} width={276} height={268} alt="Picture of the author"></Image>
+     |                         ^^^^^
+  42 |           <p></p>
+  43 |           <p></p>
+  44 |         </li>
+
+Expected '</', got 'ident'
+[00:11:50.936] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:42:25
+Parsing ecmascript source code failed
+  40 |         <li>
+  41 |           {/* !alt */}
+> 42 |           <Image src={} width={276} height={268} alt="Picture of the author"></Image>
+     |                         ^^^^^
+  43 |           <p></p>
+  44 |           <p></p>
+  45 |         </li>
+
+Expected '</', got 'ident'
+[00:16:36.371] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:42:25
+Parsing ecmascript source code failed
+  40 |         <li>
+  41 |           {/* !alt */}
+> 42 |           <Image src={} width={276} height={268} alt="Picture of the author"></Image>
+     |                         ^^^^^
+  43 |           <p></p>
+  44 |           <p></p>
+  45 |         </li>
+
+Expected '</', got 'ident'
+[00:16:53.452] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:47:25
+Parsing ecmascript source code failed
+  45 |         </li>
+  46 |         <li>
+> 47 |           <Image src={} width={276} height={268}></Image>
+     |                         ^^^^^
+  48 |           <p></p>
+  49 |           <p></p>
+  50 |         </li>
+
+Expected '</', got 'ident'
+[00:17:11.932] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:42:25
+Parsing ecmascript source code failed
+  40 |         <li>
+  41 |           {/* !alt */}
+> 42 |           <Image src={} width={276} height={268} alt="Picture of the author"></Image>
+     |                         ^^^^^
+  43 |           <p></p>
+  44 |           <p></p>
+  45 |         </li>
+
+Expected '</', got 'ident'
+[00:17:51.943] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:43:18
+Parsing ecmascript source code failed
+  41 |           {/* !alt */}
+  42 |           <Image
+> 43 |             src={/carsImg/aegim.jpg}
+     |                  ^^^^^^^^^^^^^^
+  44 |             width={276}
+  45 |             height={268}
+  46 |             alt="Picture of the author"
+
+Unknown regular expression flags.
+[00:21:28.932] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:43:18
+Parsing ecmascript source code failed
+  41 |           {/* !alt */}
+  42 |           <Image
+> 43 |             src={/image1.jpg}
+     |                  ^^^^^^^^^^^^
+  44 |             width={276}
+  45 |             height={268}
+  46 |             alt="Picture of the author"
+
+Unterminated regexp literal
+[00:21:38.933] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:43:18
+Parsing ecmascript source code failed
+  41 |           {/* !alt */}
+  42 |           <Image
+> 43 |             src={/image1.jpg}
+     |                  ^^^^^^^^^^^^
+  44 |             width={276}
+  45 |             height={268}
+  46 |             alt="Picture of the author"
+
+Unterminated regexp literal
+[00:22:13.989] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:43:18
+Parsing ecmascript source code failed
+  41 |           {/* !alt */}
+  42 |           <Image
+> 43 |             src={/image.jpg}
+     |                  ^^^^^^^^^^^
+  44 |             width={276}
+  45 |             height={268}
+  46 |             alt="Picture of the author"
+
+Unterminated regexp literal
+[00:22:33.314] Server  ERROR   ⨯ ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:43:18
+Parsing ecmascript source code failed
+  41 |           {/* !alt */}
+  42 |           <Image
+> 43 |             src={/image.jpg}
+     |                  ^^^^^^^^^^^
+  44 |             width={276}
+  45 |             height={268}
+  46 |             alt="Picture of the author"
+
+Unterminated regexp literal
+
+
+[00:22:33.427] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:43:18
+Parsing ecmascript source code failed
+  41 |           {/* !alt */}
+  42 |           <Image
+> 43 |             src={/image.jpg}
+     |                  ^^^^^^^^^^^
+  44 |             width={276}
+  45 |             height={268}
+  46 |             alt="Picture of the author"
+
+Unterminated regexp literal
+[00:22:34.294] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:43:18
+Parsing ecmascript source code failed
+  41 |           {/* !alt */}
+  42 |           <Image
+> 43 |             src={/image.jpg}
+     |                  ^^^^^^^^^^^
+  44 |             width={276}
+  45 |             height={268}
+  46 |             alt="Picture of the author"
+
+Unterminated regexp literal
+[00:22:34.295] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:43:18
+Parsing ecmascript source code failed
+  41 |           {/* !alt */}
+  42 |           <Image
+> 43 |             src={/image.jpg}
+     |                  ^^^^^^^^^^^
+  44 |             width={276}
+  45 |             height={268}
+  46 |             alt="Picture of the author"
+
+Unterminated regexp literal
+[00:22:35.143] Browser ERROR   uncaughtError: Error: ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:43:18
+Parsing ecmascript source code failed
+  41 |           {/* !alt */}
+  42 |           <Image
+> 43 |             src={/image.jpg}
+     |                  ^^^^^^^^^^^
+  44 |             width={276}
+  45 |             height={268}
+  46 |             alt="Picture of the author"
+
+Unterminated regexp literal
+
+
+[00:22:35.313] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:43:18
+Parsing ecmascript source code failed
+  41 |           {/* !alt */}
+  42 |           <Image
+> 43 |             src={/image.jpg}
+     |                  ^^^^^^^^^^^
+  44 |             width={276}
+  45 |             height={268}
+  46 |             alt="Picture of the author"
+
+Unterminated regexp literal
+[00:22:35.535] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:43:18
+Parsing ecmascript source code failed
+  41 |           {/* !alt */}
+  42 |           <Image
+> 43 |             src={/image.jpg}
+     |                  ^^^^^^^^^^^
+  44 |             width={276}
+  45 |             height={268}
+  46 |             alt="Picture of the author"
+
+Unterminated regexp literal
+[00:23:02.420] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:43:18
+Parsing ecmascript source code failed
+  41 |           {/* !alt */}
+  42 |           <Image
+> 43 |             src={/imagejpg}
+     |                  ^^^^^^^^^^
+  44 |             width={276}
+  45 |             height={268}
+  46 |             alt="Picture of the author"
+
+Unterminated regexp literal
+[00:23:04.859] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:47:25
+Parsing ecmascript source code failed
+  45 |         </li>
+  46 |         <li>
+> 47 |           <Image src={} width={276} height={268}></Image>
+     |                         ^^^^^
+  48 |           <p></p>
+  49 |           <p></p>
+  50 |         </li>
+
+Expected '</', got 'ident'
+[00:23:11.890] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:47:25
+Parsing ecmascript source code failed
+  45 |         </li>
+  46 |         <li>
+> 47 |           <Image src={} width={276} height={268}></Image>
+     |                         ^^^^^
+  48 |           <p></p>
+  49 |           <p></p>
+  50 |         </li>
+
+Expected '</', got 'ident'
+[00:24:29.932] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:44:14
+Parsing ecmascript source code failed
+  42 |                   <Image src={/>image1.jpg} width={276} height={268} alt="Picture of the author"></Image>
+  43 |           <p></p>
+> 44 |           <p></p>
+     |              ^
+  45 |         </li>
+  46 |         <li>
+  47 |           <Image src={} width={276} height={268}></Image>
+
+Expression expected
+[00:24:29.933] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:42:31
+Parsing ecmascript source code failed
+  40 |         <li>
+  41 |           {/* !alt */}
+> 42 |                   <Image src={/>image1.jpg} width={276} height={268} alt="Picture of the author"></Image>
+     |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  43 |           <p></p>
+  44 |           <p></p>
+  45 |         </li>
+
+Unknown regular expression flags.
+[00:24:29.933] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:44:15
+Parsing ecmascript source code failed
+  42 |                   <Image src={/>image1.jpg} width={276} height={268} alt="Picture of the author"></Image>
+  43 |           <p></p>
+> 44 |           <p></p>
+     |               ^^^
+  45 |         </li>
+  46 |         <li>
+  47 |           <Image src={} width={276} height={268}></Image>
+
+Unterminated regexp literal
+[00:24:30.931] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:44:14
+Parsing ecmascript source code failed
+  42 |                   <Image src={/image1.jpg} width={276} height={268} alt="Picture of the author"></Image>
+  43 |           <p></p>
+> 44 |           <p></p>
+     |              ^
+  45 |         </li>
+  46 |         <li>
+  47 |           <Image src={} width={276} height={268}></Image>
+
+Expression expected
+[00:24:30.931] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:42:31
+Parsing ecmascript source code failed
+  40 |         <li>
+  41 |           {/* !alt */}
+> 42 |                   <Image src={/image1.jpg} width={276} height={268} alt="Picture of the author"></Image>
+     |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  43 |           <p></p>
+  44 |           <p></p>
+  45 |         </li>
+
+Unknown regular expression flags.
+[00:24:30.931] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:44:15
+Parsing ecmascript source code failed
+  42 |                   <Image src={/image1.jpg} width={276} height={268} alt="Picture of the author"></Image>
+  43 |           <p></p>
+> 44 |           <p></p>
+     |               ^^^
+  45 |         </li>
+  46 |         <li>
+  47 |           <Image src={} width={276} height={268}></Image>
+
+Unterminated regexp literal
+[00:24:40.931] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx:47:25
+Parsing ecmascript source code failed
+  45 |         </li>
+  46 |         <li>
+> 47 |           <Image src={} width={276} height={268}></Image>
+     |                         ^^^^^
+  48 |           <p></p>
+  49 |           <p></p>
+  50 |         </li>
+
+Expected '</', got 'ident'
+[00:28:06.263] Server  LOG     ✓ Compiled in 406ms
+[00:28:08.455] Browser WARN    Image with src "/logo.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:28:08.838] Browser WARN    Image with src "/image1.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:31:52.046] Server  LOG     ✓ Compiled in 58ms
+[00:34:57.281] Server  LOG     ✓ Compiled in 264ms
+[00:36:23.477] Server  LOG     ✓ Compiled in 255ms
+[00:37:47.390] Server  LOG     ✓ Compiled in 242ms
+[00:40:14.558] Server  LOG     ✓ Compiled in 105ms
+[00:40:21.152] Server  LOG     ✓ Compiled in 17ms
+[00:41:03.290] Server  LOG     ✓ Compiled in 18ms
+[00:41:28.051] Server  LOG     ✓ Compiled in 21ms
+[00:42:04.536] Server  LOG     ✓ Compiled in 15ms
+[00:42:44.651] Server  LOG     ✓ Compiled in 138ms
+[00:43:29.085] Server  LOG     ✓ Compiled in 24ms
+[00:43:32.460] Server  LOG     ✓ Compiled in 10ms
+[00:45:23.429] Server  LOG     ✓ Compiled in 38ms
+[00:46:41.778] Server  LOG     ✓ Compiled in 90ms
+[00:47:52.244] Server  LOG     ✓ Compiled in 111ms
+[00:48:22.537] Server  LOG     ✓ Compiled in 196ms
+[00:50:15.626] Server  LOG     ✓ Compiled in 11ms
+[00:50:23.241] Server  LOG     ✓ Compiled in 13ms
+[00:50:33.692] Server  LOG     ✓ Compiled in 18ms
+[00:50:37.641] Server  LOG     ✓ Compiled in 8ms
+[00:50:59.579] Server  LOG     ✓ Compiled in 31ms
+[00:52:03.195] Server  LOG     ✓ Compiled in 91ms
+[00:53:23.580] Server  LOG     ✓ Compiled in 188ms
+[00:53:44.779] Server  LOG     ✓ Compiled in 113ms
+[00:54:05.367] Server  LOG     ✓ Compiled in 132ms
+[00:56:59.039] Server  LOG     ✓ Compiled in 50ms
+[00:58:55.832] Server  LOG     ✓ Compiled in 429ms
+[00:59:03.013] Server  LOG     ✓ Compiled in 662ms
+[00:59:15.193] Server  LOG     ✓ Compiled in 781ms

@@ -1,0 +1,60 @@
+/* [project]/Developer/Projects 2.0/RentalCar/app/catalog/page.module.css [app-client] (css) */
+.page-module__yGTRfa__container {
+  padding: 0 120px;
+}
+
+.page-module__yGTRfa__carsList {
+  flex-flow: wrap;
+  justify-content: space-between;
+  row-gap: 48px;
+  width: 100%;
+  display: flex;
+}
+
+.page-module__yGTRfa__carImg {
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.page-module__yGTRfa__topTextPosition {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.page-module__yGTRfa__topText {
+  font-family: var(--font-family);
+  color: var(--main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.page-module__yGTRfa__bottomText {
+  font-family: var(--font-family);
+  color: var(--gray);
+  max-width: 200px;
+  margin-bottom: 28px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33333;
+}
+
+.page-module__yGTRfa__carsLiButton {
+  background: var(--button);
+  min-width: 276px;
+  font-family: var(--font-family);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 12px 99px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.page-module__yGTRfa__carsLiButton:hover, .page-module__yGTRfa__carsLiButton:focus {
+  background: var(--button-hover);
+}
+
+/*# sourceMappingURL=Developer_Projects%202_0_RentalCar_app_catalog_page_module_8155f70c.css.map*/

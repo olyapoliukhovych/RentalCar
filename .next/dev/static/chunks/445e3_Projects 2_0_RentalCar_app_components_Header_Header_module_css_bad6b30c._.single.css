@@ -1,0 +1,26 @@
+/* [project]/Developer/Projects 2.0/RentalCar/app/components/Header/Header.module.css [app-client] (css) */
+.Header-module__cUOT9q__header {
+  background: var(--badges);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 120px;
+  display: flex;
+}
+
+.Header-module__cUOT9q__navigation {
+  flex-direction: row;
+  gap: 32px;
+  display: flex;
+}
+
+.Header-module__cUOT9q__navigationItem {
+  font-family: var(--font-family);
+  text-align: center;
+  color: var(--main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+/*# sourceMappingURL=445e3_Projects%202_0_RentalCar_app_components_Header_Header_module_css_bad6b30c._.single.css.map*/
