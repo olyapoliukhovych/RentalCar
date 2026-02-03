@@ -4,6 +4,7 @@
   justify-content: space-between;
   row-gap: 48px;
   width: 100%;
+  margin-bottom: 80px;
   display: flex;
 }
 
@@ -57,7 +58,28 @@
 
 /* [project]/Developer/Projects 2.0/RentalCar/app/catalog/page.module.css [app-client] (css) */
 .page-module__yGTRfa__container {
-  padding: 0 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 84px 120px 124px;
+  display: flex;
+}
+
+.page-module__yGTRfa__loadMoreBtn {
+  border: 1px solid var(--button);
+  min-width: 156px;
+  font-family: var(--font-family);
+  color: var(--main);
+  border-radius: 12px;
+  padding: 12px 51px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  transition: border .25s ease-in-out;
+}
+
+.page-module__yGTRfa__loadMoreBtn:hover, .page-module__yGTRfa__loadMoreBtn:focus {
+  border: 1px solid var(--button-hover);
 }
 
 /*# sourceMappingURL=Developer_Projects%202_0_RentalCar_app_9f59a317._.css.map*/

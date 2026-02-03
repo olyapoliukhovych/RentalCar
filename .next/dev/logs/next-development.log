@@ -10,3 +10,60 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:15:45.662] Server  LOG     ✓ Compiled in 5ms
 [00:15:54.052] Server  LOG     ✓ Compiled in 5ms
 [00:16:20.619] Server  LOG     ✓ Compiled in 8ms
+[00:18:44.443] Server  LOG     ✓ Compiled in 18ms
+[00:18:51.259] Server  LOG     ✓ Compiled in 4ms
+[00:19:11.059] Server  LOG     ✓ Compiled in 46ms
+[00:20:05.612] Server  LOG     ✓ Compiled in 4ms
+[00:20:14.101] Server  LOG     ✓ Compiled in 9ms
+[00:20:17.345] Server  LOG     ✓ Compiled in 32ms
+[00:21:03.886] Server  LOG     ✓ Compiled in 109ms
+[00:21:04.764] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.module.css:18:1
+Parsing CSS source code failed
+  16 | }
+  17 | border: 1px solid var(--button-hover);
+> 18 |
+     | ^
+
+Unexpected end of input
+
+Import trace:
+  Server Component:
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.module.css
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx
+[00:21:24.534] Server  LOG     ✓ Compiled in 16ms
+[00:21:24.763] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.module.css:18:1
+Parsing CSS source code failed
+  16 | }
+  17 | border: 1px solid var(--button-hover);
+> 18 |
+     | ^
+
+Unexpected end of input
+
+Import trace:
+  Server Component:
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.module.css
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx
+[00:21:31.763] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/page.module.css:26:1
+Parsing CSS source code failed
+  24 | }
+  25 | border: 1px solid var(--button-hover);
+> 26 |
+     | ^
+
+Unexpected end of input
+
+Import trace:
+  Server Component:
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.module.css
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx
+[00:22:02.638] Server  LOG     ✓ Compiled in 25ms
+[00:22:54.605] Server  LOG     ✓ Compiled in 8ms
+[00:23:01.231] Server  LOG     ✓ Compiled in 5ms
+[00:23:11.045] Server  LOG     ✓ Compiled in 20ms
+[00:23:32.972] Server  LOG     ✓ Compiled in 11ms
+[00:23:40.791] Server  LOG     ✓ Compiled in 15ms
+[00:23:49.205] Server  LOG     ✓ Compiled in 23ms
+[00:24:43.420] Server  LOG     ✓ Compiled in 11ms
+[00:25:19.113] Server  LOG     ✓ Compiled in 63ms
+[00:25:31.524] Server  LOG     ✓ Compiled in 14ms

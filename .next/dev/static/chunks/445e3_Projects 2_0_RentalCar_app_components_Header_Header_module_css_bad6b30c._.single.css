@@ -24,7 +24,7 @@
   transition: color .25s ease-in-out;
 }
 
-.Header-module__cUOT9q__navigationItem:hover, .Header-module__cUOT9q__navigationItem:focus, .Header-module__cUOT9q__navigationItem:active {
+.Header-module__cUOT9q__navigationItem:hover, .Header-module__cUOT9q__navigationItem:focus {
   color: var(--button-hover);
 }
 

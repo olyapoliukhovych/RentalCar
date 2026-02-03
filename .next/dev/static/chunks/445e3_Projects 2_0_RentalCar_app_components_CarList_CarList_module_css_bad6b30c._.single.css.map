@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.module.css"],"sourcesContent":[".carsList {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  width: 100%;\n  row-gap: 48px;\n}\n"],"names":[],"mappings":"AAAA"}}]
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.module.css"],"sourcesContent":[".carsList {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  width: 100%;\n  row-gap: 48px;\n  margin-bottom: 80px;\n}\n"],"names":[],"mappings":"AAAA"}}]
 }
