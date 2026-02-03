@@ -503,7 +503,7 @@ input, select, textarea {
 }
 
 /* [project]/Developer/Projects 2.0/RentalCar/app/components/Header/Header.module.css [app-client] (css) */
-.Header-module__cUOT9q__header {
+.Header-module__cUOT9q__container {
   background: var(--badges);
   flex-direction: row;
   justify-content: space-between;
@@ -525,6 +525,11 @@ input, select, textarea {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.25;
+  transition: color .25s ease-in-out;
+}
+
+.Header-module__cUOT9q__navigationItem:hover, .Header-module__cUOT9q__navigationItem:focus, .Header-module__cUOT9q__navigationItem:active {
+  color: var(--button-hover);
 }
 
 /*# sourceMappingURL=%5Broot-of-the-server%5D__5c863b0d._.css.map*/

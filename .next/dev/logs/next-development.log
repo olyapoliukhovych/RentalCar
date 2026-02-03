@@ -1,1 +1,12 @@
 [00:00:01.190] Server  LOG     ✓ Ready in 976ms
+[00:11:56.306] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:13:41.234] Server  LOG     ✓ Compiled in 13ms
+[00:14:17.120] Server  LOG     ✓ Compiled in 25ms
+[00:15:14.686] Server  LOG     ✓ Compiled in 15ms
+[00:15:20.682] Server  LOG     ✓ Compiled in 8ms
+[00:15:27.905] Server  LOG     ✓ Compiled in 9ms
+[00:15:36.259] Server  LOG     ✓ Compiled in 9ms
+[00:15:45.662] Server  LOG     ✓ Compiled in 5ms
+[00:15:54.052] Server  LOG     ✓ Compiled in 5ms
+[00:16:20.619] Server  LOG     ✓ Compiled in 8ms

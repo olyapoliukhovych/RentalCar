@@ -1,6 +1,4 @@
-.header {
-  /* width: 100%; */
-  /* max-width: 100vw; */
+.container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -22,4 +20,18 @@
   line-height: 1.25;
   text-align: center;
   color: var(--main);
+
+  transition: color 250ms ease-in-out;
+
+  &:hover {
+    color: var(--button-hover);
+  }
+
+  &:focus {
+    color: var(--button-hover);
+  }
+
+  &:active {
+    color: var(--button-hover);
+  }
 }

@@ -1,5 +1,5 @@
 /* [project]/Developer/Projects 2.0/RentalCar/app/components/Header/Header.module.css [app-client] (css) */
-.Header-module__cUOT9q__header {
+.Header-module__cUOT9q__container {
   background: var(--badges);
   flex-direction: row;
   justify-content: space-between;
@@ -21,6 +21,11 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.25;
+  transition: color .25s ease-in-out;
+}
+
+.Header-module__cUOT9q__navigationItem:hover, .Header-module__cUOT9q__navigationItem:focus, .Header-module__cUOT9q__navigationItem:active {
+  color: var(--button-hover);
 }
 
 /*# sourceMappingURL=445e3_Projects%202_0_RentalCar_app_components_Header_Header_module_css_bad6b30c._.single.css.map*/
