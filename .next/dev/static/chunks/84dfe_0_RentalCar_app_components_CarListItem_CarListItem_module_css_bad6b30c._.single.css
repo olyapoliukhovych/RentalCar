@@ -1,0 +1,49 @@
+/* [project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.module.css [app-client] (css) */
+.CarListItem-module__fZFi2q__carImg {
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.CarListItem-module__fZFi2q__topTextPosition {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.CarListItem-module__fZFi2q__topText {
+  font-family: var(--font-family);
+  color: var(--main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.CarListItem-module__fZFi2q__bottomText {
+  font-family: var(--font-family);
+  color: var(--gray);
+  max-width: 200px;
+  margin-bottom: 28px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33333;
+}
+
+.CarListItem-module__fZFi2q__carsLiButton {
+  background: var(--button);
+  min-width: 276px;
+  font-family: var(--font-family);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 12px 99px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.CarListItem-module__fZFi2q__carsLiButton:hover, .CarListItem-module__fZFi2q__carsLiButton:focus {
+  background: var(--button-hover);
+}
+
+/*# sourceMappingURL=84dfe_0_RentalCar_app_components_CarListItem_CarListItem_module_css_bad6b30c._.single.css.map*/
