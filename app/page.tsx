@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import css from './page.module.css';
 
 export default function Home() {
@@ -9,7 +10,9 @@ export default function Home() {
           <h2 className={css.heroSecondaryText}>
             Reliable and budget-friendly rentals for any journey
           </h2>
-          <button className={css.heroButton}>View Catalog</button>
+          <Link href="/catalog" className={css.heroButton}>
+            View Catalog
+          </Link>
         </div>
       </div>
     </div>

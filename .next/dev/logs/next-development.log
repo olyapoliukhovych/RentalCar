@@ -333,3 +333,5 @@ Import traces:
 [00:59:16.820] Server  LOG     ✓ Compiled in 123ms
 [01:00:36.576] Server  LOG     ✓ Compiled in 122ms
 [01:02:07.329] Server  LOG     ✓ Compiled in 170ms
+[01:04:27.038] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
+Open your browser's console to view the Component stack trace.
