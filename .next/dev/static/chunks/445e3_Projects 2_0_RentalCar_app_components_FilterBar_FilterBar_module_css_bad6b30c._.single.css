@@ -6,4 +6,16 @@
   display: flex;
 }
 
+.FilterBar-module__iZLo1q__searchBtn {
+  background: var(--button);
+  min-width: 156px;
+  font-family: var(--font-family);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 12px 51px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
 /*# sourceMappingURL=445e3_Projects%202_0_RentalCar_app_components_FilterBar_FilterBar_module_css_bad6b30c._.single.css.map*/
