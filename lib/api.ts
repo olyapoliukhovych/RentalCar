@@ -30,12 +30,24 @@ const apiNext = axios.create({
   baseURL: 'https://car-rental-api.goit.global',
 });
 
-export const getCars = async (page: number = 1, limit: number = 12): Promise<CarsListResponse> => {
+export const getCars = async (
+  page: number = 1,
+  limit: number = 12,
+  filters = {}
+): Promise<CarsListResponse> => {
   const res = await apiNext.get<CarsListResponse>('/cars', {
     params: {
       page,
       limit,
+      ...filters,
     },
   });
+  return res.data;
+};
+
+export type BrandsResponse = string[];
+
+export const getBrands = async (): Promise<BrandsResponse> => {
+  const res = await apiNext.get<BrandsResponse>('/brands');
   return res.data;
 };

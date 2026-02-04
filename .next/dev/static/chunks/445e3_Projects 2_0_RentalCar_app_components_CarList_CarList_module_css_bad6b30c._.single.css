@@ -8,4 +8,26 @@
   display: flex;
 }
 
+.CarList-module__7yQoGG__loadMoreBtn {
+  border: 1px solid var(--button);
+  min-width: 156px;
+  font-family: var(--font-family);
+  color: var(--main);
+  border-radius: 12px;
+  padding: 12px 51px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  transition: border .25s ease-in-out;
+}
+
+.CarList-module__7yQoGG__loadMoreBtn:hover, .CarList-module__7yQoGG__loadMoreBtn:focus {
+  border: 1px solid var(--button-hover);
+}
+
+.CarList-module__7yQoGG__loadMoreBtn:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
 /*# sourceMappingURL=445e3_Projects%202_0_RentalCar_app_components_CarList_CarList_module_css_bad6b30c._.single.css.map*/

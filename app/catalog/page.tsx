@@ -1,20 +1,26 @@
-import CarList from '../components/CarList/CarList';
-import css from './page.module.css';
-import { getCars } from '@/lib/api';
+'use client';
 
-const Catalog = async () => {
-  const response = await getCars();
+// import { useCarListStore } from '@/store/useCarListStore';
+import CarList from '../components/CarList/CarList';
+import FilterBar from '../components/FilterBar/FilterBar';
+import css from './page.module.css';
+// import { useEffect } from 'react';
+// import { getCars } from '@/lib/api';
+
+const Catalog = () => {
+  // const response = await getCars();
+  // const { cars, fetchCars, page, totalPages, isLoading } = useCarListStore();
+
+  // useEffect(() => {
+  //   fetchCars(true);
+  // }, [fetchCars]);
 
   return (
     <div className={css.container}>
-      <div className={css.filters}>
-        <input></input>
-        <button className={css.searchBtn}>Search</button>
-      </div>
+      <FilterBar />
 
-      {response?.cars?.length > 0 && <CarList cars={response.cars} />}
-
-      <button className={css.loadMoreBtn}>Load more</button>
+      {/* {response.cars?.length > 0 && <CarList cars={response.cars} />} */}
+      <CarList />
     </div>
   );
 };
