@@ -113,6 +113,11 @@ const customPriceStyles: StylesConfig<Price> = {
   singleValue: base => ({
     ...base,
     color: 'var(--main)',
+
+    display: 'flex',
+    '&:before': {
+      content: '"To $"',
+    },
   }),
   option: (base, { isFocused, isSelected }) => ({
     ...base,
@@ -171,7 +176,6 @@ const customPriceStyles: StylesConfig<Price> = {
 const priceOptions: Price[] = [];
 for (let i = 30; i <= 200; i += 10) {
   priceOptions.push({ value: i.toString(), label: i.toString() });
-  // priceOptions.push({ value: i.toString(), label: `To $${i}` });
 }
 
 const FilterBar = () => {

@@ -493,7 +493,11 @@ const customPriceStyles = {
         }),
     singleValue: (base)=>({
             ...base,
-            color: 'var(--main)'
+            color: 'var(--main)',
+            display: 'flex',
+            '&:before': {
+                content: '"To $"'
+            }
         }),
     option: (base, { isFocused, isSelected })=>({
             ...base,
@@ -552,7 +556,6 @@ for(let i = 30; i <= 200; i += 10){
         value: i.toString(),
         label: i.toString()
     });
-// priceOptions.push({ value: i.toString(), label: `To $${i}` });
 }
 const FilterBar = ()=>{
     const { setBrand, setPrice, fetchCars, resetFilters } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$store$2f$useCarListStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCarListStore"])();
@@ -604,13 +607,13 @@ const FilterBar = ()=>{
                         instanceId: "brand-select"
                     }, void 0, false, {
                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-                        lineNumber: 216,
+                        lineNumber: 220,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-                lineNumber: 214,
+                lineNumber: 218,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -627,13 +630,13 @@ const FilterBar = ()=>{
                         instanceId: "brand-select"
                     }, void 0, false, {
                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-                        lineNumber: 229,
+                        lineNumber: 233,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-                lineNumber: 227,
+                lineNumber: 231,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -642,13 +645,13 @@ const FilterBar = ()=>{
                 children: "Search"
             }, void 0, false, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-                lineNumber: 245,
+                lineNumber: 249,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-        lineNumber: 213,
+        lineNumber: 217,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

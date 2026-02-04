@@ -590,7 +590,11 @@ const customPriceStyles = {
         }),
     singleValue: (base)=>({
             ...base,
-            color: 'var(--main)'
+            color: 'var(--main)',
+            display: 'flex',
+            '&:before': {
+                content: '"To $"'
+            }
         }),
     option: (base, { isFocused, isSelected })=>({
             ...base,
@@ -649,16 +653,15 @@ for(let i = 30; i <= 200; i += 10){
         value: i.toString(),
         label: i.toString()
     });
-// priceOptions.push({ value: i.toString(), label: `To $${i}` });
 }
 const FilterBar = ()=>{
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(22);
-    if ($[0] !== "cb32493c6af963da8995a951401cc830520ab686817c30e3f1819f26e5043a97") {
+    if ($[0] !== "a231547c8aaaad42fa3b5b0749a32920f00adfe28e4dd88f2962073746f4161f") {
         for(let $i = 0; $i < 22; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "cb32493c6af963da8995a951401cc830520ab686817c30e3f1819f26e5043a97";
+        $[0] = "a231547c8aaaad42fa3b5b0749a32920f00adfe28e4dd88f2962073746f4161f";
     }
     const { setBrand, setPrice, fetchCars, resetFilters } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$store$2f$useCarListStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCarListStore"])();
     let t0;
@@ -749,13 +752,13 @@ const FilterBar = ()=>{
                     instanceId: "brand-select"
                 }, void 0, false, {
                     fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-                    lineNumber: 270,
+                    lineNumber: 273,
                     columnNumber: 48
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-            lineNumber: 270,
+            lineNumber: 273,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
         $[11] = brandOptions;
@@ -780,13 +783,13 @@ const FilterBar = ()=>{
                     instanceId: "brand-select"
                 }, void 0, false, {
                     fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-                    lineNumber: 279,
+                    lineNumber: 282,
                     columnNumber: 53
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-            lineNumber: 279,
+            lineNumber: 282,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
         $[14] = handlePriceChange;
@@ -802,7 +805,7 @@ const FilterBar = ()=>{
             children: "Search"
         }, void 0, false, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-            lineNumber: 287,
+            lineNumber: 290,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
         $[16] = handleSearch;
@@ -821,7 +824,7 @@ const FilterBar = ()=>{
             ]
         }, void 0, true, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-            lineNumber: 295,
+            lineNumber: 298,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
         $[18] = t6;
