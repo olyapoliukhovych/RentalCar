@@ -11,16 +11,26 @@ interface Brand {
   label: string;
 }
 
-const customStyles: StylesConfig<Brand> = {
+interface Price {
+  value: string;
+  label: string;
+}
+
+const customBrandStyles: StylesConfig<Brand> = {
   control: base => ({
     ...base,
     backgroundColor: 'var(--inputs)',
     borderRadius: '12px',
     border: 'none',
-    padding: '6px 6px',
+    paddingLeft: '6px',
+    paddingRight: '6px', // the rest comes from default paddings and margins
     width: '204px',
+    height: '44px',
+    boxShadow: 'none',
+    fontSize: '16px',
     fontFamily: 'var(--font-family)',
-    // scrollbarColor: 'var(--gray-light)',
+    marginTop: '8px',
+    cursor: 'pointer',
   }),
   placeholder: base => ({
     ...base,
@@ -32,9 +42,125 @@ const customStyles: StylesConfig<Brand> = {
   }),
   option: (base, { isFocused, isSelected }) => ({
     ...base,
-    backgroundColor: isSelected ? 'var(--white)' : isFocused ? 'var(--inputs)' : 'var(--white)',
+    paddingTop: '4px',
+    paddingBottom: '4px',
+    backgroundColor: isFocused ? 'var(--inputs)' : 'transparent',
     color: isSelected ? 'var(--main)' : 'var(--gray)',
+    fontSize: '16px',
     cursor: 'pointer',
+    margin: 0,
+    width: '100%',
+
+    ':hover': {
+      backgroundColor: 'var(--inputs)',
+    },
+    ':active': {
+      backgroundColor: 'var(--inputs)',
+    },
+  }),
+  menu: base => ({
+    ...base,
+    borderRadius: '12px',
+    border: '1px solid var(--inputs)',
+    boxShadow: 'none',
+    paddingRight: '8px',
+    paddingLeft: '6px',
+    paddingTop: '4px',
+    paddingBottom: '4px',
+  }),
+  menuList: base => ({
+    ...base,
+    maxHeight: '272px',
+    overflowY: 'auto',
+    '::-webkit-scrollbar': {
+      width: '8px',
+    },
+    '::-webkit-scrollbar-track': {
+      background: 'transparent',
+      marginTop: '4px',
+      marginBottom: '4px',
+    },
+    '::-webkit-scrollbar-thumb': {
+      background: 'var(--gray-light)',
+      borderRadius: '10px',
+    },
+    '::-webkit-scrollbar-thumb:hover': {
+      background: 'var(--gray)',
+    },
+  }),
+};
+
+const customPriceStyles: StylesConfig<Price> = {
+  control: base => ({
+    ...base,
+    backgroundColor: 'var(--inputs)',
+    borderRadius: '12px',
+    border: 'none',
+    paddingLeft: '6px',
+    paddingRight: '6px', // the rest comes from default paddings and margins
+    width: '204px',
+    height: '44px',
+    boxShadow: 'none',
+    fontSize: '16px',
+    fontFamily: 'var(--font-family)',
+    marginTop: '8px',
+    cursor: 'pointer',
+  }),
+  placeholder: base => ({
+    ...base,
+    color: 'var(--main)',
+  }),
+  singleValue: base => ({
+    ...base,
+    color: 'var(--main)',
+  }),
+  option: (base, { isFocused, isSelected }) => ({
+    ...base,
+    paddingTop: '4px',
+    paddingBottom: '4px',
+    backgroundColor: isFocused ? 'var(--inputs)' : 'transparent',
+    color: isSelected ? 'var(--main)' : 'var(--gray)',
+    fontSize: '16px',
+    cursor: 'pointer',
+    margin: 0,
+    width: '100%',
+
+    ':hover': {
+      backgroundColor: 'var(--inputs)',
+    },
+    ':active': {
+      backgroundColor: 'var(--inputs)',
+    },
+  }),
+  menu: base => ({
+    ...base,
+    borderRadius: '12px',
+    border: '1px solid var(--inputs)',
+    boxShadow: 'none',
+    paddingRight: '8px',
+    paddingLeft: '6px',
+    paddingTop: '4px',
+    paddingBottom: '4px',
+  }),
+  menuList: base => ({
+    ...base,
+    maxHeight: '188px',
+    overflowY: 'auto',
+    '::-webkit-scrollbar': {
+      width: '8px',
+    },
+    '::-webkit-scrollbar-track': {
+      background: 'transparent',
+      marginTop: '4px',
+      marginBottom: '4px',
+    },
+    '::-webkit-scrollbar-thumb': {
+      background: 'var(--gray-light)',
+      borderRadius: '10px',
+    },
+    '::-webkit-scrollbar-thumb:hover': {
+      background: 'var(--gray)',
+    },
   }),
 };
 
@@ -42,8 +168,14 @@ const customStyles: StylesConfig<Brand> = {
 //   onChange: (value: string) => void;
 // }
 
+const priceOptions: Price[] = [];
+for (let i = 30; i <= 200; i += 10) {
+  priceOptions.push({ value: i.toString(), label: i.toString() });
+  // priceOptions.push({ value: i.toString(), label: `To $${i}` });
+}
+
 const FilterBar = () => {
-  const { setBrand, fetchCars, resetFilters } = useCarListStore();
+  const { setBrand, setPrice, fetchCars, resetFilters } = useCarListStore();
   const [brandOptions, setBrandOptions] = useState<Brand[]>([]);
 
   useEffect(() => {
@@ -60,12 +192,17 @@ const FilterBar = () => {
     fetchOptions();
   }, []);
 
-  const handleChange = (newValue: SingleValue<Brand>) => {
-    if (newValue) {
-      setBrand(newValue.value);
+  const handleBrandChange = (selectedBrand: SingleValue<Brand>) => {
+    if (selectedBrand) {
+      setBrand(selectedBrand.value);
     } else {
       resetFilters();
     }
+  };
+
+  const handlePriceChange = (selectedPrice: SingleValue<Price>) => {
+    const value = selectedPrice ? selectedPrice.value : '';
+    setPrice(value);
   };
 
   const handleSearch = () => {
@@ -74,15 +211,31 @@ const FilterBar = () => {
 
   return (
     <div className={css.allFilters}>
-      <Select<Brand>
-        options={brandOptions}
-        styles={customStyles}
-        placeholder="Choose a brand"
-        onChange={handleChange}
-        isSearchable
-        isClearable
-        instanceId="brand-select"
-      />
+      <label className={css.label}>
+        Car brand
+        <Select<Brand>
+          options={brandOptions}
+          styles={customBrandStyles}
+          placeholder="Choose a brand"
+          onChange={handleBrandChange}
+          isSearchable
+          isClearable
+          instanceId="brand-select"
+        />
+      </label>
+
+      <label className={css.label}>
+        Price / 1 hour
+        <Select<Price>
+          options={priceOptions}
+          styles={customPriceStyles}
+          placeholder="Choose a price"
+          onChange={handlePriceChange}
+          isSearchable
+          isClearable
+          instanceId="brand-select"
+        />
+      </label>
 
       {/* <div className={css.carMileageInput}>
         <input></input>

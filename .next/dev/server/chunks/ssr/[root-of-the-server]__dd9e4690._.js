@@ -241,7 +241,8 @@ const useCarListStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Deve
         totalPages: 1,
         isLoading: false,
         filters: {
-            brand: ''
+            brand: '',
+            rentalPrice: ''
         },
         setBrand: (brand)=>{
             set((state)=>({
@@ -251,10 +252,19 @@ const useCarListStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Deve
                     }
                 }));
         },
+        setPrice: (price)=>{
+            set((state)=>({
+                    filters: {
+                        ...state.filters,
+                        rentalPrice: price
+                    }
+                }));
+        },
         resetFilters: ()=>{
             set({
                 filters: {
-                    brand: ''
+                    brand: '',
+                    rentalPrice: ''
                 }
             });
             get().fetchCars(true);
@@ -365,6 +375,7 @@ const __TURBOPACK__default__export__ = CarList;
 
 __turbopack_context__.v({
   "allFilters": "FilterBar-module__iZLo1q__allFilters",
+  "label": "FilterBar-module__iZLo1q__label",
   "searchBtn": "FilterBar-module__iZLo1q__searchBtn",
 });
 }),
@@ -388,15 +399,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$
 ;
 ;
 ;
-const customStyles = {
+const customBrandStyles = {
     control: (base)=>({
             ...base,
             backgroundColor: 'var(--inputs)',
             borderRadius: '12px',
             border: 'none',
-            padding: '6px 6px',
+            paddingLeft: '6px',
+            paddingRight: '6px',
             width: '204px',
-            fontFamily: 'var(--font-family)'
+            height: '44px',
+            boxShadow: 'none',
+            fontSize: '16px',
+            fontFamily: 'var(--font-family)',
+            marginTop: '8px',
+            cursor: 'pointer'
         }),
     placeholder: (base)=>({
             ...base,
@@ -408,16 +425,137 @@ const customStyles = {
         }),
     option: (base, { isFocused, isSelected })=>({
             ...base,
-            backgroundColor: isSelected ? 'var(--white)' : isFocused ? 'var(--inputs)' : 'var(--white)',
+            paddingTop: '4px',
+            paddingBottom: '4px',
+            backgroundColor: isFocused ? 'var(--inputs)' : 'transparent',
             color: isSelected ? 'var(--main)' : 'var(--gray)',
+            fontSize: '16px',
+            cursor: 'pointer',
+            margin: 0,
+            width: '100%',
+            ':hover': {
+                backgroundColor: 'var(--inputs)'
+            },
+            ':active': {
+                backgroundColor: 'var(--inputs)'
+            }
+        }),
+    menu: (base)=>({
+            ...base,
+            borderRadius: '12px',
+            border: '1px solid var(--inputs)',
+            boxShadow: 'none',
+            paddingRight: '8px',
+            paddingLeft: '6px',
+            paddingTop: '4px',
+            paddingBottom: '4px'
+        }),
+    menuList: (base)=>({
+            ...base,
+            maxHeight: '272px',
+            overflowY: 'auto',
+            '::-webkit-scrollbar': {
+                width: '8px'
+            },
+            '::-webkit-scrollbar-track': {
+                background: 'transparent',
+                marginTop: '4px',
+                marginBottom: '4px'
+            },
+            '::-webkit-scrollbar-thumb': {
+                background: 'var(--gray-light)',
+                borderRadius: '10px'
+            },
+            '::-webkit-scrollbar-thumb:hover': {
+                background: 'var(--gray)'
+            }
+        })
+};
+const customPriceStyles = {
+    control: (base)=>({
+            ...base,
+            backgroundColor: 'var(--inputs)',
+            borderRadius: '12px',
+            border: 'none',
+            paddingLeft: '6px',
+            paddingRight: '6px',
+            width: '204px',
+            height: '44px',
+            boxShadow: 'none',
+            fontSize: '16px',
+            fontFamily: 'var(--font-family)',
+            marginTop: '8px',
             cursor: 'pointer'
+        }),
+    placeholder: (base)=>({
+            ...base,
+            color: 'var(--main)'
+        }),
+    singleValue: (base)=>({
+            ...base,
+            color: 'var(--main)'
+        }),
+    option: (base, { isFocused, isSelected })=>({
+            ...base,
+            paddingTop: '4px',
+            paddingBottom: '4px',
+            backgroundColor: isFocused ? 'var(--inputs)' : 'transparent',
+            color: isSelected ? 'var(--main)' : 'var(--gray)',
+            fontSize: '16px',
+            cursor: 'pointer',
+            margin: 0,
+            width: '100%',
+            ':hover': {
+                backgroundColor: 'var(--inputs)'
+            },
+            ':active': {
+                backgroundColor: 'var(--inputs)'
+            }
+        }),
+    menu: (base)=>({
+            ...base,
+            borderRadius: '12px',
+            border: '1px solid var(--inputs)',
+            boxShadow: 'none',
+            paddingRight: '8px',
+            paddingLeft: '6px',
+            paddingTop: '4px',
+            paddingBottom: '4px'
+        }),
+    menuList: (base)=>({
+            ...base,
+            maxHeight: '188px',
+            overflowY: 'auto',
+            '::-webkit-scrollbar': {
+                width: '8px'
+            },
+            '::-webkit-scrollbar-track': {
+                background: 'transparent',
+                marginTop: '4px',
+                marginBottom: '4px'
+            },
+            '::-webkit-scrollbar-thumb': {
+                background: 'var(--gray-light)',
+                borderRadius: '10px'
+            },
+            '::-webkit-scrollbar-thumb:hover': {
+                background: 'var(--gray)'
+            }
         })
 };
 // interface FilterBarProps {
 //   onChange: (value: string) => void;
 // }
+const priceOptions = [];
+for(let i = 30; i <= 200; i += 10){
+    priceOptions.push({
+        value: i.toString(),
+        label: i.toString()
+    });
+// priceOptions.push({ value: i.toString(), label: `To $${i}` });
+}
 const FilterBar = ()=>{
-    const { setBrand, fetchCars, resetFilters } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$store$2f$useCarListStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCarListStore"])();
+    const { setBrand, setPrice, fetchCars, resetFilters } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$store$2f$useCarListStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCarListStore"])();
     const [brandOptions, setBrandOptions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const fetchOptions = async ()=>{
@@ -435,12 +573,16 @@ const FilterBar = ()=>{
         };
         fetchOptions();
     }, []);
-    const handleChange = (newValue)=>{
-        if (newValue) {
-            setBrand(newValue.value);
+    const handleBrandChange = (selectedBrand)=>{
+        if (selectedBrand) {
+            setBrand(selectedBrand.value);
         } else {
             resetFilters();
         }
+    };
+    const handlePriceChange = (selectedPrice)=>{
+        const value = selectedPrice ? selectedPrice.value : '';
+        setPrice(value);
     };
     const handleSearch = ()=>{
         fetchCars(true);
@@ -448,17 +590,50 @@ const FilterBar = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].allFilters,
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$react$2d$select$2f$dist$2f$react$2d$select$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"], {
-                options: brandOptions,
-                styles: customStyles,
-                placeholder: "Choose a brand",
-                onChange: handleChange,
-                isSearchable: true,
-                isClearable: true,
-                instanceId: "brand-select"
-            }, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].label,
+                children: [
+                    "Car brand",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$react$2d$select$2f$dist$2f$react$2d$select$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"], {
+                        options: brandOptions,
+                        styles: customBrandStyles,
+                        placeholder: "Choose a brand",
+                        onChange: handleBrandChange,
+                        isSearchable: true,
+                        isClearable: true,
+                        instanceId: "brand-select"
+                    }, void 0, false, {
+                        fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
+                        lineNumber: 216,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-                lineNumber: 77,
+                lineNumber: 214,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].label,
+                children: [
+                    "Price / 1 hour",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$react$2d$select$2f$dist$2f$react$2d$select$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"], {
+                        options: priceOptions,
+                        styles: customPriceStyles,
+                        placeholder: "Choose a price",
+                        onChange: handlePriceChange,
+                        isSearchable: true,
+                        isClearable: true,
+                        instanceId: "brand-select"
+                    }, void 0, false, {
+                        fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
+                        lineNumber: 229,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
+                lineNumber: 227,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -467,13 +642,13 @@ const FilterBar = ()=>{
                 children: "Search"
             }, void 0, false, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-                lineNumber: 92,
+                lineNumber: 245,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-        lineNumber: 76,
+        lineNumber: 213,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

@@ -81,6 +81,8 @@
 /* [project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.module.css [app-client] (css) */
 .FilterBar-module__iZLo1q__allFilters {
   flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
   gap: 16px;
   margin-bottom: 56px;
   display: flex;
@@ -89,13 +91,21 @@
 .FilterBar-module__iZLo1q__searchBtn {
   background: var(--button);
   min-width: 156px;
+  height: 44px;
   font-family: var(--font-family);
   color: var(--white);
   border-radius: 12px;
-  padding: 12px 51px;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.25;
+}
+
+.FilterBar-module__iZLo1q__label {
+  font-family: var(--font-family);
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33333;
 }
 
 /* [project]/Developer/Projects 2.0/RentalCar/app/catalog/page.module.css [app-client] (css) */

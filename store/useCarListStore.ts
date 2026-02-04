@@ -14,8 +14,9 @@ type CarListStore = {
   totalPages: number;
   isLoading: boolean;
   //   filters: Filters;
-  filters: { brand: string };
+  filters: { brand: string; rentalPrice: string };
   setBrand: (brand: string) => void;
+  setPrice: (rentalPrice: string) => void;
   resetFilters: () => void;
   fetchCars: (isNewSearch: boolean) => Promise<void>;
 };
@@ -25,7 +26,7 @@ export const useCarListStore = create<CarListStore>()((set, get) => ({
   page: 1,
   totalPages: 1,
   isLoading: false,
-  filters: { brand: '' },
+  filters: { brand: '', rentalPrice: '' },
 
   setBrand: brand => {
     set(state => ({
@@ -33,8 +34,14 @@ export const useCarListStore = create<CarListStore>()((set, get) => ({
     }));
   },
 
+  setPrice: price => {
+    set(state => ({
+      filters: { ...state.filters, rentalPrice: price },
+    }));
+  },
+
   resetFilters: () => {
-    set({ filters: { brand: '' } });
+    set({ filters: { brand: '', rentalPrice: '' } });
     get().fetchCars(true);
   },
 
