@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 84px 120px 104px 120px;
+  gap: 72px;
+}
+
+.detailsCarImg {
+  object-fit: cover;
+  border-radius: 19px;
+}
+
+.mainDescription {
+  position: relative;
+  margin-bottom: 68px;
+}
+
+.mainTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: var(--main);
+  margin-bottom: 8px;
+}
+
+.id {
+  position: absolute;
+  right: 188px;
+  top: 9px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--gray);
+}
+
+.location {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main);
+  margin-bottom: 16px;
+}
+
+.price {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: var(--button);
+  margin-bottom: 32px;
+}
+
+.description {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main);
+}
+
+/* .otherCarDetails {
+} */
+
+.carDetailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.carDetailsList:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.listTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main);
+  margin-bottom: 20px;
+}
+
+.listItem {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main);
+}

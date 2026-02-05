@@ -51,3 +51,8 @@ export const getBrands = async (): Promise<BrandsResponse> => {
   const res = await apiNext.get<BrandsResponse>('/brands');
   return res.data;
 };
+
+export const getSingleCar = async (id: string) => {
+  const res = await apiNext.get<Car>(`/cars/${id}`);
+  return res.data;
+};

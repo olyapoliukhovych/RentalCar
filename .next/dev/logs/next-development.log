@@ -695,3 +695,111 @@ https://nextjs.org/docs/messages/module-not-found
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:38:33.244] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:45:31.802] Server  LOG     ✓ Compiled in 507ms
+[00:47:36.772] Server  LOG     ✓ Compiled in 122ms
+[00:49:13.359] Server  LOG     ✓ Compiled in 36ms
+[00:49:39.053] Server  LOG     ✓ Compiled in 26ms
+[00:50:07.020] Server  LOG     ✓ Compiled in 5ms
+[00:50:26.437] Server  LOG     ✓ Compiled in 46ms
+[00:50:37.925] Server  LOG     ✓ Compiled in 24ms
+[00:50:45.182] Server  LOG     ✓ Compiled in 28ms
+[00:56:16.137] Server  ERROR   (node:1131) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[00:56:16.529] Server  ERROR   ⨯ AxiosError: Request failed with status code 404
+[00:56:16.650] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 404
+[00:56:20.750] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:56:50.966] Server  LOG     ✓ Compiled in 10ms
+[01:04:59.290] Server  ERROR   ⨯ ReferenceError: item is not defined
+[01:05:00.384] Browser ERROR   uncaughtError: ReferenceError: item is not defined
+[01:05:13.991] Server  LOG     ✓ Compiled in 10ms
+[01:05:38.384] Browser ERROR   React instrumentation encountered an error: %o {}
+[01:07:05.127] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:11:27.450] Server  LOG     ✓ Compiled in 7ms
+[02:11:42.445] Server  LOG     ✓ Compiled in 14ms
+[02:21:11.848] Server  LOG     ✓ Compiled in 13ms
+[02:21:46.926] Server  LOG     ✓ Compiled in 25ms
+[02:23:09.363] Server  LOG     ✓ Compiled in 11ms
+[02:23:24.947] Server  LOG     ✓ Compiled in 17ms
+[02:28:02.402] Server  LOG     ✓ Compiled in 15ms
+[02:28:23.833] Server  LOG     ✓ Compiled in 13ms
+[02:28:34.690] Server  LOG     ✓ Compiled in 10ms
+[02:29:18.440] Server  LOG     ✓ Compiled in 22ms
+[02:29:25.880] Server  LOG     ✓ Compiled in 10ms
+[02:29:41.303] Server  LOG     ✓ Compiled in 60ms
+[02:30:39.503] Server  LOG     ✓ Compiled in 25ms
+[02:30:57.964] Server  LOG     ✓ Compiled in 7ms
+[02:31:18.113] Server  LOG     ✓ Compiled in 12ms
+[02:31:30.076] Server  LOG     ✓ Compiled in 4ms
+[02:31:40.838] Server  LOG     ✓ Compiled in 11ms
+[02:33:00.800] Server  LOG     ✓ Compiled in 11ms
+[02:33:09.215] Server  LOG     ✓ Compiled in 5ms
+[02:33:18.044] Server  LOG     ✓ Compiled in 10ms
+[02:33:40.777] Server  LOG     ✓ Compiled in 11ms
+[02:33:53.375] Server  LOG     ✓ Compiled in 14ms
+[02:34:18.758] Server  LOG     ✓ Compiled in 7ms
+[02:34:23.885] Server  LOG     ✓ Compiled in 3ms
+[02:35:10.634] Server  LOG     ✓ Compiled in 11ms
+[02:35:32.214] Server  LOG     ✓ Compiled in 11ms
+[02:36:08.976] Server  LOG     ✓ Compiled in 14ms
+[02:36:18.835] Server  LOG     ✓ Compiled in 9ms
+[02:36:23.413] Server  LOG     ✓ Compiled in 3ms
+[02:36:29.472] Server  LOG     ✓ Compiled in 5ms
+[02:36:46.979] Server  LOG     ✓ Compiled in 17ms
+[02:37:19.859] Server  LOG     ✓ Compiled in 6ms
+[02:37:32.251] Server  LOG     ✓ Compiled in 8ms
+[02:37:35.478] Server  LOG     ✓ Compiled in 6ms
+[02:39:05.889] Server  LOG     ✓ Compiled in 16ms
+[02:39:13.401] Server  LOG     ✓ Compiled in 24ms
+[02:39:16.950] Server  LOG     ✓ Compiled in 5ms
+[02:39:27.637] Server  LOG     ✓ Compiled in 8ms
+[02:39:38.055] Server  LOG     ✓ Compiled in 5ms
+[02:43:25.383] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <p> p 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="11a3ab35-0..." loading={Promise}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/catalog/1..." tree={[...]} params={{id:"11a3ab..."}} ...>
+                      <SegmentViewNode type="page" pagePath="/Developer...">
+                        <SegmentTrieNode>
+                        <CarDetails>
+                          <div className="CarDetails...">
+                            <div>
+                            <div>
+                              <div className="CarDetails...">
+                                <h2>
+                                <p>
+>                               <p className="CarDetails-module__sk-neG__location">
+>                                 <p>
+                                ...
+                              ...
+                      ...
+                    ...
+          ...
+
+[02:47:35.230] Server  LOG     ✓ Compiled in 52ms
+[02:47:53.650] Server  LOG     ✓ Compiled in 10ms
+[02:48:50.308] Server  LOG     ✓ Compiled in 18ms
+[02:49:01.756] Server  LOG     ✓ Compiled in 16ms
+[02:49:53.924] Server  LOG     ✓ Compiled in 13ms
+[02:50:05.449] Server  LOG     ✓ Compiled in 9ms
+[02:53:51.159] Server  LOG     ✓ Compiled in 201ms
+[02:53:52.495] Server  ERROR   ⨯ ReferenceError: numbers is not defined
+[02:53:53.390] Browser ERROR   uncaughtError: ReferenceError: numbers is not defined
+[02:54:07.703] Server  LOG     ✓ Compiled in 26ms
+[02:55:03.175] Server  ERROR   ⨯ ReferenceError: num is not defined
+[02:55:03.382] Browser ERROR   uncaughtError: ReferenceError: num is not defined
+[02:55:03.382] Browser ERROR   React instrumentation encountered an error: %o {}
+[02:56:27.331] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:00:43.841] Server  LOG     ✓ Compiled in 246ms
+[03:04:29.371] Server  LOG     ✓ Compiled in 30ms
+[03:19:26.831] Server  LOG     ✓ Compiled in 238ms
