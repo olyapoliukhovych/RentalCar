@@ -1,6 +1,10 @@
 /* [project]/Developer/Projects 2.0/RentalCar/app/catalog/page.module.css [app-client] (css) */
 .page-module__yGTRfa__container {
-  padding: 0 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 84px 120px 124px;
+  display: flex;
 }
 
 /*# sourceMappingURL=Developer_Projects%202_0_RentalCar_app_catalog_page_module_8155f70c.css.map*/

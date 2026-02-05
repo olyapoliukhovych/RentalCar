@@ -499,3 +499,199 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:29:06.051] Server  LOG     ✓ Compiled in 13.1s
 [00:29:31.949] Server  LOG     ✓ Compiled in 25.9s
 [00:30:01.279] Server  LOG     ✓ Compiled in 29.3s
+[00:34:03.593] Server  ERROR   ⨯ Error: The default export is not a React Component in "/catalog/loading"
+[00:34:03.942] Server  ERROR   ⨯ Error: The default export is not a React Component in "/catalog/loading"
+[00:34:04.440] Server  ERROR   ⨯ Error: The default export is not a React Component in "/catalog/loading"
+[00:34:04.709] Server  ERROR   ⨯ Error: The default export is not a React Component in "/catalog/loading"
+[00:34:16.362] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:36:15.058] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:36:17.593] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:37:22.407] Server  LOG     ✓ Compiled in 647ms
+[00:38:18.839] Server  ERROR   ⨯ ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:18.841] Server  ERROR   ⨯ ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:18.850] Server  ERROR   ⨯ ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:18.852] Server  ERROR   ⨯ ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:18.852] Server  ERROR   ⨯ ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:18.853] Server  ERROR   ⨯ ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:18.920] Server  ERROR   ⨯ ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:18.928] Server  LOG     ✓ Compiled in 716ms
+[00:38:19.038] Server  ERROR   ⨯ ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:19.045] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:19.045] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:19.060] Server  ERROR   ⨯ ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:19.063] Server  ERROR   ⨯ ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:19.216] Browser ERROR   uncaughtError: Error: ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:19.460] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:19.460] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/catalog/loading.tsx:1:1
+Module not found: Can't resolve './components/ListItemSkeleton/ListItemSkeleton'
+> 1 | import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import css from './page.module.css';
+  3 |
+  4 | export default function Loading() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:26.968] Server  LOG     ✓ Compiled in 94ms
+[00:38:30.547] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:38:33.244] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
