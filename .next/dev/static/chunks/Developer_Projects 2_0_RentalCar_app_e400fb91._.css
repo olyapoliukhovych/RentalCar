@@ -108,6 +108,53 @@
   line-height: 1.33333;
 }
 
+.FilterBar-module__iZLo1q__carMileageInputs {
+  flex-direction: row;
+  align-items: flex-end;
+  display: flex;
+}
+
+.FilterBar-module__iZLo1q__carMileageFirstInput {
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+}
+
+.FilterBar-module__iZLo1q__carMileageInputL {
+  border-right: 1px solid var(--gray-light);
+  background: var(--inputs);
+  width: 160px;
+  height: 44px;
+  font-family: var(--font-family);
+  color: var(--main);
+  border-radius: 12px 0 0 12px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.FilterBar-module__iZLo1q__carMileageInputR {
+  background: var(--inputs);
+  width: 160px;
+  height: 44px;
+  font-family: var(--font-family);
+  color: var(--main);
+  border-radius: 0 12px 12px 0;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.FilterBar-module__iZLo1q__carMileageInputL::placeholder, .FilterBar-module__iZLo1q__carMileageInputR::placeholder {
+  font-family: var(--font-family);
+  color: var(--main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
 /* [project]/Developer/Projects 2.0/RentalCar/app/catalog/page.module.css [app-client] (css) */
 .page-module__yGTRfa__container {
   flex-direction: column;

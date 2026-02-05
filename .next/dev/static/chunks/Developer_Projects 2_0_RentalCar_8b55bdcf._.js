@@ -241,7 +241,9 @@ const useCarListStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Deve
         isLoading: false,
         filters: {
             brand: '',
-            rentalPrice: ''
+            rentalPrice: '',
+            minMileage: '',
+            maxMileage: ''
         },
         setBrand: (brand)=>{
             set((state)=>({
@@ -259,11 +261,20 @@ const useCarListStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Deve
                     }
                 }));
         },
+        setMileage: (min, max)=>set((state)=>({
+                    filters: {
+                        ...state.filters,
+                        minMileage: min,
+                        maxMileage: max
+                    }
+                })),
         resetFilters: ()=>{
             set({
                 filters: {
                     brand: '',
-                    rentalPrice: ''
+                    rentalPrice: '',
+                    minMileage: '',
+                    maxMileage: ''
                 }
             });
             get().fetchCars(true);
@@ -467,6 +478,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 __turbopack_context__.v({
   "allFilters": "FilterBar-module__iZLo1q__allFilters",
+  "carMileageFirstInput": "FilterBar-module__iZLo1q__carMileageFirstInput",
+  "carMileageInputL": "FilterBar-module__iZLo1q__carMileageInputL",
+  "carMileageInputR": "FilterBar-module__iZLo1q__carMileageInputR",
+  "carMileageInputs": "FilterBar-module__iZLo1q__carMileageInputs",
   "label": "FilterBar-module__iZLo1q__label",
   "searchBtn": "FilterBar-module__iZLo1q__searchBtn",
 });
@@ -485,9 +500,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$
 var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$react$2d$select$2f$dist$2f$react$2d$select$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/Developer/Projects 2.0/RentalCar/node_modules/react-select/dist/react-select.esm.js [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Developer/Projects 2.0/RentalCar/lib/api.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$store$2f$useCarListStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Developer/Projects 2.0/RentalCar/store/useCarListStore.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$react$2d$number$2d$format$2f$dist$2f$react$2d$number$2d$format$2e$es$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Developer/Projects 2.0/RentalCar/node_modules/react-number-format/dist/react-number-format.es.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -508,6 +525,7 @@ const customBrandStyles = {
             boxShadow: 'none',
             fontSize: '16px',
             fontFamily: 'var(--font-family)',
+            fontWeight: '500',
             marginTop: '8px',
             cursor: 'pointer'
         }),
@@ -581,6 +599,7 @@ const customPriceStyles = {
             boxShadow: 'none',
             fontSize: '16px',
             fontFamily: 'var(--font-family)',
+            fontWeight: '500',
             marginTop: '8px',
             cursor: 'pointer'
         }),
@@ -656,14 +675,14 @@ for(let i = 30; i <= 200; i += 10){
 }
 const FilterBar = ()=>{
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(22);
-    if ($[0] !== "a231547c8aaaad42fa3b5b0749a32920f00adfe28e4dd88f2962073746f4161f") {
-        for(let $i = 0; $i < 22; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(39);
+    if ($[0] !== "992ec742b72465994609d4bac548661247046963e62ed9873be6fb383fc1a6cd") {
+        for(let $i = 0; $i < 39; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "a231547c8aaaad42fa3b5b0749a32920f00adfe28e4dd88f2962073746f4161f";
+        $[0] = "992ec742b72465994609d4bac548661247046963e62ed9873be6fb383fc1a6cd";
     }
-    const { setBrand, setPrice, fetchCars, resetFilters } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$store$2f$useCarListStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCarListStore"])();
+    const { setBrand, setPrice, setMileage, filters, fetchCars, resetFilters } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$store$2f$useCarListStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCarListStore"])();
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t0 = [];
@@ -726,19 +745,39 @@ const FilterBar = ()=>{
     }
     const handlePriceChange = t4;
     let t5;
-    if ($[9] !== fetchCars) {
-        t5 = ()=>{
+    if ($[9] !== filters.maxMileage || $[10] !== setMileage) {
+        t5 = (vals)=>setMileage(vals.value, filters.maxMileage);
+        $[9] = filters.maxMileage;
+        $[10] = setMileage;
+        $[11] = t5;
+    } else {
+        t5 = $[11];
+    }
+    const handleFromChange = t5;
+    let t6;
+    if ($[12] !== filters.minMileage || $[13] !== setMileage) {
+        t6 = (vals_0)=>setMileage(filters.minMileage, vals_0.value);
+        $[12] = filters.minMileage;
+        $[13] = setMileage;
+        $[14] = t6;
+    } else {
+        t6 = $[14];
+    }
+    const handleToChange = t6;
+    let t7;
+    if ($[15] !== fetchCars) {
+        t7 = ()=>{
             fetchCars(true);
         };
-        $[9] = fetchCars;
-        $[10] = t5;
+        $[15] = fetchCars;
+        $[16] = t7;
     } else {
-        t5 = $[10];
+        t7 = $[16];
     }
-    const handleSearch = t5;
-    let t6;
-    if ($[11] !== brandOptions || $[12] !== handleBrandChange) {
-        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+    const handleSearch = t7;
+    let t8;
+    if ($[17] !== brandOptions || $[18] !== handleBrandChange) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].label,
             children: [
                 "Car brand",
@@ -752,24 +791,24 @@ const FilterBar = ()=>{
                     instanceId: "brand-select"
                 }, void 0, false, {
                     fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-                    lineNumber: 273,
+                    lineNumber: 298,
                     columnNumber: 48
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-            lineNumber: 273,
+            lineNumber: 298,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[11] = brandOptions;
-        $[12] = handleBrandChange;
-        $[13] = t6;
+        $[17] = brandOptions;
+        $[18] = handleBrandChange;
+        $[19] = t8;
     } else {
-        t6 = $[13];
+        t8 = $[19];
     }
-    let t7;
-    if ($[14] !== handlePriceChange) {
-        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+    let t9;
+    if ($[20] !== handlePriceChange) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].label,
             children: [
                 "Price / 1 hour",
@@ -783,60 +822,152 @@ const FilterBar = ()=>{
                     instanceId: "brand-select"
                 }, void 0, false, {
                     fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-                    lineNumber: 282,
+                    lineNumber: 307,
                     columnNumber: 53
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-            lineNumber: 282,
+            lineNumber: 307,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[14] = handlePriceChange;
-        $[15] = t7;
+        $[20] = handlePriceChange;
+        $[21] = t9;
     } else {
-        t7 = $[15];
+        t9 = $[21];
     }
-    let t8;
-    if ($[16] !== handleSearch) {
-        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+    let t10;
+    if ($[22] === Symbol.for("react.memo_cache_sentinel")) {
+        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].label,
+            htmlFor: "from",
+            children: "Car mileage / km"
+        }, void 0, false, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
+            lineNumber: 315,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[22] = t10;
+    } else {
+        t10 = $[22];
+    }
+    let t11;
+    if ($[23] !== filters.minMileage || $[24] !== handleFromChange) {
+        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carMileageFirstInput,
+            children: [
+                t10,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$react$2d$number$2d$format$2f$dist$2f$react$2d$number$2d$format$2e$es$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NumericFormat"], {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carMileageInputL,
+                    placeholder: "From",
+                    prefix: "From ",
+                    thousandSeparator: " ",
+                    allowNegative: false,
+                    decimalScale: 0,
+                    value: filters.minMileage,
+                    onValueChange: handleFromChange,
+                    title: "Only positive integers allowed"
+                }, void 0, false, {
+                    fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
+                    lineNumber: 322,
+                    columnNumber: 58
+                }, ("TURBOPACK compile-time value", void 0))
+            ]
+        }, void 0, true, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
+            lineNumber: 322,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[23] = filters.minMileage;
+        $[24] = handleFromChange;
+        $[25] = t11;
+    } else {
+        t11 = $[25];
+    }
+    let t12;
+    if ($[26] !== filters.maxMileage || $[27] !== handleToChange) {
+        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$react$2d$number$2d$format$2f$dist$2f$react$2d$number$2d$format$2e$es$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NumericFormat"], {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carMileageInputR,
+            placeholder: "To",
+            prefix: "To ",
+            thousandSeparator: " ",
+            allowNegative: false,
+            decimalScale: 0,
+            value: filters.maxMileage,
+            onValueChange: handleToChange,
+            title: "Only positive integers allowed"
+        }, void 0, false, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
+            lineNumber: 331,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[26] = filters.maxMileage;
+        $[27] = handleToChange;
+        $[28] = t12;
+    } else {
+        t12 = $[28];
+    }
+    let t13;
+    if ($[29] !== t11 || $[30] !== t12) {
+        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carMileageInputs,
+            children: [
+                t11,
+                t12
+            ]
+        }, void 0, true, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
+            lineNumber: 340,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[29] = t11;
+        $[30] = t12;
+        $[31] = t13;
+    } else {
+        t13 = $[31];
+    }
+    let t14;
+    if ($[32] !== handleSearch) {
+        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].searchBtn,
             onClick: handleSearch,
             children: "Search"
         }, void 0, false, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-            lineNumber: 290,
-            columnNumber: 10
+            lineNumber: 349,
+            columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[16] = handleSearch;
-        $[17] = t8;
+        $[32] = handleSearch;
+        $[33] = t14;
     } else {
-        t8 = $[17];
+        t14 = $[33];
     }
-    let t9;
-    if ($[18] !== t6 || $[19] !== t7 || $[20] !== t8) {
-        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t15;
+    if ($[34] !== t13 || $[35] !== t14 || $[36] !== t8 || $[37] !== t9) {
+        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].allFilters,
             children: [
-                t6,
-                t7,
-                t8
+                t8,
+                t9,
+                t13,
+                t14
             ]
         }, void 0, true, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx",
-            lineNumber: 298,
-            columnNumber: 10
+            lineNumber: 357,
+            columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[18] = t6;
-        $[19] = t7;
-        $[20] = t8;
-        $[21] = t9;
+        $[34] = t13;
+        $[35] = t14;
+        $[36] = t8;
+        $[37] = t9;
+        $[38] = t15;
     } else {
-        t9 = $[21];
+        t15 = $[38];
     }
-    return t9;
+    return t15;
 };
-_s(FilterBar, "NUbQx9d3ObopXmGFEbuLAyHa30g=", false, function() {
+_s(FilterBar, "pGtKFVT0Yjc9+kbdUe/G97t92Cg=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$store$2f$useCarListStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCarListStore"]
     ];

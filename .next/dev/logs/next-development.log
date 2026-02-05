@@ -1,52 +1,109 @@
-[00:00:01.404] Server  LOG     ✓ Ready in 1089ms
-[00:02:15.112] Server  LOG     ✓ Compiled in 139ms
-[00:03:03.532] Server  LOG     ✓ Compiled in 84ms
-[00:03:11.045] Server  LOG     ✓ Compiled in 37ms
-[00:04:56.381] Server  LOG     ✓ Compiled in 106ms
-[00:04:56.495] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:233:12
+[00:00:02.198] Server  LOG     ✓ Ready in 1965ms
+[00:00:17.203] Server  ERROR   TimeoutError: The operation was aborted due to timeout
+[00:00:58.073] Server  LOG     ✓ Compiled in 355ms
+[00:02:20.923] Server  LOG     ✓ Compiled in 122ms
+[00:02:38.290] Server  LOG     ✓ Compiled in 86ms
+[00:02:43.373] Server  LOG     ✓ Compiled in 4ms
+[00:03:29.138] Server  LOG     ✓ Compiled in 19ms
+[00:03:46.038] Server  LOG     ✓ Compiled in 166ms
+[00:03:55.112] Server  LOG     ✓ Compiled in 20ms
+[00:04:19.278] Server  LOG     ✓ Compiled in 13ms
+[00:04:50.598] Server  LOG     ✓ Compiled in 34ms
+[00:05:37.873] Server  LOG     ✓ Compiled in 18ms
+[00:05:43.632] Server  LOG     ✓ Compiled in 4ms
+[00:07:59.298] Server  LOG     ✓ Compiled in 81ms
+[00:08:17.920] Server  LOG     ✓ Compiled in 67ms
+[00:08:41.693] Server  LOG     ✓ Compiled in 13ms
+[00:08:53.323] Server  LOG     ✓ Compiled in 14ms
+[00:09:27.390] Server  LOG     ✓ Compiled in 121ms
+[00:09:29.483] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:09:40.166] Server  LOG     ✓ Compiled in 72ms
+[00:10:18.996] Server  LOG     ✓ Compiled in 114ms
+[00:10:36.807] Server  LOG     ✓ Compiled in 98ms
+[00:11:34.982] Server  LOG     ✓ Compiled in 119ms
+[00:12:03.558] Server  LOG     ✓ Compiled in 69ms
+[00:13:01.777] Server  LOG     ✓ Compiled in 13ms
+[00:13:19.053] Server  LOG     ✓ Compiled in 106ms
+[00:13:21.891] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:15:15.081] Server  LOG     ✓ Compiled in 115ms
+[00:20:29.238] Server  LOG     ✓ Compiled in 141ms
+[00:23:06.322] Server  LOG     ✓ Compiled in 146ms
+[00:23:07.321] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. keyboardType keyboardtype
+[00:23:47.289] Server  LOG     ✓ Compiled in 152ms
+[00:25:11.110] Server  LOG     ✓ Compiled in 167ms
+[00:26:16.791] Server  LOG     ✓ Compiled in 91ms
+[00:27:51.350] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:28:52.271] Server  LOG     ✓ Compiled in 110ms
+[00:28:57.605] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:29:28.395] Server  LOG     ✓ Compiled in 86ms
+[00:29:32.455] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:30:40.798] Server  LOG     ✓ Compiled in 98ms
+[00:30:59.657] Server  LOG     ✓ Compiled in 109ms
+[00:31:27.519] Server  LOG     ✓ Compiled in 106ms
+[00:31:33.492] Server  LOG     ✓ Compiled in 89ms
+[00:32:49.432] Server  LOG     ✓ Compiled in 127ms
+[00:33:36.425] Server  LOG     ✓ Compiled in 73ms
+[00:33:43.513] Server  LOG     ✓ Compiled in 13ms
+[00:34:16.401] Server  LOG     ✓ Compiled in 16ms
+[00:34:33.724] Server  LOG     ✓ Compiled in 8ms
+[00:34:46.726] Server  LOG     ✓ Compiled in 6ms
+[00:34:58.382] Server  LOG     ✓ Compiled in 3ms
+[00:35:15.184] Server  LOG     ✓ Compiled in 10ms
+[00:35:37.840] Server  LOG     ✓ Compiled in 5ms
+[00:37:39.722] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:38:39.685] Server  LOG     ✓ Compiled in 113ms
+[00:38:55.779] Server  LOG     ✓ Compiled in 108ms
+[00:39:04.373] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:42:27.243] Server  LOG     ✓ Compiled in 71ms
+[00:42:28.320] Browser ERROR   ./Developer/Projects 2.0/RentalCar/store/useCarListStore.ts:29:59
 Parsing ecmascript source code failed
-  231 |           options={priceOptions}
-  232 |           styles={customPriceStyles}
-> 233 |           {value && placeholder="Choose a price"}
-      |            ^^^^^
-  234 |           onChange={handlePriceChange}
-  235 |           isSearchable
-  236 |           isClearable
+  27 |   totalPages: 1,
+  28 |   isLoading: false,
+> 29 |   filters: { brand: '', rentalPrice: '',minMileage: string; maxMileage: string },
+     |                                                           ^
+  30 |
+  31 |   setBrand: brand => {
+  32 |     set(state => ({
 
-Expected '</', got 'ident'
+Expected ',', got ';'
 
 Import traces:
   Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/store/useCarListStore.ts [Client Component Browser]
     ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
     ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
     ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
 
   Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/store/useCarListStore.ts [Client Component SSR]
     ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
     ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
     ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-[00:09:24.040] Browser ERROR   uncaughtError: ReferenceError: filters is not defined
-[00:09:38.340] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:09:38.368] Server  LOG     ✓ Compiled in 145ms
-[00:09:39.163] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:42:30.108] Server  ERROR   ⨯ ReferenceError: string is not defined
+[00:42:31.325] Browser ERROR   uncaughtError: ReferenceError: string is not defined
+[00:42:54.663] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:42:54.663] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./Developer/Projects 2.0/RentalCar/store/useCarListStore.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:42:54.663] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:42:54.767] Server  LOG     ✓ Compiled in 29ms
+[00:42:56.315] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:10:04.974] Server  LOG     ✓ Compiled in 62ms
-[00:10:18.997] Server  LOG     ✓ Compiled in 98ms
-[00:11:13.894] Server  LOG     ✓ Compiled in 109ms
-[00:11:36.195] Server  LOG     ✓ Compiled in 88ms
-[00:13:19.708] Server  LOG     ✓ Compiled in 103ms
-[00:13:43.386] Server  LOG     ✓ Compiled in 31ms
-[00:14:08.810] Server  LOG     ✓ Compiled in 22ms
-[00:14:33.936] Server  LOG     ✓ Compiled in 66ms
-[00:14:34.045] Browser ERROR   ./Developer/Projects 2.0/RentalCar/store/useCarListStore.ts:39:52
+[00:46:11.405] Server  LOG     ✓ Compiled in 48ms
+[00:46:12.324] Browser ERROR   ./Developer/Projects 2.0/RentalCar/store/useCarListStore.ts:46:3
 Parsing ecmascript source code failed
-  37 |   setPrice: price => {
-  38 |     set(state => ({
-> 39 |       filters: { ...state.filters, rentalPrice: To $price },
-     |                                                    ^^^^^^
-  40 |     }));
-  41 |   },
-  42 |
+  44 |   setMileage: (min,max)=> set(state => ({filters: {...state.filters, minMileage: min, maxMileage:max}}))
+  45 |
+> 46 |   resetFilters: () => {
+     |   ^^^^^^^^^^^^
+  47 |     set({ filters: { brand: '', rentalPrice: '', minMileage: '', maxMileage: '' } });
+  48 |     get().fetchCars(true);
+  49 |   },
 
 Expected ',', got 'ident'
 
@@ -62,77 +119,17 @@ Import traces:
     ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
     ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
     ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-[00:14:54.947] Server  LOG     ✓ Compiled in 25ms
-[00:14:55.054] Browser ERROR   ./Developer/Projects 2.0/RentalCar/store/useCarListStore.ts:39:66
+[00:46:20.321] Browser ERROR   ./Developer/Projects 2.0/RentalCar/store/useCarListStore.ts:48:3
 Parsing ecmascript source code failed
-  37 |   setPrice: price => {
-  38 |     set(state => ({
-> 39 |       filters: { ...state.filters, rentalPrice: "To $" + `${price} },
-     |                                                                  ^^^^
-> 40 |     }));
-     | ^^^^^^^^
-> 41 |   },
-     | ^^^^^^^^
-> 42 | 
-     | ^^^^^^^^
-> 43 |   resetFilters: () => {
-     | ^^^^^^^^
-> 44 |     set({ filters: { brand: '', rentalPrice: '' } });
-     | ^^^^^^^^
-> 45 |     get().fetchCars(true);
-     | ^^^^^^^^
-> 46 |   },
-     | ^^^^^^^^
-> 47 | 
-     | ^^^^^^^^
-> 48 |   fetchCars: async (isNewSearch = false) => {
-     | ^^^^^^^^
-> 49 |     set({ isLoading: true });
-     | ^^^^^^^^
-> 50 | 
-     | ^^^^^^^^
-> 51 |     const currentPage = isNewSearch ? 1 : get().page;
-     | ^^^^^^^^
-> 52 |     const currentFilters = get().filters;
-     | ^^^^^^^^
-> 53 | 
-     | ^^^^^^^^
-> 54 |     try {
-     | ^^^^^^^^
-> 55 |       const data = await getCars(currentPage, 12, currentFilters);
-     | ^^^^^^^^
-> 56 | 
-     | ^^^^^^^^
-> 57 |       set(state => ({
-     | ^^^^^^^^
-> 58 |         cars: isNewSearch ? data.cars : [...state.cars, ...data.cars],
-     | ^^^^^^^^
-> 59 |         page: state.page + 1,
-     | ^^^^^^^^
-> 60 |         // page: data.page + 1,
-     | ^^^^^^^^
-> 61 |         totalPages: data.totalPages,
-     | ^^^^^^^^
-> 62 |       }));
-     | ^^^^^^^^
-> 63 |     } catch (error) {
-     | ^^^^^^^^
-> 64 |       console.error('Error:', error);
-     | ^^^^^^^^
-> 65 |     } finally {
-     | ^^^^^^^^
-> 66 |       set({ isLoading: false });
-     | ^^^^^^^^
-> 67 |     }
-     | ^^^^^^^^
-> 68 |   },
-     | ^^^^^^^^
-> 69 | }));
-     | ^^^^^^^^
-> 70 | 
-     | ^
+  46 |     }))
+  47 |
+> 48 |   resetFilters: () => {
+     |   ^^^^^^^^^^^^
+  49 |     set({ filters: { brand: '', rentalPrice: '', minMileage: '', maxMileage: '' } });
+  50 |     get().fetchCars(true);
+  51 |   },
 
-Unterminated template
+Expected ',', got 'ident'
 
 Import traces:
   Client Component Browser:
@@ -146,192 +143,815 @@ Import traces:
     ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
     ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
     ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-[00:17:25.835] Server  LOG     ✓ Compiled in 26ms
-[00:23:15.543] Server  LOG     ✓ Compiled in 43ms
-[00:23:16.037] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:109:3
-Parsing ecmascript source code failed
-  107 |     cursor: 'pointer',
-  108 |     initialLetter:"KK".
-> 109 |   }),
-      |   ^
-  110 |   placeholder: base => ({
-  111 |     ...base,
-  112 |     color: 'var(--main)',
-
-Expected ident
-
-Import traces:
-  Client Component Browser:
-    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-[00:23:50.292] Server  LOG     ✓ Compiled in 148ms
-[00:23:55.437] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:48:58.173] Server  LOG     ✓ Compiled in 122ms
+[00:49:57.543] Server  LOG     ✓ Compiled in 81ms
+[01:13:04.894] Server  LOG     ✓ Compiled in 727ms
+[01:13:05.323] Browser ERROR   uncaughtError: ReferenceError: filters is not defined
+[01:13:52.077] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:13:52.095] Server  LOG     ✓ Compiled in 97ms
+[01:13:53.039] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:24:47.335] Server  LOG     ✓ Compiled in 74ms
-[00:25:56.618] Server  LOG     ✓ Compiled in 82ms
-[00:26:06.860] Server  LOG     ✓ Compiled in 124ms
-[00:26:28.478] Server  LOG     ✓ Compiled in 106ms
-[00:28:06.518] Server  LOG     ✓ Compiled in 156ms
-[00:32:15.783] Server  LOG     ✓ Compiled in 97ms
-[00:32:54.485] Server  LOG     ✓ Compiled in 136ms
-[00:36:37.017] Server  LOG     ✓ Compiled in 77ms
-[00:37:36.952] Server  LOG     ✓ Compiled in 122ms
-[00:37:38.038] Browser ERROR   uncaughtError: ReferenceError: components is not defined
-[00:40:57.682] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:40:57.799] Server  LOG     ✓ Compiled in 69ms
-[00:41:18.439] Server  LOG     ✓ Compiled in 95ms
-[00:42:15.466] Server  LOG     ✓ Compiled in 78ms
-[00:43:18.733] Server  LOG     ✓ Compiled in 93ms
-[00:43:20.290] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[01:14:10.282] Server  LOG     ✓ Compiled in 131ms
+[01:14:20.157] Server  LOG     ✓ Compiled in 75ms
+[01:16:02.231] Server  LOG     ✓ Compiled in 114ms
+[01:17:46.901] Server  LOG     ✓ Compiled in 113ms
+[01:19:44.691] Server  LOG     ✓ Compiled in 115ms
+[01:20:04.794] Server  LOG     ✓ Compiled in 158ms
+[01:20:05.321] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx
+Error evaluating Node.js code
+SyntaxError: /Users/olyaa/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx: Identifier 'handlePriceChange' has already been declared. (215:8)
+
+  213 |   };
+  214 |
+> 215 |   const handlePriceChange = (selectedPrice: SingleValue<Price>) => {};
+      |         ^
+  216 |
+  217 |   const handlePriceChange = (selectedPrice: SingleValue<Price>) => {};
+  218 |
+    [at constructor (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:137105)]
+    [at TypeScriptParserMixin.raise (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:194164)]
+    [at TypeScriptScopeHandler.checkRedeclarationInScope (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:163166)]
+    [at TypeScriptScopeHandler.declareName (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:162529)]
+    [at TypeScriptScopeHandler.declareName (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:271160)]
+    [at TypeScriptParserMixin.declareNameFromIdentifier (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:279226)]
+    [at TypeScriptParserMixin.checkIdentifier (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:279152)]
+    [at TypeScriptParserMixin.checkLVal (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:278197)]
+    [at TypeScriptParserMixin.parseVarId (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:403644)]
+    [at TypeScriptParserMixin.parseVarId (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:329902)]
+    [at TypeScriptParserMixin.parseVar (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:402884)]
+    [at TypeScriptParserMixin.parseVarStatement (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:399366)]
+    [at TypeScriptParserMixin.parseVarStatement (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:323322)]
+    [at TypeScriptParserMixin.parseStatementContent (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:391398)]
+    [at TypeScriptParserMixin.parseStatementContent (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:324042)]
+    [at TypeScriptParserMixin.parseStatementLike (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at TypeScriptParserMixin.parseStatementListItem (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
+    [at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
+    [at TypeScriptParserMixin.parseBlockBody (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
+    [at TypeScriptParserMixin.parseBlock (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:400923)]
+    [at TypeScriptParserMixin.parseFunctionBody (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:378053)]
+    [at TypeScriptParserMixin.parseArrowExpression (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:377398)]
+    [at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:369594)]
+    [at TypeScriptParserMixin.parseExprAtom (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:361477)]
+    [at TypeScriptParserMixin.parseExprAtom (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:269272)]
+    [at TypeScriptParserMixin.parseExprSubscripts (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:356364)]
+    [at TypeScriptParserMixin.parseUpdate (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
+    [at TypeScriptParserMixin.parseMaybeUnary (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
+    [at TypeScriptParserMixin.parseMaybeUnary (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:331837)]
+    [at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
+    [at TypeScriptParserMixin.parseExprOps (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
+    [at TypeScriptParserMixin.parseMaybeConditional (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
+    [at TypeScriptParserMixin.parseMaybeAssign (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
+    [at TypeScriptParserMixin.parseMaybeAssign (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:330620)]
+    [at /Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:350260]
+    [at TypeScriptParserMixin.allowInAnd (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:383926)]
+    [at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:350239)]
+    [at TypeScriptParserMixin.parseVar (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:402967)]
+    [at TypeScriptParserMixin.parseVarStatement (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:399366)]
+    [at TypeScriptParserMixin.parseVarStatement (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:323322)]
+    [at TypeScriptParserMixin.parseStatementContent (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:391398)]
+    [at TypeScriptParserMixin.parseStatementContent (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:324042)]
+    [at TypeScriptParserMixin.parseStatementLike (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at TypeScriptParserMixin.parseModuleItem (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:389055)]
+    [at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:401400)]
+    [at TypeScriptParserMixin.parseBlockBody (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
+    [at TypeScriptParserMixin.parseProgram (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:386857)]
+    [at TypeScriptParserMixin.parseTopLevel (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:386575)]
+    [at TypeScriptParserMixin.parse (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:426834)]
+    [at TypeScriptParserMixin.parse (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:337631)]
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[01:20:05.321] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:217:9
+Ecmascript file had an error
+  215 |   const handlePriceChange = (selectedPrice: SingleValue<Price>) => {};
+  216 |
+> 217 |   const handlePriceChange = (selectedPrice: SingleValue<Price>) => {};
+      |         ^^^^^^^^^^^^^^^^^
+  218 |
+  219 |   const handleSearch = () => {
+  220 |     fetchCars(true);
+
+the name `handlePriceChange` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[01:20:51.090] Server  LOG     ✓ Compiled in 47ms
+[01:20:51.319] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:223:3
+Parsing ecmascript source code failed
+  221 |   };
+  222 |
+> 223 |   return (
+      |   ^^^^^^^^
+> 224 |     <div className={css.allFilters}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 225 |       <label className={css.label}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 226 |         Car brand
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 227 |         <Select<Brand>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 228 |           options={brandOptions}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 229 |           styles={customBrandStyles}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 230 |           placeholder="Choose a brand"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 231 |           onChange={handleBrandChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 232 |           isSearchable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 233 |           isClearable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 234 |           instanceId="brand-select"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 235 |         />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 236 |       </label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 237 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 238 |       <label className={css.label}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 239 |         Price / 1 hour
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 240 |         <Select<Price>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 241 |           options={priceOptions}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 242 |           styles={customPriceStyles}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 243 |           placeholder="Choose a price"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 244 |           onChange={handlePriceChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 245 |           isSearchable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 246 |           isClearable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 247 |           instanceId="brand-select"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 248 |         />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 249 |       </label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 250 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 251 |       <div className={css.carMileageInputs}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 252 |         <div className={css.carMileageFirstInput}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 253 |           <label className={css.label} htmlFor="from">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 254 |             Car mileage / km
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 255 |           </label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 256 |           {/* <input
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 257 |             className={css.carMileageInputL}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 258 |             name="from"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 259 |             id="from"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 260 |             type="text"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 261 |             placeholder="From"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 262 |             // onChange={handleFromChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 263 |             // inputMode="numeric"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 264 |           ></input> */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 265 |           <NumericFormat
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 266 |             className={css.carMileageInputL}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 267 |             placeholder="From"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 268 |             thousandSeparator=" "
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 269 |             allowNegative={false}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 270 |             value={filters.minMileage}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 271 |             // onChange={handleFromChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 272 |             // onValueChange={}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 273 |           />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 274 |         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 275 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 276 |         <input
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 277 |           className={css.carMileageInputR}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 278 |           name="to"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 279 |           id="to"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 280 |           type="text"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 281 |           placeholder="To"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 282 |           // onChange={handleToChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 283 |           // inputMode="numeric"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 284 |         ></input>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 285 |       </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 286 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 287 |       <button className={css.searchBtn} onClick={handleSearch}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 288 |         Search
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 289 |       </button>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 290 |     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 291 |   );
+      | ^^^^^
+  292 | };
+  293 |
+  294 | export default FilterBar;
+
+Return statement is not allowed here
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[01:21:07.325] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:223:3
+Parsing ecmascript source code failed
+  221 |   };
+  222 |
+> 223 |   return (
+      |   ^^^^^^^^
+> 224 |     <div className={css.allFilters}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 225 |       <label className={css.label}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 226 |         Car brand
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 227 |         <Select<Brand>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 228 |           options={brandOptions}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 229 |           styles={customBrandStyles}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 230 |           placeholder="Choose a brand"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 231 |           onChange={handleBrandChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 232 |           isSearchable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 233 |           isClearable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 234 |           instanceId="brand-select"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 235 |         />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 236 |       </label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 237 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 238 |       <label className={css.label}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 239 |         Price / 1 hour
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 240 |         <Select<Price>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 241 |           options={priceOptions}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 242 |           styles={customPriceStyles}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 243 |           placeholder="Choose a price"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 244 |           onChange={handlePriceChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 245 |           isSearchable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 246 |           isClearable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 247 |           instanceId="brand-select"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 248 |         />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 249 |       </label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 250 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 251 |       <div className={css.carMileageInputs}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 252 |         <div className={css.carMileageFirstInput}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 253 |           <label className={css.label} htmlFor="from">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 254 |             Car mileage / km
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 255 |           </label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 256 |           {/* <input
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 257 |             className={css.carMileageInputL}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 258 |             name="from"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 259 |             id="from"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 260 |             type="text"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 261 |             placeholder="From"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 262 |             // onChange={handleFromChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 263 |             // inputMode="numeric"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 264 |           ></input> */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 265 |           <NumericFormat
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 266 |             className={css.carMileageInputL}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 267 |             placeholder="From"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 268 |             thousandSeparator=" "
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 269 |             allowNegative={false}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 270 |             value={filters.minMileage}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 271 |             // onChange={handleFromChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 272 |             // onValueChange={}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 273 |           />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 274 |         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 275 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 276 |         <input
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 277 |           className={css.carMileageInputR}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 278 |           name="to"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 279 |           id="to"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 280 |           type="text"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 281 |           placeholder="To"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 282 |           // onChange={handleToChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 283 |           // inputMode="numeric"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 284 |         ></input>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 285 |       </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 286 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 287 |       <button className={css.searchBtn} onClick={handleSearch}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 288 |         Search
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 289 |       </button>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 290 |     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 291 |   );
+      | ^^^^^
+  292 | };
+  293 |
+  294 | export default FilterBar;
+
+Return statement is not allowed here
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[01:21:30.321] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:223:3
+Parsing ecmascript source code failed
+  221 |   };
+  222 |
+> 223 |   return (
+      |   ^^^^^^^^
+> 224 |     <div className={css.allFilters}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 225 |       <label className={css.label}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 226 |         Car brand
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 227 |         <Select<Brand>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 228 |           options={brandOptions}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 229 |           styles={customBrandStyles}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 230 |           placeholder="Choose a brand"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 231 |           onChange={handleBrandChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 232 |           isSearchable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 233 |           isClearable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 234 |           instanceId="brand-select"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 235 |         />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 236 |       </label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 237 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 238 |       <label className={css.label}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 239 |         Price / 1 hour
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 240 |         <Select<Price>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 241 |           options={priceOptions}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 242 |           styles={customPriceStyles}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 243 |           placeholder="Choose a price"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 244 |           onChange={handlePriceChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 245 |           isSearchable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 246 |           isClearable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 247 |           instanceId="brand-select"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 248 |         />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 249 |       </label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 250 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 251 |       <div className={css.carMileageInputs}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 252 |         <div className={css.carMileageFirstInput}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 253 |           <label className={css.label} htmlFor="from">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 254 |             Car mileage / km
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 255 |           </label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 256 |           {/* <input
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 257 |             className={css.carMileageInputL}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 258 |             name="from"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 259 |             id="from"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 260 |             type="text"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 261 |             placeholder="From"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 262 |             // onChange={handleFromChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 263 |             // inputMode="numeric"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 264 |           ></input> */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 265 |           <NumericFormat
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 266 |             className={css.carMileageInputL}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 267 |             placeholder="From"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 268 |             thousandSeparator=" "
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 269 |             allowNegative={false}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 270 |             value={filters.minMileage}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 271 |             // onChange={handleFromChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 272 |             // onValueChange={}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 273 |           />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 274 |         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 275 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 276 |         <input
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 277 |           className={css.carMileageInputR}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 278 |           name="to"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 279 |           id="to"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 280 |           type="text"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 281 |           placeholder="To"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 282 |           // onChange={handleToChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 283 |           // inputMode="numeric"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 284 |         ></input>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 285 |       </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 286 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 287 |       <button className={css.searchBtn} onClick={handleSearch}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 288 |         Search
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 289 |       </button>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 290 |     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 291 |   );
+      | ^^^^^
+  292 | };
+  293 |
+  294 | export default FilterBar;
+
+Return statement is not allowed here
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[01:21:50.321] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:223:3
+Parsing ecmascript source code failed
+  221 |   };
+  222 |
+> 223 |   return (
+      |   ^^^^^^^^
+> 224 |     <div className={css.allFilters}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 225 |       <label className={css.label}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 226 |         Car brand
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 227 |         <Select<Brand>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 228 |           options={brandOptions}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 229 |           styles={customBrandStyles}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 230 |           placeholder="Choose a brand"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 231 |           onChange={handleBrandChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 232 |           isSearchable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 233 |           isClearable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 234 |           instanceId="brand-select"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 235 |         />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 236 |       </label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 237 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 238 |       <label className={css.label}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 239 |         Price / 1 hour
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 240 |         <Select<Price>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 241 |           options={priceOptions}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 242 |           styles={customPriceStyles}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 243 |           placeholder="Choose a price"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 244 |           onChange={handlePriceChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 245 |           isSearchable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 246 |           isClearable
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 247 |           instanceId="brand-select"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 248 |         />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 249 |       </label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 250 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 251 |       <div className={css.carMileageInputs}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 252 |         <div className={css.carMileageFirstInput}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 253 |           <label className={css.label} htmlFor="from">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 254 |             Car mileage / km
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 255 |           </label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 256 |           {/* <input
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 257 |             className={css.carMileageInputL}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 258 |             name="from"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 259 |             id="from"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 260 |             type="text"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 261 |             placeholder="From"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 262 |             // onChange={handleFromChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 263 |             // inputMode="numeric"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 264 |           ></input> */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 265 |           <NumericFormat
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 266 |             className={css.carMileageInputL}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 267 |             placeholder="From"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 268 |             thousandSeparator=" "
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 269 |             allowNegative={false}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 270 |             value={filters.minMileage}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 271 |             // onChange={handleFromChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 272 |             // onValueChange={}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 273 |           />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 274 |         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 275 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 276 |         <input
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 277 |           className={css.carMileageInputR}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 278 |           name="to"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 279 |           id="to"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 280 |           type="text"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 281 |           placeholder="To"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 282 |           // onChange={handleToChange}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 283 |           // inputMode="numeric"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 284 |         ></input>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 285 |       </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 286 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 287 |       <button className={css.searchBtn} onClick={handleSearch}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 288 |         Search
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 289 |       </button>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 290 |     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 291 |   );
+      | ^^^^^
+  292 | };
+  293 |
+  294 | export default FilterBar;
+
+Return statement is not allowed here
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[01:22:14.020] Server  LOG     ✓ Compiled in 125ms
+[01:22:51.873] Server  LOG     ✓ Compiled in 100ms
+[01:23:38.352] Server  LOG     ✓ Compiled in 46ms
+[01:23:39.320] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:217:77
+Parsing ecmascript source code failed
+  215 |   const handleFromChange = (vals: number) => setMileage(vals.value, filters.maxMileage);
+  216 |
+> 217 |   const handleToChange = (vals => setMileage(filters.minMileage, vals.value)};
+      |                                                                             ^
+  218 |
+  219 |   const handleSearch = () => {
+  220 |     fetchCars(true);
+
+Expected ',', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[01:23:39.645] Server  LOG     ✓ Compiled in 6ms
+[01:23:40.320] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:217:77
+Parsing ecmascript source code failed
+  215 |   const handleFromChange = (vals: number) => setMileage(vals.value, filters.maxMileage);
+  216 |
+> 217 |   const handleToChange = (vals => setMileage(filters.minMileage, vals.value);
+      |                                                                             ^
+  218 |
+  219 |   const handleSearch = () => {
+  220 |     fetchCars(true);
+
+Expected ',', got ';'
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[01:23:50.455] Server  LOG     ✓ Compiled in 157ms
+[01:24:23.028] Server  LOG     ✓ Compiled in 80ms
+[01:24:26.241] Server  LOG     ✓ Compiled in 63ms
+[01:26:00.083] Server  LOG     ✓ Compiled in 140ms
+[01:31:20.635] Server  LOG     ✓ Compiled in 148ms
+[01:31:56.319] Server  LOG     ✓ Compiled in 124ms
+[01:33:56.515] Server  LOG     ✓ Compiled in 80ms
+[01:34:39.137] Server  LOG     ✓ Compiled in 105ms
+[01:35:18.959] Server  LOG     ✓ Compiled in 83ms
+[01:37:56.260] Server  LOG     ✓ Compiled in 156ms
+[01:38:09.773] Server  LOG     ✓ Compiled in 145ms
+[01:38:20.160] Server  LOG     ✓ Compiled in 298ms
+[01:38:55.855] Server  LOG     ✓ Compiled in 129ms
+[01:40:37.387] Server  LOG     ✓ Compiled in 155ms
+[01:42:30.459] Server  LOG     ✓ Compiled in 127ms
+[01:47:55.738] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:44:15.404] Server  LOG     ✓ Compiled in 92ms
-[00:44:15.504] Browser ERROR   uncaughtError: Error: You seem to be using a value for 'content' without quotes, try replacing it with `content: '"To $"'`
-[00:44:49.993] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:44:50.018] Server  LOG     ✓ Compiled in 73ms
-[00:44:50.788] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[01:48:42.834] Server  LOG     ✓ Compiled in 51ms
+[01:48:45.407] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:46:22.967] Server  LOG     ✓ Compiled in 121ms
-[00:46:40.426] Server  LOG     ✓ Compiled in 37ms
-[00:46:42.842] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[01:49:57.588] Server  LOG     ✓ Compiled in 22ms
+[01:49:59.629] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:46:55.441] Server  LOG     ✓ Compiled in 79ms
-[00:48:16.153] Server  LOG     ✓ Compiled in 86ms
-[00:48:44.503] Server  LOG     ✓ Compiled in 63ms
-[00:49:22.635] Server  LOG     ✓ Compiled in 96ms
-[00:49:37.605] Server  LOG     ✓ Compiled in 86ms
-[00:49:49.415] Server  LOG     ✓ Compiled in 97ms
-[00:49:54.713] Server  LOG     ✓ Compiled in 37ms
-[00:50:01.578] Server  LOG     ✓ Compiled in 95ms
-[00:50:04.772] Server  LOG     ✓ Compiled in 30ms
-[00:50:19.575] Server  LOG     ✓ Compiled in 73ms
-[00:50:44.323] Server  LOG     ✓ Compiled in 57ms
-[00:50:59.336] Server  LOG     ✓ Compiled in 59ms
-[00:51:09.459] Server  LOG     ✓ Compiled in 93ms
-[00:52:00.071] Server  LOG     ✓ Compiled in 92ms
-[00:52:03.498] Server  LOG     ✓ Compiled in 45ms
-[00:52:34.421] Server  LOG     ✓ Compiled in 40ms
-[00:52:34.531] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:182:1
-Parsing ecmascript source code failed
-  180 |   alignItems: 'center',
-  181 |   display: 'flex',
-> 182 | { input &&  ':before': {
-      | ^
-  183 |     content: '"To $"',
-  184 |     // display: 'block',
-  185 |     marginRight: 8,
-
-Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
-
-Import traces:
-  Client Component Browser:
-    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-[00:52:50.590] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:182:1
-Parsing ecmascript source code failed
-  180 |   alignItems: 'center',
-  181 |   display: 'flex',
-> 182 | { input !== "" &&  ':before': {
-      | ^
-  183 |     content: '"To $"',
-  184 |     // display: 'block',
-  185 |     marginRight: 8,
-
-Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
-
-Import traces:
-  Client Component Browser:
-    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-[00:53:43.989] Server  LOG     ✓ Compiled in 40ms
-[00:53:44.092] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:165:3
-Parsing ecmascript source code failed
-  163 |     },
-  164 |   }),
-> 165 |   { input.value !== "" &&   input: base => ({ ...base, ...dot() }),}
-      |   ^
-  166 |
-  167 | };
-  168 |
-
-Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
-
-Import traces:
-  Client Component Browser:
-    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-[00:53:48.456] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:165:3
-Parsing ecmascript source code failed
-  163 |     },
-  164 |   }),
-> 165 |   { input.value !== "" &&   input: base => ({ ...base, ...dot() })}
-      |   ^
-  166 |
-  167 | };
-  168 |
-
-Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
-
-Import traces:
-  Client Component Browser:
-    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-[00:54:16.772] Server  LOG     ✓ Compiled in 35ms
-[00:54:16.877] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx:165:8
-Parsing ecmascript source code failed
-  163 |     },
-  164 |   }),
-> 165 |   base => ({ ...base, ...dot() })
-      |        ^^
-  166 |
-  167 | };
-  168 |
-
-Expected a semicolon
-
-Import traces:
-  Client Component Browser:
-    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component Browser]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.tsx [Client Component SSR]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
-    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
-[00:57:02.359] Server  LOG     ✓ Compiled in 133ms
-[00:58:27.751] Server  LOG     ✓ Compiled in 70ms
-[00:59:16.820] Server  LOG     ✓ Compiled in 123ms
-[01:00:36.576] Server  LOG     ✓ Compiled in 122ms
-[01:02:07.329] Server  LOG     ✓ Compiled in 170ms
-[01:04:27.038] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-Open your browser's console to view the Component stack trace.

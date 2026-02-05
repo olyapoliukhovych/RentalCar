@@ -5,6 +5,7 @@ import css from './FilterBar.module.css';
 import Select, { SingleValue, StylesConfig } from 'react-select';
 import { getBrands } from '@/lib/api';
 import { useCarListStore } from '@/store/useCarListStore';
+import { NumberFormatValues, NumericFormat } from 'react-number-format';
 
 interface Brand {
   value: string;
@@ -29,6 +30,7 @@ const customBrandStyles: StylesConfig<Brand> = {
     boxShadow: 'none',
     fontSize: '16px',
     fontFamily: 'var(--font-family)',
+    fontWeight: '500',
     marginTop: '8px',
     cursor: 'pointer',
   }),
@@ -103,6 +105,7 @@ const customPriceStyles: StylesConfig<Price> = {
     boxShadow: 'none',
     fontSize: '16px',
     fontFamily: 'var(--font-family)',
+    fontWeight: '500',
     marginTop: '8px',
     cursor: 'pointer',
   }),
@@ -179,7 +182,7 @@ for (let i = 30; i <= 200; i += 10) {
 }
 
 const FilterBar = () => {
-  const { setBrand, setPrice, fetchCars, resetFilters } = useCarListStore();
+  const { setBrand, setPrice, setMileage, filters, fetchCars, resetFilters } = useCarListStore();
   const [brandOptions, setBrandOptions] = useState<Brand[]>([]);
 
   useEffect(() => {
@@ -208,6 +211,10 @@ const FilterBar = () => {
     const value = selectedPrice ? selectedPrice.value : '';
     setPrice(value);
   };
+
+  const handleFromChange = (vals: NumberFormatValues) => setMileage(vals.value, filters.maxMileage);
+
+  const handleToChange = (vals: NumberFormatValues) => setMileage(filters.minMileage, vals.value);
 
   const handleSearch = () => {
     fetchCars(true);
@@ -241,10 +248,35 @@ const FilterBar = () => {
         />
       </label>
 
-      {/* <div className={css.carMileageInput}>
-        <input></input>
-        <input></input>
-      </div> */}
+      <div className={css.carMileageInputs}>
+        <div className={css.carMileageFirstInput}>
+          <label className={css.label} htmlFor="from">
+            Car mileage / km
+          </label>
+          <NumericFormat
+            className={css.carMileageInputL}
+            placeholder="From"
+            prefix={'From '}
+            thousandSeparator=" " // functional requirements
+            allowNegative={false}
+            decimalScale={0}
+            value={filters.minMileage}
+            onValueChange={handleFromChange}
+            title="Only positive integers allowed"
+          />
+        </div>
+        <NumericFormat
+          className={css.carMileageInputR}
+          placeholder="To"
+          prefix={'To '}
+          thousandSeparator=" " // functional requirements
+          allowNegative={false}
+          decimalScale={0}
+          value={filters.maxMileage}
+          onValueChange={handleToChange}
+          title="Only positive integers allowed"
+        />
+      </div>
 
       <button className={css.searchBtn} onClick={handleSearch}>
         Search

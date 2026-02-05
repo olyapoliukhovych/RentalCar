@@ -1,22 +1,23 @@
 import { create } from 'zustand';
 import { Car, getCars } from '@/lib/api';
 
-// interface Filters {
-//   brand: string;
-//   rentalPrice: string;
-//   minMileage: number;
-//   maxMileage: number;
-// }
+interface Filters {
+  brand: string;
+  rentalPrice: string;
+  minMileage: string;
+  maxMileage: string;
+}
 
 type CarListStore = {
   cars: Car[];
   page: number;
   totalPages: number;
   isLoading: boolean;
-  //   filters: Filters;
-  filters: { brand: string; rentalPrice: string };
+  filters: Filters;
+  //   filters: { brand: string; rentalPrice: string; minMileage: string; maxMileage: string };
   setBrand: (brand: string) => void;
   setPrice: (rentalPrice: string) => void;
+  setMileage: (min: string, max: string) => void;
   resetFilters: () => void;
   fetchCars: (isNewSearch: boolean) => Promise<void>;
 };
@@ -26,7 +27,7 @@ export const useCarListStore = create<CarListStore>()((set, get) => ({
   page: 1,
   totalPages: 1,
   isLoading: false,
-  filters: { brand: '', rentalPrice: '' },
+  filters: { brand: '', rentalPrice: '', minMileage: '', maxMileage: '' },
 
   setBrand: brand => {
     set(state => ({
@@ -40,8 +41,13 @@ export const useCarListStore = create<CarListStore>()((set, get) => ({
     }));
   },
 
+  setMileage: (min, max) =>
+    set(state => ({
+      filters: { ...state.filters, minMileage: min, maxMileage: max },
+    })),
+
   resetFilters: () => {
-    set({ filters: { brand: '', rentalPrice: '' } });
+    set({ filters: { brand: '', rentalPrice: '', minMileage: '', maxMileage: '' } });
     get().fetchCars(true);
   },
 
