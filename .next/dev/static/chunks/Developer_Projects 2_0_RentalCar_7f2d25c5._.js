@@ -971,11 +971,11 @@ for(let i = 30; i <= 200; i += 10){
 const FilterBar = ()=>{
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(39);
-    if ($[0] !== "992ec742b72465994609d4bac548661247046963e62ed9873be6fb383fc1a6cd") {
+    if ($[0] !== "1fc51b74e3eae094f1a115eb0a0f0758823da917e04af2cbe8c6b51e2fa094fc") {
         for(let $i = 0; $i < 39; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "992ec742b72465994609d4bac548661247046963e62ed9873be6fb383fc1a6cd";
+        $[0] = "1fc51b74e3eae094f1a115eb0a0f0758823da917e04af2cbe8c6b51e2fa094fc";
     }
     const { setBrand, setPrice, setMileage, filters, fetchCars, resetFilters } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$store$2f$useCarListStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCarListStore"])();
     let t0;
@@ -1156,7 +1156,7 @@ const FilterBar = ()=>{
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carMileageInputL,
                     placeholder: "From",
                     prefix: "From ",
-                    thousandSeparator: " ",
+                    thousandSeparator: ",",
                     allowNegative: false,
                     decimalScale: 0,
                     value: filters.minMileage,
@@ -1185,7 +1185,7 @@ const FilterBar = ()=>{
             className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$FilterBar$2f$FilterBar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carMileageInputR,
             placeholder: "To",
             prefix: "To ",
-            thousandSeparator: " ",
+            thousandSeparator: ",",
             allowNegative: false,
             decimalScale: 0,
             value: filters.maxMileage,

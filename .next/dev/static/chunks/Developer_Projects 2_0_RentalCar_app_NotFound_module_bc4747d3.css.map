@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/olyaa/Developer/Projects%202.0/RentalCar/app/NotFound.module.css"],"sourcesContent":[".container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  transform: translateY(-10%);\n  height: 100vh;\n  color: var(--main);\n  font-family: var(--second-family);\n}\n\n.title {\n  margin: 0px;\n  margin-bottom: 12px;\n}\n\n.description {\n  margin-bottom: 12px;\n}\n\n.link {\n  text-decoration: none;\n  color: var(--button);\n}\n\n.link:hover,\n.link:focus,\n.link:active {\n  text-decoration: underline;\n  color: var(--button-hover);\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;AAWA;;;;AAKA;;;;AAIA;;;;;AAKA"}}]
+}

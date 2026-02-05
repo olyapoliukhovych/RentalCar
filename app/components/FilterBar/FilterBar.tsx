@@ -257,7 +257,7 @@ const FilterBar = () => {
             className={css.carMileageInputL}
             placeholder="From"
             prefix={'From '}
-            thousandSeparator=" " // functional requirements
+            thousandSeparator=","
             allowNegative={false}
             decimalScale={0}
             value={filters.minMileage}
@@ -269,7 +269,7 @@ const FilterBar = () => {
           className={css.carMileageInputR}
           placeholder="To"
           prefix={'To '}
-          thousandSeparator=" " // functional requirements
+          thousandSeparator=","
           allowNegative={false}
           decimalScale={0}
           value={filters.maxMileage}

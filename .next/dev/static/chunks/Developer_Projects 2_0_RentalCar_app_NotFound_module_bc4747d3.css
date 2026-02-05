@@ -1,0 +1,31 @@
+/* [project]/Developer/Projects 2.0/RentalCar/app/NotFound.module.css [app-client] (css) */
+.NotFound-module__VJ7Tbq__container {
+  height: 100vh;
+  color: var(--main);
+  font-family: var(--second-family);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transform: translateY(-10%);
+}
+
+.NotFound-module__VJ7Tbq__title {
+  margin: 0 0 12px;
+}
+
+.NotFound-module__VJ7Tbq__description {
+  margin-bottom: 12px;
+}
+
+.NotFound-module__VJ7Tbq__link {
+  color: var(--button);
+  text-decoration: none;
+}
+
+.NotFound-module__VJ7Tbq__link:hover, .NotFound-module__VJ7Tbq__link:focus, .NotFound-module__VJ7Tbq__link:active {
+  color: var(--button-hover);
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=Developer_Projects%202_0_RentalCar_app_NotFound_module_bc4747d3.css.map*/
