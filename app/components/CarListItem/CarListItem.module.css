@@ -17,16 +17,59 @@
   font-size: 16px;
   line-height: 1.25;
   color: var(--main);
+
+  max-width: 216px; /* same width so it doesn't move other elements */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* "..." */
+  display: block;
 }
 
-.bottomText {
+.model {
+  color: var(--button);
+}
+
+.bottomTextOne,
+.bottomTextTwo {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.33333;
+  /* line-height: 1.67; added more space between lines */
   color: var(--gray);
-  max-width: 200px;
+  /* max-width: 216px; */
+  /* height: 40.08px; same height so it won't jump */
+}
+
+.bottomTextOne {
+  margin-bottom: 4px;
+}
+
+.bottomTextTwo {
   margin-bottom: 28px;
+}
+
+.detailsSpanOne,
+.detailsSpanTwo {
+  position: relative;
+}
+
+.detailsSpanOne {
+  margin-right: 12px;
+}
+
+.detailsSpanTwo:not(:last-child) {
+  margin-right: 12px;
+}
+
+.detailsSpanOne::after,
+.detailsSpanTwo:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  bottom: 0;
+  width: 1px;
+  height: 16px;
+  background-color: var(--gray-light);
 }
 
 .carsLiButton {

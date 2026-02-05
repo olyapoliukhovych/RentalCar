@@ -9,9 +9,13 @@ __turbopack_context__.v({
 "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "bottomText": "CarListItem-module__fZFi2q__bottomText",
+  "bottomTextOne": "CarListItem-module__fZFi2q__bottomTextOne",
+  "bottomTextTwo": "CarListItem-module__fZFi2q__bottomTextTwo",
   "carImg": "CarListItem-module__fZFi2q__carImg",
   "carsLiButton": "CarListItem-module__fZFi2q__carsLiButton",
+  "detailsSpanOne": "CarListItem-module__fZFi2q__detailsSpanOne",
+  "detailsSpanTwo": "CarListItem-module__fZFi2q__detailsSpanTwo",
+  "model": "CarListItem-module__fZFi2q__model",
   "topText": "CarListItem-module__fZFi2q__topText",
   "topTextPosition": "CarListItem-module__fZFi2q__topTextPosition",
 });
@@ -32,17 +36,28 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$
 ;
 ;
 const CarListItem = (t0)=>{
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(23);
-    if ($[0] !== "7d57c0be890f1a92651b934e31b4afb4f2c85029bcaf429ee42262d9fb8e3214") {
-        for(let $i = 0; $i < 23; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(47);
+    if ($[0] !== "73a209e2071d5e0518498a961361a660001fb0a57d36357385f52ab84bfc2b79") {
+        for(let $i = 0; $i < 47; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "7d57c0be890f1a92651b934e31b4afb4f2c85029bcaf429ee42262d9fb8e3214";
+        $[0] = "73a209e2071d5e0518498a961361a660001fb0a57d36357385f52ab84bfc2b79";
     }
     const { item } = t0;
     let t1;
-    if ($[1] !== item.description || $[2] !== item.img) {
-        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+    if ($[1] !== item.address) {
+        t1 = item.address.split(", ");
+        $[1] = item.address;
+        $[2] = t1;
+    } else {
+        t1 = $[2];
+    }
+    const splitAddress = t1;
+    const city = splitAddress[1];
+    const country = splitAddress[2];
+    let t2;
+    if ($[3] !== item.description || $[4] !== item.img) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carImg,
             src: item.img,
             width: 276,
@@ -50,138 +65,275 @@ const CarListItem = (t0)=>{
             alt: item.description
         }, void 0, false, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
-            lineNumber: 21,
+            lineNumber: 32,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[1] = item.description;
-        $[2] = item.img;
-        $[3] = t1;
+        $[3] = item.description;
+        $[4] = item.img;
+        $[5] = t2;
     } else {
-        t1 = $[3];
+        t2 = $[5];
     }
-    let t2;
-    if ($[4] !== item.brand || $[5] !== item.model || $[6] !== item.year) {
-        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+    const t3 = `${item.brand} ${item.model}, ${item.year}`;
+    let t4;
+    if ($[6] !== item.model) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].model,
+            children: item.model
+        }, void 0, false, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
+            lineNumber: 42,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[6] = item.model;
+        $[7] = t4;
+    } else {
+        t4 = $[7];
+    }
+    let t5;
+    if ($[8] !== item.brand || $[9] !== item.year || $[10] !== t3 || $[11] !== t4) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].topText,
+            title: t3,
             children: [
                 item.brand,
                 " ",
-                item.model,
+                t4,
                 ", ",
                 item.year
             ]
         }, void 0, true, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
-            lineNumber: 30,
+            lineNumber: 50,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[4] = item.brand;
-        $[5] = item.model;
-        $[6] = item.year;
-        $[7] = t2;
+        $[8] = item.brand;
+        $[9] = item.year;
+        $[10] = t3;
+        $[11] = t4;
+        $[12] = t5;
     } else {
-        t2 = $[7];
+        t5 = $[12];
     }
-    let t3;
-    if ($[8] !== item.rentalPrice) {
-        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+    let t6;
+    if ($[13] !== item.rentalPrice) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].topText,
             children: [
-                "$ ",
+                "$",
                 item.rentalPrice
             ]
         }, void 0, true, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
-            lineNumber: 40,
+            lineNumber: 61,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[8] = item.rentalPrice;
-        $[9] = t3;
+        $[13] = item.rentalPrice;
+        $[14] = t6;
     } else {
-        t3 = $[9];
-    }
-    let t4;
-    if ($[10] !== t2 || $[11] !== t3) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].topTextPosition,
-            children: [
-                t2,
-                t3
-            ]
-        }, void 0, true, {
-            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
-            lineNumber: 48,
-            columnNumber: 10
-        }, ("TURBOPACK compile-time value", void 0));
-        $[10] = t2;
-        $[11] = t3;
-        $[12] = t4;
-    } else {
-        t4 = $[12];
-    }
-    let t5;
-    if ($[13] !== item.address || $[14] !== item.mileage || $[15] !== item.rentalCompany || $[16] !== item.type) {
-        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bottomText,
-            children: [
-                item.address,
-                " | ",
-                item.rentalCompany,
-                " | ",
-                item.type,
-                " | ",
-                item.mileage
-            ]
-        }, void 0, true, {
-            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
-            lineNumber: 57,
-            columnNumber: 10
-        }, ("TURBOPACK compile-time value", void 0));
-        $[13] = item.address;
-        $[14] = item.mileage;
-        $[15] = item.rentalCompany;
-        $[16] = item.type;
-        $[17] = t5;
-    } else {
-        t5 = $[17];
-    }
-    let t6;
-    if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
-        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carsLiButton,
-            children: "Read more"
-        }, void 0, false, {
-            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
-            lineNumber: 68,
-            columnNumber: 10
-        }, ("TURBOPACK compile-time value", void 0));
-        $[18] = t6;
-    } else {
-        t6 = $[18];
+        t6 = $[14];
     }
     let t7;
-    if ($[19] !== t1 || $[20] !== t4 || $[21] !== t5) {
-        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carsLi,
+    if ($[15] !== t5 || $[16] !== t6) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].topTextPosition,
             children: [
-                t1,
-                t4,
                 t5,
                 t6
             ]
         }, void 0, true, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
-            lineNumber: 75,
+            lineNumber: 69,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[19] = t1;
-        $[20] = t4;
-        $[21] = t5;
-        $[22] = t7;
+        $[15] = t5;
+        $[16] = t6;
+        $[17] = t7;
     } else {
-        t7 = $[22];
+        t7 = $[17];
     }
-    return t7;
+    let t8;
+    if ($[18] !== city) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].detailsSpanOne,
+            children: city
+        }, void 0, false, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
+            lineNumber: 78,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[18] = city;
+        $[19] = t8;
+    } else {
+        t8 = $[19];
+    }
+    let t9;
+    if ($[20] !== country) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].detailsSpanOne,
+            children: country
+        }, void 0, false, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
+            lineNumber: 86,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[20] = country;
+        $[21] = t9;
+    } else {
+        t9 = $[21];
+    }
+    let t10;
+    if ($[22] !== item.rentalCompany) {
+        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].detailsSpanOne,
+            children: item.rentalCompany
+        }, void 0, false, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
+            lineNumber: 94,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[22] = item.rentalCompany;
+        $[23] = t10;
+    } else {
+        t10 = $[23];
+    }
+    let t11;
+    if ($[24] !== t10 || $[25] !== t8 || $[26] !== t9) {
+        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bottomTextOne,
+            children: [
+                t8,
+                t9,
+                t10
+            ]
+        }, void 0, true, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
+            lineNumber: 102,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[24] = t10;
+        $[25] = t8;
+        $[26] = t9;
+        $[27] = t11;
+    } else {
+        t11 = $[27];
+    }
+    let t12;
+    if ($[28] !== item.type) {
+        t12 = item.type.charAt(0).toUpperCase();
+        $[28] = item.type;
+        $[29] = t12;
+    } else {
+        t12 = $[29];
+    }
+    let t13;
+    if ($[30] !== item.type) {
+        t13 = item.type.slice(1).toLowerCase();
+        $[30] = item.type;
+        $[31] = t13;
+    } else {
+        t13 = $[31];
+    }
+    const t14 = t12 + t13;
+    let t15;
+    if ($[32] !== t14) {
+        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].detailsSpanTwo,
+            children: t14
+        }, void 0, false, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
+            lineNumber: 129,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[32] = t14;
+        $[33] = t15;
+    } else {
+        t15 = $[33];
+    }
+    let t16;
+    if ($[34] !== item.mileage) {
+        t16 = item.mileage.toLocaleString("uk-UA");
+        $[34] = item.mileage;
+        $[35] = t16;
+    } else {
+        t16 = $[35];
+    }
+    let t17;
+    if ($[36] !== t16) {
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].detailsSpanTwo,
+            children: [
+                t16,
+                " km"
+            ]
+        }, void 0, true, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
+            lineNumber: 145,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[36] = t16;
+        $[37] = t17;
+    } else {
+        t17 = $[37];
+    }
+    let t18;
+    if ($[38] !== t15 || $[39] !== t17) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bottomTextTwo,
+            children: [
+                t15,
+                t17
+            ]
+        }, void 0, true, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
+            lineNumber: 153,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[38] = t15;
+        $[39] = t17;
+        $[40] = t18;
+    } else {
+        t18 = $[40];
+    }
+    let t19;
+    if ($[41] === Symbol.for("react.memo_cache_sentinel")) {
+        t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carsLiButton,
+            children: "Read more"
+        }, void 0, false, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
+            lineNumber: 162,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[41] = t19;
+    } else {
+        t19 = $[41];
+    }
+    let t20;
+    if ($[42] !== t11 || $[43] !== t18 || $[44] !== t2 || $[45] !== t7) {
+        t20 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$CarListItem$2f$CarListItem$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carsLi,
+            children: [
+                t2,
+                t7,
+                t11,
+                t18,
+                t19
+            ]
+        }, void 0, true, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx",
+            lineNumber: 169,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[42] = t11;
+        $[43] = t18;
+        $[44] = t2;
+        $[45] = t7;
+        $[46] = t20;
+    } else {
+        t20 = $[46];
+    }
+    return t20;
 };
 _c = CarListItem;
 const __TURBOPACK__default__export__ = CarListItem;

@@ -955,3 +955,312 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [01:49:57.588] Server  LOG     ✓ Compiled in 22ms
 [01:49:59.629] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:54:08.769] Server  LOG     ✓ Compiled in 269ms
+[01:55:15.049] Server  LOG     ✓ Compiled in 39ms
+[02:00:27.135] Server  LOG     ✓ Compiled in 27ms
+[02:01:45.911] Server  LOG     ✓ Compiled in 26ms
+[02:02:17.995] Server  LOG     ✓ Compiled in 130ms
+[02:20:24.594] Server  LOG     ✓ Compiled in 184ms
+[02:20:47.074] Server  LOG     ✓ Compiled in 79ms
+[02:21:08.355] Server  LOG     ✓ Compiled in 59ms
+[02:21:10.511] Server  LOG     ✓ Compiled in 29ms
+[02:21:23.722] Server  LOG     ✓ Compiled in 68ms
+[02:21:33.055] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:21:53.651] Server  LOG     ✓ Compiled in 64ms
+[02:22:10.688] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:23:03.653] Server  LOG     ✓ Compiled in 25ms
+[02:24:21.105] Server  LOG     ✓ Compiled in 80ms
+[02:24:39.354] Server  LOG     ✓ Compiled in 10ms
+[02:24:51.222] Server  LOG     ✓ Compiled in 11ms
+[02:24:57.745] Server  LOG     ✓ Compiled in 7ms
+[02:25:07.974] Server  LOG     ✓ Compiled in 7ms
+[02:25:15.093] Server  LOG     ✓ Compiled in 8ms
+[02:25:22.123] Server  LOG     ✓ Compiled in 4ms
+[02:25:29.823] Server  LOG     ✓ Compiled in 6ms
+[02:25:35.231] Server  LOG     ✓ Compiled in 2ms
+[02:25:48.610] Server  LOG     ✓ Compiled in 9ms
+[02:26:56.259] Server  LOG     ✓ Compiled in 13ms
+[02:27:06.598] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:31:04.514] Server  LOG     ✓ Compiled in 140ms
+[02:32:48.888] Server  LOG     ✓ Compiled in 59ms
+[02:33:15.655] Server  LOG     ✓ Compiled in 52ms
+[02:33:18.372] Server  LOG     ✓ Compiled in 37ms
+[02:33:28.280] Server  LOG     ✓ Compiled in 83ms
+[02:33:37.220] Server  LOG     ✓ Compiled in 18ms
+[02:33:51.908] Server  LOG     ✓ Compiled in 46ms
+[02:33:59.989] Server  LOG     ✓ Compiled in 20ms
+[02:34:23.618] Server  LOG     ✓ Compiled in 31ms
+[02:35:29.252] Server  LOG     ✓ Compiled in 16ms
+[02:35:33.480] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:35:38.929] Server  LOG     ✓ Compiled in 21ms
+[02:36:50.961] Server  LOG     ✓ Compiled in 11ms
+[02:36:58.310] Server  LOG     ✓ Compiled in 4ms
+[02:37:00.383] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:38:49.786] Server  LOG     ✓ Compiled in 75ms
+[02:39:47.169] Server  LOG     ✓ Compiled in 18ms
+[02:40:21.115] Server  LOG     ✓ Compiled in 64ms
+[02:40:59.588] Server  LOG     ✓ Compiled in 14ms
+[02:41:02.328] Server  LOG     ✓ Compiled in 2ms
+[02:41:05.372] Server  LOG     ✓ Compiled in 5ms
+[02:41:11.056] Server  LOG     ✓ Compiled in 3ms
+[02:41:21.259] Server  LOG     ✓ Compiled in 8ms
+[02:45:08.135] Server  LOG     ✓ Compiled in 130ms
+[02:45:08.243] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.module.css:55:21
+Parsing CSS source code failed
+  53 | }
+  54 |
+> 55 | .detailsSpan::after(:not(:last-child)) {
+     |                     ^
+  56 |   content: '';
+  57 |   width: 1px;
+  58 |   height: 10px;
+
+'after' is not recognized as a valid pseudo-element. Did you mean ':after' (pseudo-class) or is this a typo?
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.module.css [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.module.css [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[02:45:24.587] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.module.css:55:20
+Parsing CSS source code failed
+  53 | }
+  54 |
+> 55 | .detailsSpan:after(:not(:last-child)) {
+     |                    ^
+  56 |   content: '';
+  57 |   width: 1px;
+  58 |   height: 10px;
+
+'after' is not recognized as a valid pseudo-element. Did you mean ':after' (pseudo-class) or is this a typo?
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.module.css [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.module.css [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[02:46:52.279] Server  LOG     ✓ Compiled in 23ms
+[02:47:09.606] Server  LOG     ✓ Compiled in 20ms
+[02:49:10.398] Server  LOG     ✓ Compiled in 26ms
+[02:49:38.138] Server  LOG     ✓ Compiled in 14ms
+[02:49:54.711] Server  LOG     ✓ Compiled in 33ms
+[02:49:57.261] Server  LOG     ✓ Compiled in 4ms
+[02:51:09.029] Server  LOG     ✓ Compiled in 25ms
+[02:51:10.360] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:51:29.594] Server  LOG     ✓ Compiled in 15ms
+[02:51:48.835] Server  LOG     ✓ Compiled in 15ms
+[02:52:17.254] Server  LOG     ✓ Compiled in 9ms
+[02:57:44.822] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:38:14.970] Server  LOG     ✓ Compiled in 70ms
+[03:38:16.324] Server  LOG     ✓ Compiled in 25ms
+[03:38:55.970] Server  LOG     ✓ Compiled in 14ms
+[03:39:00.765] Server  LOG     ✓ Compiled in 3ms
+[03:41:13.472] Server  LOG     ✓ Compiled in 14ms
+[03:41:19.214] Server  LOG     ✓ Compiled in 3ms
+[03:41:22.828] Server  LOG     ✓ Compiled in 156ms
+[03:41:49.027] Server  LOG     ✓ Compiled in 70ms
+[03:42:44.093] Server  LOG     ✓ Compiled in 3ms
+[03:42:46.283] Server  LOG     ✓ Compiled in 7ms
+[03:42:50.130] Server  LOG     ✓ Compiled in 2ms
+[03:43:10.111] Server  LOG     ✓ Compiled in 15ms
+[03:43:56.416] Server  LOG     ✓ Compiled in 20ms
+[03:44:06.606] Server  LOG     ✓ Compiled in 4ms
+[03:44:14.312] Server  LOG     ✓ Compiled in 5ms
+[03:48:56.365] Server  LOG     ✓ Compiled in 19ms
+[03:49:00.208] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:49:07.664] Server  LOG     ✓ Compiled in 17ms
+[03:49:10.704] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:49:40.520] Server  LOG     ✓ Compiled in 11ms
+[03:49:43.874] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:49:57.560] Server  LOG     ✓ Compiled in 3ms
+[03:50:15.395] Server  LOG     ✓ Compiled in 83ms
+[03:50:15.502] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx:31:66
+Parsing ecmascript source code failed
+  29 |       </p>
+  30 |       <p className={css.bottomTextTwo}>
+> 31 |         <span className={css.detailsSpanTwo} style={textTransform: "capitalize"}>{item.type}</span>
+     |                                                                  ^
+  32 |         <span className={css.detailsSpanTwo}>{item.mileage}</span>
+  33 |       </p>
+  34 |
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[03:50:26.546] Browser WARN    Image with src "https://ac.goit.global/car-rental-task/9582-ai.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:50:36.448] Server  LOG     ✓ Compiled in 48ms
+[03:50:48.840] Server  LOG     ✓ Compiled in 77ms
+[03:50:53.987] Server  LOG     ✓ Compiled in 59ms
+[03:52:08.506] Server  LOG     ✓ Compiled in 47ms
+[03:52:09.461] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx:31:46
+Parsing ecmascript source code failed
+  29 |       </p>
+  30 |       <p className={css.bottomTextTwo}>
+> 31 |         <span className={css.detailsSpanTwo} }>
+     |                                              ^
+  32 |           {item.type}
+  33 |         </span>
+  34 |         <span className={css.detailsSpanTwo}>{item.mileage}</span>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[03:52:12.698] Server  LOG     ✓ Compiled in 27ms
+[03:59:14.662] Server  LOG     ✓ Compiled in 201ms
+[03:59:30.481] Server  LOG     ✓ Compiled in 85ms
+[04:02:45.735] Server  ERROR   TimeoutError: The operation was aborted due to timeout
+[05:39:12.435] Server  LOG     ✓ Compiled in 217ms
+[05:40:21.922] Server  LOG     ✓ Compiled in 173ms
+[05:40:51.612] Server  LOG     ✓ Compiled in 92ms
+[05:41:23.802] Server  LOG     ✓ Compiled in 93ms
+[05:41:33.779] Server  LOG     ✓ Compiled in 71ms
+[06:10:36.422] Server  LOG     ✓ Compiled in 236ms
+[06:10:37.017] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx
+Error evaluating Node.js code
+SyntaxError: /Users/olyaa/Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx: Identifier 'city' has already been declared. (20:8)
+
+  18 |   };
+  19 |
+> 20 |   const city = cityFixes[rawCity] || rawCity;
+     |         ^
+  21 |
+  22 |   return (
+  23 |     <li className={css.carsLi}>
+    [at constructor (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:137105)]
+    [at TypeScriptParserMixin.raise (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:194164)]
+    [at TypeScriptScopeHandler.checkRedeclarationInScope (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:163166)]
+    [at TypeScriptScopeHandler.declareName (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:162529)]
+    [at TypeScriptScopeHandler.declareName (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:271160)]
+    [at TypeScriptParserMixin.declareNameFromIdentifier (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:279226)]
+    [at TypeScriptParserMixin.checkIdentifier (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:279152)]
+    [at TypeScriptParserMixin.checkLVal (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:278197)]
+    [at TypeScriptParserMixin.parseVarId (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:403644)]
+    [at TypeScriptParserMixin.parseVarId (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:329902)]
+    [at TypeScriptParserMixin.parseVar (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:402884)]
+    [at TypeScriptParserMixin.parseVarStatement (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:399366)]
+    [at TypeScriptParserMixin.parseVarStatement (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:323322)]
+    [at TypeScriptParserMixin.parseStatementContent (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:391398)]
+    [at TypeScriptParserMixin.parseStatementContent (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:324042)]
+    [at TypeScriptParserMixin.parseStatementLike (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at TypeScriptParserMixin.parseStatementListItem (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
+    [at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
+    [at TypeScriptParserMixin.parseBlockBody (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
+    [at TypeScriptParserMixin.parseBlock (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:400923)]
+    [at TypeScriptParserMixin.parseFunctionBody (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:378053)]
+    [at TypeScriptParserMixin.parseArrowExpression (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:377398)]
+    [at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:369594)]
+    [at TypeScriptParserMixin.parseExprAtom (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:361477)]
+    [at TypeScriptParserMixin.parseExprAtom (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:269272)]
+    [at TypeScriptParserMixin.parseExprSubscripts (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:356364)]
+    [at TypeScriptParserMixin.parseUpdate (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
+    [at TypeScriptParserMixin.parseMaybeUnary (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
+    [at TypeScriptParserMixin.parseMaybeUnary (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:331837)]
+    [at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
+    [at TypeScriptParserMixin.parseExprOps (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
+    [at TypeScriptParserMixin.parseMaybeConditional (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
+    [at TypeScriptParserMixin.parseMaybeAssign (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
+    [at TypeScriptParserMixin.parseMaybeAssign (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:330620)]
+    [at /Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:350260]
+    [at TypeScriptParserMixin.allowInAnd (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:383926)]
+    [at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:350239)]
+    [at TypeScriptParserMixin.parseVar (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:402967)]
+    [at TypeScriptParserMixin.parseVarStatement (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:399366)]
+    [at TypeScriptParserMixin.parseVarStatement (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:323322)]
+    [at TypeScriptParserMixin.parseStatementContent (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:391398)]
+    [at TypeScriptParserMixin.parseStatementContent (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:324042)]
+    [at TypeScriptParserMixin.parseStatementLike (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at TypeScriptParserMixin.parseModuleItem (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:389055)]
+    [at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:401400)]
+    [at TypeScriptParserMixin.parseBlockBody (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
+    [at TypeScriptParserMixin.parseProgram (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:386857)]
+    [at TypeScriptParserMixin.parseTopLevel (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:386575)]
+    [at TypeScriptParserMixin.parse (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:426834)]
+    [at TypeScriptParserMixin.parse (/Users/olyaa/Developer/Projects 2.0/RentalCar/node_modules/next/dist/compiled/babel/bundle.js:191:337631)]
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+[06:10:37.017] Browser ERROR   ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx:20:9
+Ecmascript file had an error
+  18 |   };
+  19 |
+> 20 |   const city = cityFixes[rawCity] || rawCity;
+     |         ^^^^
+  21 |
+  22 |   return (
+  23 |     <li className={css.carsLi}>
+
+the name `city` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component Browser]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Developer/Projects 2.0/RentalCar/app/components/CarListItem/CarListItem.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Client Component SSR]
+    ./Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [Server Component]
