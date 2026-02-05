@@ -1,0 +1,119 @@
+/* [project]/Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.module.css [app-client] (css) */
+.CarList-module__7yQoGG__carsList {
+  flex-flow: wrap;
+  justify-content: space-between;
+  row-gap: 48px;
+  width: 100%;
+  margin-bottom: 80px;
+  display: flex;
+}
+
+.CarList-module__7yQoGG__loadMoreBtn {
+  border: 1px solid var(--button);
+  min-width: 156px;
+  font-family: var(--font-family);
+  color: var(--main);
+  border-radius: 12px;
+  padding: 12px 51px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  transition: border .25s ease-in-out;
+}
+
+.CarList-module__7yQoGG__loadMoreBtn:hover, .CarList-module__7yQoGG__loadMoreBtn:focus {
+  border: 1px solid var(--button-hover);
+}
+
+.CarList-module__7yQoGG__loadMoreBtn:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+/* [project]/Developer/Projects 2.0/RentalCar/app/components/FilterBar/FilterBar.module.css [app-client] (css) */
+.FilterBar-module__iZLo1q__allFilters {
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 56px;
+  display: flex;
+}
+
+.FilterBar-module__iZLo1q__searchBtn {
+  background: var(--button);
+  min-width: 156px;
+  height: 44px;
+  font-family: var(--font-family);
+  color: var(--white);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.FilterBar-module__iZLo1q__label {
+  font-family: var(--font-family);
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33333;
+}
+
+.FilterBar-module__iZLo1q__carMileageInputs {
+  flex-direction: row;
+  align-items: flex-end;
+  display: flex;
+}
+
+.FilterBar-module__iZLo1q__carMileageFirstInput {
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+}
+
+.FilterBar-module__iZLo1q__carMileageInputL {
+  border-right: 1px solid var(--gray-light);
+  background: var(--inputs);
+  width: 160px;
+  height: 44px;
+  font-family: var(--font-family);
+  color: var(--main);
+  border-radius: 12px 0 0 12px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.FilterBar-module__iZLo1q__carMileageInputR {
+  background: var(--inputs);
+  width: 160px;
+  height: 44px;
+  font-family: var(--font-family);
+  color: var(--main);
+  border-radius: 0 12px 12px 0;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.FilterBar-module__iZLo1q__carMileageInputL::placeholder, .FilterBar-module__iZLo1q__carMileageInputR::placeholder {
+  font-family: var(--font-family);
+  color: var(--main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+/* [project]/Developer/Projects 2.0/RentalCar/app/catalog/page.module.css [app-client] (css) */
+.page-module__yGTRfa__container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 84px 120px 124px;
+  display: flex;
+}
+
+/*# sourceMappingURL=Developer_Projects%202_0_RentalCar_app_0dd88ee8._.css.map*/

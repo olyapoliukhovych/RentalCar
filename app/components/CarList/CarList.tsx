@@ -1,21 +1,13 @@
 'use client';
 
 import css from './CarList.module.css';
-// import { Car } from '@/lib/api';
 import CarListItem from '../CarListItem/CarListItem';
 import { useCarListStore } from '@/store/useCarListStore';
 import { useEffect } from 'react';
-
-// type CarListProps = {
-//   cars: Car[];
-// };
+import { ListItemSkeleton } from '../ListItemSkeleton/ListItemSkeleton';
 
 const CarList = () => {
   const { cars, page, totalPages, isLoading, fetchCars } = useCarListStore();
-
-  //   useEffect(() => {
-  //     fetchCars(true);
-  //   }, [fetchCars]);
 
   useEffect(() => {
     if (cars.length === 0) {
@@ -25,12 +17,14 @@ const CarList = () => {
 
   const handleClick = () => fetchCars(false);
 
+  const skeletons = Array.from({ length: 12 });
+
   return (
     <>
       <ul className={css.carsList}>
-        {cars.map(car => (
-          <CarListItem key={car.id} item={car} />
-        ))}
+        {isLoading && cars.length === 0
+          ? skeletons.map((_, index) => <ListItemSkeleton key={index} />) /* loader */
+          : cars.map(car => <CarListItem key={car.id} item={car} />)}
       </ul>
 
       {page <= totalPages && cars.length > 0 && (
@@ -44,7 +38,7 @@ const CarList = () => {
         </button>
       )}
 
-      {isLoading && cars.length === 0 && <p>Loading...</p>}
+      {/* {isLoading && cars.length === 0 && <p>Loading...</p>} */}
     </>
   );
 };

@@ -8,7 +8,7 @@ type CarListItemProps = {
 
 const CarListItem = ({ item }: CarListItemProps) => {
   const splitAddress = item.address.split(', ');
-  const address = splitAddress[0]; // no need now
+  //   const address = splitAddress[0]; // no need now
   const city = splitAddress[1];
   const country = splitAddress[2];
 

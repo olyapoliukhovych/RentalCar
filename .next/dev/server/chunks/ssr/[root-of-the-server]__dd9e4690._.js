@@ -35,7 +35,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$
 ;
 const CarListItem = ({ item })=>{
     const splitAddress = item.address.split(', ');
-    const address = splitAddress[0]; // no need now
+    //   const address = splitAddress[0]; // no need now
     const city = splitAddress[1];
     const country = splitAddress[2];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -404,6 +404,9 @@ const CarList = ()=>{
         cars.length
     ]);
     const handleClick = ()=>fetchCars(false);
+    const skeletons = Array.from({
+        length: 12
+    });
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -412,12 +415,12 @@ const CarList = ()=>{
                         item: car
                     }, car.id, false, {
                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx",
-                        lineNumber: 32,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)))
             }, void 0, false, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx",
-                lineNumber: 30,
+                lineNumber: 33,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             page <= totalPages && cars.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -428,15 +431,8 @@ const CarList = ()=>{
                 children: isLoading ? 'Loading...' : 'Load more'
             }, void 0, false, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx",
-                lineNumber: 37,
+                lineNumber: 41,
                 columnNumber: 9
-            }, ("TURBOPACK compile-time value", void 0)),
-            isLoading && cars.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "Loading..."
-            }, void 0, false, {
-                fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.tsx",
-                lineNumber: 47,
-                columnNumber: 42
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true);
