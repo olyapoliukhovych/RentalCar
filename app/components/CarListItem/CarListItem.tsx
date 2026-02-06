@@ -1,6 +1,7 @@
 import { Car } from '@/lib/api';
 import Image from 'next/image';
 import css from './CarListItem.module.css';
+import Link from 'next/link';
 
 type CarListItemProps = {
   item: Car;
@@ -36,7 +37,6 @@ const CarListItem = ({ item }: CarListItemProps) => {
       </div>
 
       <p className={css.bottomTextOne}>
-        {/* <span className={css.detailsSpanOne}>{item.address.split(', ').slice(-2).join(' ')}</span> */}
         <span className={css.detailsSpanOne}>{ukrCity}</span>
         <span className={css.detailsSpanOne}>{country}</span>
         <span className={css.detailsSpanOne}>{item.rentalCompany}</span>
@@ -48,7 +48,9 @@ const CarListItem = ({ item }: CarListItemProps) => {
         <span className={css.detailsSpanTwo}>{item.mileage.toLocaleString('uk-UA')} km</span>
       </p>
 
-      <button className={css.carsLiButton}>Read more</button>
+      <Link href={`/catalog/${item.id}`} className={css.carsLiButton}>
+        Read more
+      </Link>
     </li>
   );
 };
