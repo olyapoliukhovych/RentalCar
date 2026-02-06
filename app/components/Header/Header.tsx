@@ -1,3 +1,4 @@
+import { Icon } from '../Icon/Icon';
 import css from './Header.module.css';
 import Link from 'next/link';
 
@@ -6,9 +7,7 @@ const Header = () => {
     <header className={css.header}>
       <div className={css.container}>
         <Link href="/" aria-label="Home">
-          <svg width="104" height="16">
-            <use href="/logo.svg"></use>
-          </svg>
+          <Icon id="logo" width={104} height={16} />
         </Link>
 
         <nav aria-label="Main Navigation">

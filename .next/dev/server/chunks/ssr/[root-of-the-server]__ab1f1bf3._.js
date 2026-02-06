@@ -131,6 +131,7 @@ __turbopack_context__.v({
   "container": "CarDetails-module__sk-neG__container",
   "description": "CarDetails-module__sk-neG__description",
   "detailsCarImg": "CarDetails-module__sk-neG__detailsCarImg",
+  "icon": "CarDetails-module__sk-neG__icon",
   "id": "CarDetails-module__sk-neG__id",
   "listItem": "CarDetails-module__sk-neG__listItem",
   "listTitle": "CarDetails-module__sk-neG__listTitle",
@@ -138,6 +139,7 @@ __turbopack_context__.v({
   "mainDescription": "CarDetails-module__sk-neG__mainDescription",
   "mainTitle": "CarDetails-module__sk-neG__mainTitle",
   "price": "CarDetails-module__sk-neG__price",
+  "withIcon": "CarDetails-module__sk-neG__withIcon",
 });
 }),
 "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
@@ -151,6 +153,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$
 var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$lib$2f$api$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Developer/Projects 2.0/RentalCar/lib/api.ts [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/CarDetails.module.css [app-rsc] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Developer/Projects 2.0/RentalCar/node_modules/next/image.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$Icon$2f$Icon$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Developer/Projects 2.0/RentalCar/app/components/Icon/Icon.tsx [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -175,12 +179,12 @@ const CarDetails = async ({ params })=>{
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].detailsCarImg
                 }, void 0, false, {
                     fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                    lineNumber: 21,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -200,7 +204,7 @@ const CarDetails = async ({ params })=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 33,
+                                lineNumber: 34,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -208,22 +212,39 @@ const CarDetails = async ({ params })=>{
                                 children: "Id: 2983"
                             }, void 0, false, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 36,
+                                lineNumber: 37,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].location,
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].withIcon,
                                 children: [
-                                    city,
-                                    ", ",
-                                    country,
-                                    "     Mileage: ",
-                                    car.mileage.toLocaleString('uk-UA'),
-                                    " km"
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$Icon$2f$Icon$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Icon"], {
+                                        id: "location",
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
+                                    }, void 0, false, {
+                                        fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
+                                        lineNumber: 39,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].location,
+                                        children: [
+                                            city,
+                                            ", ",
+                                            country,
+                                            "     Mileage: ",
+                                            car.mileage.toLocaleString('uk-UA'),
+                                            " km"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
+                                        lineNumber: 40,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 37,
+                                lineNumber: 38,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -234,7 +255,7 @@ const CarDetails = async ({ params })=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 40,
+                                lineNumber: 44,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -242,13 +263,13 @@ const CarDetails = async ({ params })=>{
                                 children: car.description
                             }, void 0, false, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 41,
+                                lineNumber: 45,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -259,22 +280,32 @@ const CarDetails = async ({ params })=>{
                                 children: "Rental Conditions:"
                             }, void 0, false, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 45,
+                                lineNumber: 49,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].carDetailsList,
                                 children: car.rentalConditions.map((con, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].listItem,
-                                        children: con
-                                    }, index, false, {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$Icon$2f$Icon$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Icon"], {
+                                                id: "check-circle",
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
+                                            }, void 0, false, {
+                                                fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
+                                                lineNumber: 53,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            con
+                                        ]
+                                    }, index, true, {
                                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                        lineNumber: 48,
+                                        lineNumber: 52,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)))
                             }, void 0, false, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 46,
+                                lineNumber: 50,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -282,7 +313,7 @@ const CarDetails = async ({ params })=>{
                                 children: "Car Specifications:"
                             }, void 0, false, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 54,
+                                lineNumber: 59,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -291,51 +322,83 @@ const CarDetails = async ({ params })=>{
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].listItem,
                                         children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$Icon$2f$Icon$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Icon"], {
+                                                id: "calendar",
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
+                                            }, void 0, false, {
+                                                fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
+                                                lineNumber: 62,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
                                             "Year: ",
                                             car.year
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 61,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].listItem,
                                         children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$Icon$2f$Icon$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Icon"], {
+                                                id: "car",
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
+                                            }, void 0, false, {
+                                                fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
+                                                lineNumber: 66,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
                                             "Type: ",
                                             car.type.charAt(0).toUpperCase() + car.type.slice(1).toLowerCase()
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 65,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].listItem,
                                         children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$Icon$2f$Icon$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Icon"], {
+                                                id: "fuel-pump",
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
+                                            }, void 0, false, {
+                                                fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
+                                                lineNumber: 70,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
                                             "Fuel Consumption: ",
                                             car.fuelConsumption
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                        lineNumber: 60,
+                                        lineNumber: 69,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].listItem,
                                         children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$Icon$2f$Icon$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Icon"], {
+                                                id: "gear",
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
+                                            }, void 0, false, {
+                                                fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
+                                                lineNumber: 74,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
                                             "Engine Size: ",
                                             car.engineSize
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 73,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 55,
+                                lineNumber: 60,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -343,7 +406,7 @@ const CarDetails = async ({ params })=>{
                                 children: "Accessories and functionalities:"
                             }, void 0, false, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 64,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -351,42 +414,62 @@ const CarDetails = async ({ params })=>{
                                 children: [
                                     car.accessories.map((acc, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].listItem,
-                                            children: acc
-                                        }, index, false, {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$Icon$2f$Icon$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Icon"], {
+                                                    id: "check-circle",
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
+                                                    lineNumber: 83,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                acc
+                                            ]
+                                        }, index, true, {
                                             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 82,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))),
                                     car.functionalities.map((fun, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].listItem,
-                                            children: fun
-                                        }, index, false, {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$components$2f$Icon$2f$Icon$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Icon"], {
+                                                    id: "check-circle",
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
+                                                    lineNumber: 89,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                fun
+                                            ]
+                                        }, index, true, {
                                             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 88,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 65,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                        lineNumber: 44,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                lineNumber: 31,
+                lineNumber: 32,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

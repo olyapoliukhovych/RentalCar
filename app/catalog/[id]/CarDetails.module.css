@@ -43,7 +43,6 @@
   font-size: 16px;
   line-height: 1.25;
   color: var(--main);
-  margin-bottom: 16px;
 }
 
 .price {
@@ -52,6 +51,7 @@
   font-size: 24px;
   line-height: 1.33333;
   color: var(--button);
+  margin-top: 16px;
   margin-bottom: 32px;
 }
 
@@ -91,4 +91,18 @@
   font-size: 16px;
   line-height: 1.25;
   color: var(--main);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.withIcon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon {
+  flex-shrink: 0;
 }
