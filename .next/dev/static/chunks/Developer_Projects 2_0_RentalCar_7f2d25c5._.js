@@ -482,17 +482,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$
 ;
 ;
 const ListItemSkeleton = ()=>{
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(6);
-    if ($[0] !== "d8b863be36f4b9a22e38505d72f1b12368acac2b331c0799659bbbb51e682a3c") {
-        for(let $i = 0; $i < 6; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(7);
+    if ($[0] !== "d3fdd7b148afc49ac056a354cfddd57455f30d15376aaa3febfaab1a4aeb7a5d") {
+        for(let $i = 0; $i < 7; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "d8b863be36f4b9a22e38505d72f1b12368acac2b331c0799659bbbb51e682a3c";
+        $[0] = "d3fdd7b148afc49ac056a354cfddd57455f30d15376aaa3febfaab1a4aeb7a5d";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t0 = {
-            mb: 2
+            width: 276
         };
         $[1] = t0;
     } else {
@@ -500,8 +500,17 @@ const ListItemSkeleton = ()=>{
     }
     let t1;
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-            sx: t0,
+        t1 = {
+            mb: 2
+        };
+        $[2] = t1;
+    } else {
+        t1 = $[2];
+    }
+    let t2;
+    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+            sx: t1,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Skeleton$2f$Skeleton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Skeleton$3e$__["Skeleton"], {
                 variant: "rectangular",
                 width: 276,
@@ -511,33 +520,8 @@ const ListItemSkeleton = ()=>{
                 }
             }, void 0, false, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/ListItemSkeleton/ListItemSkeleton.tsx",
-                lineNumber: 22,
+                lineNumber: 31,
                 columnNumber: 23
-            }, ("TURBOPACK compile-time value", void 0))
-        }, void 0, false, {
-            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/ListItemSkeleton/ListItemSkeleton.tsx",
-            lineNumber: 22,
-            columnNumber: 10
-        }, ("TURBOPACK compile-time value", void 0));
-        $[2] = t1;
-    } else {
-        t1 = $[2];
-    }
-    let t2;
-    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-            sx: {
-                mb: 1,
-                borderRadius: "12px"
-            },
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Skeleton$2f$Skeleton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Skeleton$3e$__["Skeleton"], {
-                variant: "text",
-                width: "100%",
-                height: 20
-            }, void 0, false, {
-                fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/ListItemSkeleton/ListItemSkeleton.tsx",
-                lineNumber: 34,
-                columnNumber: 8
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/ListItemSkeleton/ListItemSkeleton.tsx",
@@ -552,21 +536,21 @@ const ListItemSkeleton = ()=>{
     if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
         t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
             sx: {
-                mb: 3.5,
+                mb: 1,
                 borderRadius: "12px"
             },
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Skeleton$2f$Skeleton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Skeleton$3e$__["Skeleton"], {
-                variant: "text",
+                variant: "rectangular",
                 width: "100%",
-                height: 40
+                height: 20
             }, void 0, false, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/ListItemSkeleton/ListItemSkeleton.tsx",
-                lineNumber: 44,
+                lineNumber: 43,
                 columnNumber: 8
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/ListItemSkeleton/ListItemSkeleton.tsx",
-            lineNumber: 41,
+            lineNumber: 40,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
         $[4] = t3;
@@ -576,10 +560,36 @@ const ListItemSkeleton = ()=>{
     let t4;
     if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
         t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+            sx: {
+                mb: 3.5,
+                borderRadius: "12px"
+            },
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Skeleton$2f$Skeleton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Skeleton$3e$__["Skeleton"], {
+                variant: "rectangular",
+                width: "100%",
+                height: 40
+            }, void 0, false, {
+                fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/ListItemSkeleton/ListItemSkeleton.tsx",
+                lineNumber: 53,
+                columnNumber: 8
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/ListItemSkeleton/ListItemSkeleton.tsx",
+            lineNumber: 50,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[5] = t4;
+    } else {
+        t4 = $[5];
+    }
+    let t5;
+    if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+            sx: t0,
             children: [
-                t1,
                 t2,
                 t3,
+                t4,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Skeleton$2f$Skeleton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Skeleton$3e$__["Skeleton"], {
                     variant: "rectangular",
                     width: "100%",
@@ -589,20 +599,20 @@ const ListItemSkeleton = ()=>{
                     }
                 }, void 0, false, {
                     fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/ListItemSkeleton/ListItemSkeleton.tsx",
-                    lineNumber: 51,
-                    columnNumber: 27
+                    lineNumber: 60,
+                    columnNumber: 35
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/components/ListItemSkeleton/ListItemSkeleton.tsx",
-            lineNumber: 51,
+            lineNumber: 60,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[5] = t4;
+        $[6] = t5;
     } else {
-        t4 = $[5];
+        t5 = $[6];
     }
-    return t4;
+    return t5;
 };
 _c = ListItemSkeleton;
 var _c;
@@ -1290,7 +1300,11 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/Developer/Projects 2.0/RentalCar/app/catalog/page.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
+  "btn": "page-module__yGTRfa__btn",
   "container": "page-module__yGTRfa__container",
+  "description": "page-module__yGTRfa__description",
+  "errorWrapper": "page-module__yGTRfa__errorWrapper",
+  "title": "page-module__yGTRfa__title",
 });
 }),
 "[project]/Developer/Projects 2.0/RentalCar/app/catalog/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {

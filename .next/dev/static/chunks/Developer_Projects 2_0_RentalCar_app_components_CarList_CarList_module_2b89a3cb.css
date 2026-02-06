@@ -1,0 +1,33 @@
+/* [project]/Developer/Projects 2.0/RentalCar/app/components/CarList/CarList.module.css [app-client] (css) */
+.CarList-module__7yQoGG__carsList {
+  flex-flow: wrap;
+  justify-content: space-between;
+  row-gap: 48px;
+  width: 100%;
+  margin-bottom: 80px;
+  display: flex;
+}
+
+.CarList-module__7yQoGG__loadMoreBtn {
+  border: 1px solid var(--button);
+  min-width: 156px;
+  font-family: var(--font-family);
+  color: var(--main);
+  border-radius: 12px;
+  padding: 12px 51px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  transition: border .25s ease-in-out;
+}
+
+.CarList-module__7yQoGG__loadMoreBtn:hover, .CarList-module__7yQoGG__loadMoreBtn:focus {
+  border: 1px solid var(--button-hover);
+}
+
+.CarList-module__7yQoGG__loadMoreBtn:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+/*# sourceMappingURL=Developer_Projects%202_0_RentalCar_app_components_CarList_CarList_module_2b89a3cb.css.map*/

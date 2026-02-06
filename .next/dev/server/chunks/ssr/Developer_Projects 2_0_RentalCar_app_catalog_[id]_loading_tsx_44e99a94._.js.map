@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["file:///Users/olyaa/Developer/Projects%202.0/RentalCar/app/catalog/%5Bid%5D/loading.tsx"],"sourcesContent":["{\n  isLoading && cars.length === 0\n    ? skeletons.map((_, index) => <ListItemSkeleton key={index} />) /* loader */\n    : cars.map(car => <CarListItem key={car.id} item={car} />);\n}\n"],"names":[],"mappings":";AAAA;IACE,aAAa,KAAK,MAAM,KAAK,IACzB,UAAU,GAAG,CAAC,CAAC,GAAG,sBAAU,QAAC,sBAAsB;;;;wEACnD,KAAK,GAAG,CAAC,CAAA,oBAAO,QAAC;YAAyB,MAAM;WAAd,IAAI,EAAE;;;;;AAC9C"}},
+    {"offset": {"line": 16, "column": 1}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

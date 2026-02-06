@@ -7,4 +7,40 @@
   display: flex;
 }
 
+.page-module__yGTRfa__errorWrapper {
+  height: 100vh;
+  color: var(--main);
+  font-family: var(--second-family);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transform: translateY(-10%);
+}
+
+.page-module__yGTRfa__title {
+  margin: 0 0 12px;
+}
+
+.page-module__yGTRfa__description {
+  margin-bottom: 12px;
+}
+
+.page-module__yGTRfa__btn {
+  min-width: 156px;
+  font-family: var(--font-family);
+  color: var(--main);
+  border: 1px solid #f08080;
+  border-radius: 12px;
+  padding: 12px 51px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  transition: border .25s ease-in-out;
+}
+
+.page-module__yGTRfa__btn:hover, .page-module__yGTRfa__btn:focus {
+  border: 1px solid red;
+}
+
 /*# sourceMappingURL=Developer_Projects%202_0_RentalCar_app_catalog_page_module_css_bad6b30c._.single.css.map*/
