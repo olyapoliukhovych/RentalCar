@@ -174,6 +174,11 @@ const CarDetails = async ({ params })=>{
     //   const address = splitAddress[0]; // no need now
     const city = splitAddress[1];
     const country = splitAddress[2];
+    const editedCity = {
+        Kiev: 'Kyiv',
+        Odessa: 'Odesa'
+    };
+    const ukrCity = editedCity[city] || city;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].container,
         children: [
@@ -187,12 +192,12 @@ const CarDetails = async ({ params })=>{
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].detailsCarImg
                 }, void 0, false, {
                     fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                    lineNumber: 22,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                lineNumber: 21,
+                lineNumber: 28,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -212,7 +217,7 @@ const CarDetails = async ({ params })=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 34,
+                                lineNumber: 41,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -220,7 +225,7 @@ const CarDetails = async ({ params })=>{
                                 children: "Id: 2983"
                             }, void 0, false, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 37,
+                                lineNumber: 44,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -231,13 +236,13 @@ const CarDetails = async ({ params })=>{
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
                                     }, void 0, false, {
                                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 46,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].location,
                                         children: [
-                                            city,
+                                            ukrCity,
                                             ", ",
                                             country,
                                             "     Mileage: ",
@@ -246,13 +251,13 @@ const CarDetails = async ({ params })=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                        lineNumber: 40,
+                                        lineNumber: 47,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 38,
+                                lineNumber: 45,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -263,7 +268,7 @@ const CarDetails = async ({ params })=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 44,
+                                lineNumber: 51,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -271,13 +276,13 @@ const CarDetails = async ({ params })=>{
                                 children: car.description
                             }, void 0, false, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 45,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                        lineNumber: 33,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -288,7 +293,7 @@ const CarDetails = async ({ params })=>{
                                 children: "Rental Conditions:"
                             }, void 0, false, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 49,
+                                lineNumber: 56,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -301,19 +306,19 @@ const CarDetails = async ({ params })=>{
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
                                             }, void 0, false, {
                                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                                lineNumber: 53,
+                                                lineNumber: 60,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             con
                                         ]
                                     }, index, true, {
                                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 59,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)))
                             }, void 0, false, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 50,
+                                lineNumber: 57,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -321,7 +326,7 @@ const CarDetails = async ({ params })=>{
                                 children: "Car Specifications:"
                             }, void 0, false, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 59,
+                                lineNumber: 66,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -335,7 +340,7 @@ const CarDetails = async ({ params })=>{
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
                                             }, void 0, false, {
                                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                                lineNumber: 62,
+                                                lineNumber: 69,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Year: ",
@@ -343,7 +348,7 @@ const CarDetails = async ({ params })=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 68,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -354,7 +359,7 @@ const CarDetails = async ({ params })=>{
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
                                             }, void 0, false, {
                                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                                lineNumber: 66,
+                                                lineNumber: 73,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Type: ",
@@ -362,7 +367,7 @@ const CarDetails = async ({ params })=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                        lineNumber: 65,
+                                        lineNumber: 72,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -373,7 +378,7 @@ const CarDetails = async ({ params })=>{
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
                                             }, void 0, false, {
                                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                                lineNumber: 70,
+                                                lineNumber: 77,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Fuel Consumption: ",
@@ -381,7 +386,7 @@ const CarDetails = async ({ params })=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                        lineNumber: 69,
+                                        lineNumber: 76,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -392,7 +397,7 @@ const CarDetails = async ({ params })=>{
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
                                             }, void 0, false, {
                                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                                lineNumber: 74,
+                                                lineNumber: 81,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Engine Size: ",
@@ -400,13 +405,13 @@ const CarDetails = async ({ params })=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 80,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 60,
+                                lineNumber: 67,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -414,7 +419,7 @@ const CarDetails = async ({ params })=>{
                                 children: "Accessories and functionalities:"
                             }, void 0, false, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 79,
+                                lineNumber: 86,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -428,14 +433,14 @@ const CarDetails = async ({ params })=>{
                                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
                                                 }, void 0, false, {
                                                     fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                                    lineNumber: 83,
+                                                    lineNumber: 90,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 acc
                                             ]
                                         }, index, true, {
                                             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                            lineNumber: 82,
+                                            lineNumber: 89,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))),
                                     car.functionalities.map((fun, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -446,38 +451,38 @@ const CarDetails = async ({ params })=>{
                                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$Developer$2f$Projects__2$2e$0$2f$RentalCar$2f$app$2f$catalog$2f5b$id$5d2f$CarDetails$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].icon
                                                 }, void 0, false, {
                                                     fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                                    lineNumber: 89,
+                                                    lineNumber: 96,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 fun
                                             ]
                                         }, index, true, {
                                             fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 95,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                                lineNumber: 80,
+                                lineNumber: 87,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                        lineNumber: 48,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-                lineNumber: 32,
+                lineNumber: 39,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/Developer/Projects 2.0/RentalCar/app/catalog/[id]/page.tsx",
-        lineNumber: 20,
+        lineNumber: 27,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

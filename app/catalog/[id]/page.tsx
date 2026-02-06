@@ -16,6 +16,13 @@ const CarDetails = async ({ params }: Props) => {
   const city = splitAddress[1];
   const country = splitAddress[2];
 
+  const editedCity: Record<string, string> = {
+    Kiev: 'Kyiv',
+    Odessa: 'Odesa',
+  };
+
+  const ukrCity = editedCity[city] || city;
+
   return (
     <div className={css.container}>
       <div className={css.contentL}>
@@ -38,7 +45,7 @@ const CarDetails = async ({ params }: Props) => {
           <div className={css.withIcon}>
             <Icon id="location" className={css.icon} />
             <p className={css.location}>
-              {city}, {country} &nbsp; &nbsp; Mileage: {car.mileage.toLocaleString('uk-UA')} km
+              {ukrCity}, {country} &nbsp; &nbsp; Mileage: {car.mileage.toLocaleString('uk-UA')} km
             </p>
           </div>
           <p className={css.price}>${car.rentalPrice}</p>

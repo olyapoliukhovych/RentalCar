@@ -12,6 +12,13 @@ const CarListItem = ({ item }: CarListItemProps) => {
   const city = splitAddress[1];
   const country = splitAddress[2];
 
+  const editedCity: Record<string, string> = {
+    Kiev: 'Kyiv',
+    Odessa: 'Odesa',
+  };
+
+  const ukrCity = editedCity[city] || city;
+
   return (
     <li className={css.carsLi}>
       <Image
@@ -30,7 +37,7 @@ const CarListItem = ({ item }: CarListItemProps) => {
 
       <p className={css.bottomTextOne}>
         {/* <span className={css.detailsSpanOne}>{item.address.split(', ').slice(-2).join(' ')}</span> */}
-        <span className={css.detailsSpanOne}>{city}</span>
+        <span className={css.detailsSpanOne}>{ukrCity}</span>
         <span className={css.detailsSpanOne}>{country}</span>
         <span className={css.detailsSpanOne}>{item.rentalCompany}</span>
       </p>

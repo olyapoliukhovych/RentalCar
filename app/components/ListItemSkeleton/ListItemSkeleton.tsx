@@ -8,11 +8,11 @@ export const ListItemSkeleton = () => {
       </Box>
 
       <Box sx={{ mb: 1, borderRadius: '12px' }}>
-        <Skeleton variant="rectangular" width="100%" height={20} />
+        <Skeleton variant="rectangular" width="100%" height={20} sx={{ borderRadius: '12px' }} />
       </Box>
 
       <Box sx={{ mb: 3.5, borderRadius: '12px' }}>
-        <Skeleton variant="rectangular" width="100%" height={40} />
+        <Skeleton variant="rectangular" width="100%" height={40} sx={{ borderRadius: '12px' }} />
       </Box>
 
       <Skeleton variant="rectangular" width="100%" height={44} sx={{ borderRadius: '12px' }} />
