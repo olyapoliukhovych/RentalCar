@@ -2,6 +2,7 @@ import { getSingleCar } from '@/lib/api';
 import css from './CarDetails.module.css';
 import Image from 'next/image';
 import { Icon } from '@/app/components/Icon/Icon';
+import BookCarForm from '@/app/components/BookCarForm/BookCarForm';
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -33,7 +34,7 @@ const CarDetails = async ({ params }: Props) => {
           alt={car.description}
           className={css.detailsCarImg}
         ></Image>
-        {/* form */}
+        <BookCarForm />
       </div>
 
       <div className={css.contentR}>

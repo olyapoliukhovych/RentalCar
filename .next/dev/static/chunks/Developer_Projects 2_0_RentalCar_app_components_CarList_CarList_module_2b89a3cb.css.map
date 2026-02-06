@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/olyaa/Developer/Projects%202.0/RentalCar/app/components/CarList/CarList.module.css"],"sourcesContent":[".carsList {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  width: 100%;\n  row-gap: 48px;\n  margin-bottom: 80px;\n}\n\n.loadMoreBtn {\n  border: 1px solid var(--button);\n  border-radius: 12px;\n  padding: 12px 51px;\n  min-width: 156px;\n\n  font-family: var(--font-family);\n  font-weight: 600;\n  font-size: 16px;\n  line-height: 1.25;\n  color: var(--main);\n\n  transition: border 250ms ease-in-out;\n\n  &:hover {\n    border: 1px solid var(--button-hover);\n  }\n\n  &:focus {\n    border: 1px solid var(--button-hover);\n  }\n}\n\n.loadMoreBtn:disabled {\n  opacity: 0.7;\n  cursor: not-allowed;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AAUA;;;;;;;;;;;;;AAcE;;;;AASF"}}]
-}

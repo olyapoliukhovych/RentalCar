@@ -9,6 +9,7 @@
 .detailsCarImg {
   object-fit: cover;
   border-radius: 19px;
+  margin-bottom: 40px;
 }
 
 .mainDescription {

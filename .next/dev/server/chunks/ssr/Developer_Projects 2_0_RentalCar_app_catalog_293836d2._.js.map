@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Developer/Projects 2.0/RentalCar/app/catalog/page.module.css [app-rsc] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"container\": \"page-module__yGTRfa__container\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA"}},
-    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///Users/olyaa/Developer/Projects%202.0/RentalCar/app/catalog/loading.tsx"],"sourcesContent":["import { ListItemSkeleton } from './components/ListItemSkeleton/ListItemSkeleton';\nimport css from './page.module.css';\n\nexport default function Loading() {\n  return (\n    <ul className={css.carsList}>\n      {Array.from({ length: 12 }).map((_, index) => (\n        <ListItemSkeleton key={index} />\n      ))}\n    </ul>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;;AACA;;;;AAEe,SAAS;IACtB,qBACE,4RAAC;QAAG,WAAW,2LAAG,CAAC,QAAQ;kBACxB,MAAM,IAAI,CAAC;YAAE,QAAQ;QAAG,GAAG,GAAG,CAAC,CAAC,GAAG,sBAClC,4RAAC,sBAAsB;;;;;;;;;;AAI/B"}}]
-}
