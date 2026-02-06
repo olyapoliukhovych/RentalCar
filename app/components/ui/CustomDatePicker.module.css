@@ -64,9 +64,9 @@
   display: none;
 }
 
-.datePickerWrapper :global(.react-datepicker__month-container) {
-  /* padding: 12px; */
-}
+/* .datePickerWrapper :global(.react-datepicker__month-container) {
+  padding: 12px;
+} */
 
 .datePickerWrapper :global(.react-datepicker__header) {
   padding: 12px 0 12px 0;

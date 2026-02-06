@@ -1,8 +1,18 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
 import { Icon } from '../Icon/Icon';
 import css from './Header.module.css';
 import Link from 'next/link';
 
 const Header = () => {
+  const pathname = usePathname();
+
+  const getActiveLink = (href: string) => {
+    const isActive = pathname === href || pathname.startsWith(`${href}/`);
+    return isActive ? css.active : '';
+  };
+
   return (
     <header className={css.header}>
       <div className={css.container}>
@@ -13,10 +23,14 @@ const Header = () => {
         <nav aria-label="Main Navigation">
           <ul className={css.navigation}>
             <li className={css.navigationItem}>
-              <Link href="/">Home</Link>
+              <Link href="/" className={getActiveLink('/')}>
+                Home
+              </Link>
             </li>
             <li className={css.navigationItem}>
-              <Link href="/catalog">Catalog</Link>
+              <Link href="/catalog" className={getActiveLink('/catalog')}>
+                Catalog
+              </Link>
             </li>
           </ul>
         </nav>
