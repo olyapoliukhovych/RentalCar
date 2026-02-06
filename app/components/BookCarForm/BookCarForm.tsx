@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import CustomDatePicker from '../ui/CustomDatePicker';
 import css from './BookCarForm.module.css';
+import toast from 'react-hot-toast';
 
 const BookCarForm = () => {
   const router = useRouter();
@@ -23,6 +24,16 @@ const BookCarForm = () => {
   });
 
   const handleDateChange = (newDate: Date | null) => {
+    if (newDate) {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+
+      if (newDate < today) {
+        toast.error('Date cannot be in the past!');
+        return;
+      }
+    }
+
     setDate(newDate);
 
     const params = new URLSearchParams(searchParams.toString());
@@ -43,45 +54,37 @@ const BookCarForm = () => {
     router.push(`${pathname}?${params.toString()}`, { scroll: false });
   };
 
-  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
     const data = {
       ...Object.fromEntries(formData.entries()),
-      date: date ? date.toLocaleDateString('en-GB') : null,
+      date: date ? date.toLocaleDateString('uk-UA') : null,
     };
 
     console.log('Form Submitted:', data);
 
     e.currentTarget.reset();
     setDate(null);
-    router.push(pathname);
+    router.push(pathname, { scroll: false });
 
-    alert('Success! Form sent.');
+    toast.success('Form was sent successfully.');
   };
 
   return (
-    <form className={css.form}>
+    <form className={css.form} onSubmit={handleSubmit}>
       <h3 className={css.heading}>Book your car now</h3>
       <p className={css.paragraph}>Stay connected! We are always ready to help you.</p>
 
-      <input
-        className={css.simpleInput}
-        type="text"
-        name="name"
-        placeholder="Name*"
-        title="Enter your name"
-        required
-      />
+      <input className={css.simpleInput} type="text" name="name" placeholder="Name*" required />
       <input
         className={css.simpleInput}
         type="email"
         name="email"
         placeholder="Email*"
         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-        title="Enter your email"
-        // title="myemail@gmail.com"
+        title="myemail@gmail.com"
         required
       />
 
@@ -93,7 +96,7 @@ const BookCarForm = () => {
 
       <textarea className={css.textarea} name="comment" placeholder="Comment"></textarea>
 
-      <button className={css.sendBtn} type="submit" onClick={handleSubmit}>
+      <button className={css.sendBtn} type="submit">
         Send
       </button>
     </form>

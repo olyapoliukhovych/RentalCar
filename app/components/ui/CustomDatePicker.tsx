@@ -19,11 +19,11 @@ const CustomDatePicker = ({ values, setFieldValue, submitForm }: CustomDatePicke
         selected={values}
         onChange={(date: Date | null) => {
           setFieldValue('date', date);
-          setTimeout(() => submitForm(), 50);
+          submitForm();
         }}
         dateFormat="dd/MM/yyyy"
         placeholderText="Booking date"
-        // title="dd/mm/yyyy"
+        formatWeekDay={dayName => dayName.substring(0, 3)}
         onKeyDown={event => event.preventDefault()} // keyboard disabled
         autoComplete="off"
         customInput={
@@ -34,12 +34,10 @@ const CustomDatePicker = ({ values, setFieldValue, submitForm }: CustomDatePicke
         }
         calendarStartDay={1}
         previousMonthButtonLabel={
-          //   <Image src="/arrow-left.svg" width={6} height={10} alt="Previous month" />
-          <Icon id="arrow-left" className={css.icon} width={24} height={24} />
+          <Icon id="arrow-left" className={css.iconLeft} width={24} height={24} />
         }
         nextMonthButtonLabel={
-          //   <Image src="/arrow-right.svg" width={6} height={10} alt="Next month" />
-          <Icon id="arrow-right" className={css.icon} width={24} height={24} />
+          <Icon id="arrow-right" className={css.iconRight} width={24} height={24} />
         }
       />
     </div>
