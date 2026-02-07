@@ -6,22 +6,42 @@
 
 .heroMainText {
   font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 60px;
+  font-weight: 600;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
   color: var(--white);
   margin-bottom: 16px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    font-weight: 700;
+    font-size: 60px;
+  }
 }
 
 .heroSecondaryText {
   font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 1.33333;
   text-align: center;
   color: var(--white);
   margin-bottom: 40px;
+  max-width: 240px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+    max-width: 585px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    font-weight: 600;
+    font-size: 24px;
+  }
 }
 
 .heroButton {
@@ -48,8 +68,6 @@
 }
 
 .bgImg {
-  /* position: relative; */
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

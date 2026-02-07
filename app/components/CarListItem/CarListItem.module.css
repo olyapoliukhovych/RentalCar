@@ -23,6 +23,12 @@
   overflow: hidden;
   text-overflow: ellipsis; /* "..." */
   display: block;
+
+  @media only screen and (min-width: 768px) {
+  }
+
+  @media only screen and (min-width: 1440px) {
+  }
 }
 
 .model {
@@ -34,10 +40,7 @@
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
-  /* line-height: 1.67; added more space between lines */
   color: var(--gray);
-  /* max-width: 216px; */
-  /* height: 40.08px; same height so it won't jump */
 }
 
 .bottomTextOne {
@@ -91,6 +94,7 @@
   &:focus {
     background: var(--button-hover);
   }
+
 }
 
 .carsLi {

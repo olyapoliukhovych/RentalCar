@@ -1,15 +1,18 @@
 .form {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
-
+  background: var(--white);
   border: 1px solid var(--gray-light);
   border-radius: 10px;
-  padding: 32px;
-  width: 640px;
-  height: 488px;
-  background: var(--white);
+  padding: 24px;
+  width: 329px;
+  /* height: 488px; */
+
+  @media only screen and (min-width: 768px) {
+    padding: 32px;
+    width: 640px;
+    height: 488px;
+  }
 }
 
 .heading {
@@ -39,9 +42,13 @@
 
   border-radius: 12px;
   padding: 12px 20px;
-  width: 576px;
+  width: 282px;
   background: var(--inputs);
   margin-bottom: 16px;
+
+  @media only screen and (min-width: 768px) {
+    width: 576px;
+  }
 }
 
 .simpleInput::placeholder {
@@ -61,11 +68,15 @@
   resize: none;
 
   border-radius: 12px;
-  padding: 12px 20px 56px;
-  width: 576px;
+  padding: 12px 20px 12px;
+  width: 282px;
   background: var(--inputs);
-  /* height: 88px; */
+  height: 88px;
   margin-bottom: 24px;
+
+  @media only screen and (min-width: 768px) {
+    width: 576px;
+  }
 }
 
 .textarea::placeholder {
@@ -87,4 +98,6 @@
   font-size: 16px;
   line-height: 1.25;
   color: var(--white);
+
+  align-self: center;
 }

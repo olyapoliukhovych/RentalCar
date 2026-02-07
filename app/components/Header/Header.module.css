@@ -3,14 +3,22 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 120px;
+  padding: 24px 30px;
   background: var(--badges);
+
+  @media only screen and (min-width: 768px) {
+    padding: 24px 120px;
+  }
 }
 
 .navigation {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 20px;
+
+  @media only screen and (min-width: 768px) {
+    gap: 32px;
+  }
 }
 
 .navigationItem {
