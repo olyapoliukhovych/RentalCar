@@ -27,7 +27,7 @@ export type CarsListResponse = {
 };
 
 const apiNext = axios.create({
-  baseURL: 'https://car-rental-api.goit.global',
+  baseURL: process.env.NEXT_PUBLIC_RENTALCAR_TOKEN,
 });
 
 export const getCars = async (
