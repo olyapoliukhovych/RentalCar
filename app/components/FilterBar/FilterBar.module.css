@@ -77,3 +77,11 @@
   line-height: 1.25;
   color: var(--main);
 }
+
+.arrowDown {
+  transition: transform 250ms ease-in-out;
+}
+
+.rotateArrow {
+  transform: rotate(180deg);
+}

@@ -2,22 +2,24 @@
 
 import { useEffect, useState } from 'react';
 import css from './FilterBar.module.css';
-import Select, { SingleValue, StylesConfig } from 'react-select';
+import Select, {
+  DropdownIndicatorProps,
+  components,
+  SingleValue,
+  StylesConfig,
+  GroupBase,
+} from 'react-select';
 import { getBrands } from '@/lib/api';
 import { useCarListStore } from '@/store/useCarListStore';
 import { NumberFormatValues, NumericFormat } from 'react-number-format';
+import { Icon } from '../Icon/Icon';
 
-interface Brand {
+interface SelectOption {
   value: string;
   label: string;
 }
 
-interface Price {
-  value: string;
-  label: string;
-}
-
-const customBrandStyles: StylesConfig<Brand> = {
+const customBrandStyles: StylesConfig<SelectOption> = {
   control: base => ({
     ...base,
     backgroundColor: 'var(--inputs)',
@@ -90,9 +92,13 @@ const customBrandStyles: StylesConfig<Brand> = {
       background: 'var(--gray)',
     },
   }),
+  dropdownIndicator: base => ({
+    ...base,
+    padding: '0 10px',
+  }),
 };
 
-const customPriceStyles: StylesConfig<Price> = {
+const customPriceStyles: StylesConfig<SelectOption> = {
   control: base => ({
     ...base,
     backgroundColor: 'var(--inputs)',
@@ -170,20 +176,33 @@ const customPriceStyles: StylesConfig<Price> = {
       background: 'var(--gray)',
     },
   }),
+  dropdownIndicator: base => ({
+    ...base,
+    padding: '0 10px',
+  }),
 };
 
-// interface FilterBarProps {
-//   onChange: (value: string) => void;
-// }
-
-const priceOptions: Price[] = [];
+const priceOptions: SelectOption[] = [];
 for (let i = 30; i <= 200; i += 10) {
   priceOptions.push({ value: i.toString(), label: i.toString() });
 }
 
+const CustomDropdownIndicator = (
+  props: DropdownIndicatorProps<SelectOption, false, GroupBase<SelectOption>>
+) => {
+  return (
+    <components.DropdownIndicator {...props}>
+      <Icon
+        id="arrow-down"
+        className={`${css.arrowDown} ${props.selectProps.menuIsOpen ? css.rotateArrow : ''}`}
+      />
+    </components.DropdownIndicator>
+  );
+};
+
 const FilterBar = () => {
   const { setBrand, setPrice, setMileage, filters, fetchCars, resetFilters } = useCarListStore();
-  const [brandOptions, setBrandOptions] = useState<Brand[]>([]);
+  const [brandOptions, setBrandOptions] = useState<SelectOption[]>([]);
 
   useEffect(() => {
     const fetchOptions = async () => {
@@ -199,7 +218,7 @@ const FilterBar = () => {
     fetchOptions();
   }, []);
 
-  const handleBrandChange = (selectedBrand: SingleValue<Brand>) => {
+  const handleBrandChange = (selectedBrand: SingleValue<SelectOption>) => {
     if (selectedBrand) {
       setBrand(selectedBrand.value);
     } else {
@@ -207,7 +226,7 @@ const FilterBar = () => {
     }
   };
 
-  const handlePriceChange = (selectedPrice: SingleValue<Price>) => {
+  const handlePriceChange = (selectedPrice: SingleValue<SelectOption>) => {
     const value = selectedPrice ? selectedPrice.value : '';
     setPrice(value);
   };
@@ -224,7 +243,7 @@ const FilterBar = () => {
     <div className={css.allFilters}>
       <label className={css.label}>
         Car brand
-        <Select<Brand>
+        <Select<SelectOption>
           options={brandOptions}
           styles={customBrandStyles}
           placeholder="Choose a brand"
@@ -232,12 +251,16 @@ const FilterBar = () => {
           isSearchable
           isClearable
           instanceId="brand-select"
+          components={{
+            IndicatorSeparator: () => null, // remove default separator
+            DropdownIndicator: CustomDropdownIndicator,
+          }}
         />
       </label>
 
       <label className={css.label}>
         Price / 1 hour
-        <Select<Price>
+        <Select<SelectOption>
           options={priceOptions}
           styles={customPriceStyles}
           placeholder="Choose a price"
@@ -245,6 +268,10 @@ const FilterBar = () => {
           isSearchable
           isClearable
           instanceId="brand-select"
+          components={{
+            IndicatorSeparator: () => null, // remove default separator
+            DropdownIndicator: CustomDropdownIndicator,
+          }}
         />
       </label>
 
