@@ -51,12 +51,12 @@ const CarDetails = async ({ params }: Props) => {
               {ukrCity}, {country} &nbsp; &nbsp; Mileage: {car.mileage.toLocaleString('uk-UA')} km
             </p>
           </div>
-          <p className={css.price}>${car.rentalPrice}</p>
+          <h2 className={css.price}>${car.rentalPrice}</h2>
           <p className={css.description}>{car.description}</p>
         </div>
 
         <div className={css.otherCarDetails}>
-          <p className={css.listTitle}>Rental Conditions:</p>
+          <h3 className={css.listTitle}>Rental Conditions:</h3>
           <ul className={css.carDetailsList}>
             {car.rentalConditions.map((con, index) => (
               <li key={index} className={css.listItem}>
@@ -66,7 +66,7 @@ const CarDetails = async ({ params }: Props) => {
             ))}
           </ul>
 
-          <p className={css.listTitle}>Car Specifications:</p>
+          <h3 className={css.listTitle}>Car Specifications:</h3>
           <ul className={css.carDetailsList}>
             <li className={css.listItem}>
               <Icon id="calendar" className={css.icon} />
@@ -86,7 +86,7 @@ const CarDetails = async ({ params }: Props) => {
             </li>
           </ul>
 
-          <p className={css.listTitle}>Accessories and functionalities:</p>
+          <h3 className={css.listTitle}>Accessories and functionalities:</h3>
           <ul className={css.carDetailsList}>
             {car.accessories.map((acc, index) => (
               <li key={index} className={css.listItem}>

@@ -39,9 +39,6 @@ const BookCarForm = () => {
     const params = new URLSearchParams(searchParams.toString());
 
     if (newDate) {
-      //   const formattedDate = newDate.toISOString().split('T')[0];
-      //   const formattedDate = newDate.toLocaleDateString();
-
       const day = String(newDate.getDate()).padStart(2, '0');
       const month = String(newDate.getMonth() + 1).padStart(2, '0');
       const year = newDate.getFullYear();

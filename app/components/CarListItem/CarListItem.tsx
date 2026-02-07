@@ -57,7 +57,7 @@ const CarListItem = ({ item }: CarListItemProps) => {
         <span className={css.detailsSpanTwo}>{item.mileage.toLocaleString('uk-UA')} km</span>
       </p>
 
-      <Link href={`/catalog/${item.id}`} className={css.carsLiButton}>
+      <Link href={`/catalog/${item.id}`} className={css.readMoreBtn}>
         Read more
       </Link>
     </li>

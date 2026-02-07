@@ -9,13 +9,10 @@
 
   @media only screen and (min-width: 768px) {
     justify-content: space-between;
-    row-gap: 48px;
   }
 
   @media only screen and (min-width: 1440px) {
     justify-content: flex-start;
-
-    row-gap: 48px;
     column-gap: 27.7968px;
   }
 }

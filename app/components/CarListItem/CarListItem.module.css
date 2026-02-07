@@ -12,23 +12,11 @@
 }
 
 .topText {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  color: var(--main);
-
   max-width: 216px; /* same width so it doesn't move other elements */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; /* "..." */
   display: block;
-
-  @media only screen and (min-width: 768px) {
-  }
-
-  @media only screen and (min-width: 1440px) {
-  }
 }
 
 .model {
@@ -37,7 +25,6 @@
 
 .bottomTextOne,
 .bottomTextTwo {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
   color: var(--gray);
@@ -75,17 +62,24 @@
   background-color: var(--gray-light);
 }
 
-.carsLiButton {
-  border-radius: 12px;
+.readMoreBtn {
   padding: 12px 99px;
   min-width: 276px;
+  border-radius: 12px;
   background: var(--button);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
   color: var(--white);
+
+  transition: background 250ms ease-in-out;
 
   &:hover {
     background: var(--button-hover);
@@ -94,7 +88,6 @@
   &:focus {
     background: var(--button-hover);
   }
-
 }
 
 .carsLi {
