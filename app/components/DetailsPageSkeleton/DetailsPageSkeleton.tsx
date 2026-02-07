@@ -8,20 +8,27 @@ export const DetailsPageSkeleton = () => {
         maxWidth: 1200,
         margin: '0 auto',
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: { xs: 'column', md: 'row' },
         gap: '68px',
         justifyContent: 'center',
         alignItems: 'flex-start',
-        padding: '84px 0 0 0',
+        padding: { xs: '44px 24px 0 24px', sm: '44px 65px 0 65px', md: '84px 0 0 0' },
       }}
     >
       <Box>
-        <Skeleton variant="rectangular" width={640} height={512} sx={{ borderRadius: '19px' }} />
+        <Skeleton
+          variant="rectangular"
+          sx={{
+            borderRadius: '19px',
+            width: { xs: '329px', sm: '640px' },
+            height: { xs: '512px' },
+          }}
+        />
       </Box>
 
       <Box
         sx={{
-          display: 'flex',
+          display: { xs: 'none', md: 'flex' },
           flexDirection: 'column',
           gap: '68px',
           flexGrow: 1,
