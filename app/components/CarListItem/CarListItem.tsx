@@ -2,12 +2,18 @@ import { Car } from '@/lib/api';
 import Image from 'next/image';
 import css from './CarListItem.module.css';
 import Link from 'next/link';
+import { Icon } from '../Icon/Icon';
+import { useLikedStore } from '@/store/useLikedStore';
 
 type CarListItemProps = {
   item: Car;
 };
 
 const CarListItem = ({ item }: CarListItemProps) => {
+  const { toggleLike, liked } = useLikedStore();
+
+  const isLiked = liked.includes(item.id);
+
   const splitAddress = item.address.split(', ');
   //   const address = splitAddress[0]; // no need now
   const city = splitAddress[1];
@@ -29,6 +35,9 @@ const CarListItem = ({ item }: CarListItemProps) => {
         height={268}
         alt={item.description}
       ></Image>
+      <button className={css.likeButton} onClick={() => toggleLike(item.id)} type="button">
+        <Icon id={isLiked ? 'heart-filled' : 'heart-empty'} className={css.heartIcon} />
+      </button>
       <div className={css.topTextPosition}>
         <p className={css.topText} title={`${item.brand} ${item.model}, ${item.year}`}>
           {item.brand} <span className={css.model}>{item.model}</span>, {item.year}

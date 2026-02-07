@@ -92,3 +92,17 @@
     background: var(--button-hover);
   }
 }
+
+.carsLi {
+  position: relative;
+}
+
+.likeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.heartIcon {
+  transition: all 250ms ease-in-out;
+}
