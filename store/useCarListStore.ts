@@ -13,8 +13,8 @@ type CarListStore = {
   page: number;
   totalPages: number;
   isLoading: boolean;
+  isSearchPerformed: boolean;
   filters: Filters;
-  //   filters: { brand: string; rentalPrice: string; minMileage: string; maxMileage: string };
   setBrand: (brand: string) => void;
   setPrice: (rentalPrice: string) => void;
   setMileage: (min: string, max: string) => void;
@@ -27,18 +27,17 @@ export const useCarListStore = create<CarListStore>()((set, get) => ({
   page: 1,
   totalPages: 1,
   isLoading: false,
+  isSearchPerformed: false,
   filters: { brand: '', rentalPrice: '', minMileage: '', maxMileage: '' },
 
   setBrand: brand => {
-    set(state => ({
-      filters: { ...state.filters, brand },
-    }));
+    set(state => ({ filters: { ...state.filters, brand }, page: 1 }));
+    get().fetchCars(true);
   },
 
-  setPrice: price => {
-    set(state => ({
-      filters: { ...state.filters, rentalPrice: price },
-    }));
+  setPrice: rentalPrice => {
+    set(state => ({ filters: { ...state.filters, rentalPrice }, page: 1 }));
+    get().fetchCars(true); // auto-fetch, no need to press Search
   },
 
   setMileage: (min, max) =>
@@ -65,6 +64,7 @@ export const useCarListStore = create<CarListStore>()((set, get) => ({
         page: state.page + 1,
         // page: data.page + 1,
         totalPages: data.totalPages,
+        isSearchPerformed: true,
       }));
     } catch (error) {
       console.error('Error:', error);

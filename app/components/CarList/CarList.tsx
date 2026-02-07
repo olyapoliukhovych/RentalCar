@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { ListItemSkeleton } from '../ListItemSkeleton/ListItemSkeleton';
 
 const CarList = () => {
-  const { cars, page, totalPages, isLoading, fetchCars } = useCarListStore();
+  const { cars, page, totalPages, isLoading, isSearchPerformed, fetchCars } = useCarListStore();
 
   useEffect(() => {
     if (cars.length === 0) {
@@ -18,6 +18,10 @@ const CarList = () => {
   const handleClick = () => fetchCars(false);
 
   const skeletons = Array.from({ length: 12 });
+
+  if (isSearchPerformed && !isLoading && cars.length === 0) {
+    return <p className={css.noCarsFound}>No cars found. Try adjusting your filters.</p>;
+  }
 
   return (
     <>
@@ -37,8 +41,6 @@ const CarList = () => {
           {isLoading ? 'Loading...' : 'Load more'}
         </button>
       )}
-
-      {/* {isLoading && cars.length === 0 && <p>Loading...</p>} */}
     </>
   );
 };

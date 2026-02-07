@@ -1,10 +1,12 @@
 .carsList {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
   row-gap: 48px;
+  column-gap: 27.7968px;
   margin-bottom: 80px;
 }
 
@@ -34,4 +36,11 @@
 .loadMoreBtn:disabled {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+.noCarsFound {
+  font-family: var(--font-family);
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
 }

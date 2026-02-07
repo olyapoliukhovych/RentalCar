@@ -39,10 +39,12 @@ const CarDetails = async ({ params }: Props) => {
 
       <div className={css.contentR}>
         <div className={css.mainDescription}>
-          <h2 className={css.mainTitle}>
-            {car.brand} {car.model}, {car.year}
-          </h2>
-          <p className={css.id}>Id: 2983</p>
+          <div className={css.mainTitleDiv}>
+            <h2 className={css.mainTitle}>
+              {car.brand} {car.model}, {car.year}
+            </h2>
+            <p className={css.id}>Id: 2983</p>
+          </div>
           <div className={css.withIcon}>
             <Icon id="location" className={css.icon} />
             <p className={css.location}>

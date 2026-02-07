@@ -8,11 +8,6 @@ import Link from 'next/link';
 const Header = () => {
   const pathname = usePathname();
 
-  const getActiveLink = (href: string) => {
-    const isActive = pathname === href || pathname.startsWith(`${href}/`);
-    return isActive ? css.active : '';
-  };
-
   return (
     <header className={css.header}>
       <div className={css.container}>
@@ -23,12 +18,12 @@ const Header = () => {
         <nav aria-label="Main Navigation">
           <ul className={css.navigation}>
             <li className={css.navigationItem}>
-              <Link href="/" className={getActiveLink('/')}>
+              <Link href="/" className={pathname === '/' ? css.active : ''}>
                 Home
               </Link>
             </li>
             <li className={css.navigationItem}>
-              <Link href="/catalog" className={getActiveLink('/catalog')}>
+              <Link href="/catalog" className={pathname === '/catalog' ? css.active : ''}>
                 Catalog
               </Link>
             </li>

@@ -13,7 +13,6 @@
 }
 
 .mainDescription {
-  position: relative;
   margin-bottom: 68px;
 }
 
@@ -26,11 +25,15 @@
   margin-bottom: 8px;
 }
 
-.id {
-  position: absolute;
-  right: 188px;
-  top: 9px;
+.mainTitleDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
 
+.id {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
