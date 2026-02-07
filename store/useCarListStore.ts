@@ -1,5 +1,6 @@
 import { create } from 'zustand';
-import { Car, getCars } from '@/lib/api';
+import { getCars } from '@/lib/api';
+import { Car } from '@/types/car';
 
 interface Filters {
   brand: string;

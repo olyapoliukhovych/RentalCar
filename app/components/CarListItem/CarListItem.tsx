@@ -1,9 +1,9 @@
-import { Car } from '@/lib/api';
 import Image from 'next/image';
 import css from './CarListItem.module.css';
 import Link from 'next/link';
 import { Icon } from '../Icon/Icon';
 import { useLikedStore } from '@/store/useLikedStore';
+import { Car } from '@/types/car';
 
 type CarListItemProps = {
   item: Car;
