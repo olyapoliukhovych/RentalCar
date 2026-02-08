@@ -1,9 +1,7 @@
-'use client';
-
 import { Metadata } from 'next';
-import CarList from '../components/CarList/CarList';
-import FilterBar from '../components/FilterBar/FilterBar';
-import css from './page.module.css';
+import { dehydrate, HydrationBoundary, QueryClient } from '@tanstack/react-query';
+import { getCars } from '@/lib/api';
+import CatalogClient from './Catalog.client';
 
 export const metadata: Metadata = {
   title: 'Catalog | Rental Car',
@@ -21,12 +19,18 @@ export const metadata: Metadata = {
   },
 };
 
-const Catalog = () => {
+const Catalog = async () => {
+  const queryClient = new QueryClient();
+
+  await queryClient.prefetchQuery({
+    queryKey: ['cars', 1, '', '', '', ''],
+    queryFn: () => getCars(1, 12),
+  });
+
   return (
-    <div className={css.container}>
-      <FilterBar />
-      <CarList />
-    </div>
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <CatalogClient />
+    </HydrationBoundary>
   );
 };
 

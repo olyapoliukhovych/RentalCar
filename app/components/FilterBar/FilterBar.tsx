@@ -14,6 +14,7 @@ import { useCarListStore } from '@/store/useCarListStore';
 import { NumberFormatValues, NumericFormat } from 'react-number-format';
 import { Icon } from '../Icon/Icon';
 import toast from 'react-hot-toast';
+import { Filters } from '@/types/car';
 
 interface SelectOption {
   value: string;
@@ -201,9 +202,18 @@ const CustomDropdownIndicator = (
   );
 };
 
-const FilterBar = () => {
-  const { setBrand, setPrice, setMileage, filters, fetchCars, resetFilters } = useCarListStore();
+interface FilterBarProps {
+  onSearch: (filters: Filters) => void;
+}
+
+const FilterBar = ({ onSearch }: FilterBarProps) => {
+  const { filters } = useCarListStore();
   const [brandOptions, setBrandOptions] = useState<SelectOption[]>([]);
+
+  const [brand, setBrand] = useState<string>('');
+  const [rentalPrice, setPrice] = useState<string>('');
+  const [minMileage, setMinMil] = useState<string>('');
+  const [maxMileage, setMaxMil] = useState<string>('');
 
   useEffect(() => {
     const fetchOptions = async () => {
@@ -220,24 +230,23 @@ const FilterBar = () => {
   }, []);
 
   const handleBrandChange = (selectedBrand: SingleValue<SelectOption>) => {
-    if (selectedBrand) {
-      setBrand(selectedBrand.value);
-    } else {
-      resetFilters();
-    }
+    setBrand(selectedBrand ? selectedBrand.value : '');
   };
 
   const handlePriceChange = (selectedPrice: SingleValue<SelectOption>) => {
-    const value = selectedPrice ? selectedPrice.value : '';
-    setPrice(value);
+    setPrice(selectedPrice ? selectedPrice.value : '');
   };
 
-  const handleFromChange = (vals: NumberFormatValues) => setMileage(vals.value, filters.maxMileage);
+  const handleFromChange = (vals: NumberFormatValues) => {
+    setMinMil(vals.value);
+  };
 
-  const handleToChange = (vals: NumberFormatValues) => setMileage(filters.minMileage, vals.value);
+  const handleToChange = (vals: NumberFormatValues) => {
+    setMaxMil(vals.value);
+  };
 
   const handleSearch = () => {
-    fetchCars(true);
+    onSearch({ brand, rentalPrice, minMileage, maxMileage });
   };
 
   return (

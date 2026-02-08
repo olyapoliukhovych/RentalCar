@@ -27,15 +27,6 @@ const BookCarForm = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // const formData = new FormData(e.currentTarget);
-    // const data = {
-    //   ...Object.fromEntries(formData.entries()),
-    //   startDate: startDate.toLocaleDateString('uk-UA'),
-    //   endDate: endDate.toLocaleDateString('uk-UA'),
-    // };
-
-    // data is not used right now
-
     e.currentTarget.reset();
     setDateRange([null, null]);
 

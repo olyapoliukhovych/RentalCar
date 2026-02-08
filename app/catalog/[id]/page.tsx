@@ -44,7 +44,6 @@ const CarDetails = async ({ params }: Props) => {
   const car = await getSingleCar(id);
 
   const splitAddress = car.address.split(', ');
-  //   const address = splitAddress[0]; // no need now
   const city = splitAddress[1];
   const country = splitAddress[2];
 
