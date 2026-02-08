@@ -2,7 +2,7 @@
 
 import { getCars } from '@/lib/api';
 import { useCarListStore } from '@/store/useCarListStore';
-import { keepPreviousData, useQuery } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
 import FilterBar from '../components/FilterBar/FilterBar';
 import CarList from '../components/CarList/CarList';
@@ -13,39 +13,43 @@ export default function CatalogClient() {
   const { filters, setFilters } = useCarListStore();
   const [page, setPage] = useState(1);
   const [allCars, setAllCars] = useState<Car[]>([]);
+  const [totalPages, setTotalPages] = useState(1);
 
-  const { data, isLoading, isFetching } = useQuery({
-    queryKey: [
-      'cars',
-      page,
-      filters.brand,
-      filters.rentalPrice,
-      filters.minMileage,
-      filters.maxMileage,
-    ],
+  const { data, isFetching, isLoading } = useQuery({
+    queryKey: ['cars', page, filters],
     queryFn: () => getCars(page, 12, filters),
-    placeholderData: keepPreviousData,
+    placeholderData: previousData => previousData,
     refetchOnMount: false,
   });
 
   useEffect(() => {
-    if (data?.cars) {
+    if (data) {
+      setTotalPages(data.totalPages);
+
       if (page === 1) {
         setAllCars(data.cars);
       } else {
-        setAllCars(prev => [...prev, ...data.cars]);
+        setAllCars(prev => {
+          const newCars = data.cars.filter(newCar => !prev.some(oldCar => oldCar.id === newCar.id));
+          return [...prev, ...newCars];
+        });
       }
     }
   }, [data, page]);
 
   const handleSearch = (newFilters: Filters) => {
+    setAllCars([]);
     setPage(1);
     setFilters(newFilters);
-    setAllCars([]);
+  };
+
+  const handleLoadMore = () => {
+    if (page < totalPages) {
+      setPage(prev => prev + 1);
+    }
   };
 
   const hasCars = allCars.length > 0;
-  const isLastPage = data ? page >= data.totalPages : false;
 
   return (
     <div className={css.container}>
@@ -54,13 +58,13 @@ export default function CatalogClient() {
       {hasCars ? (
         <CarList carList={allCars} isLoading={isLoading} />
       ) : (
-        !isLoading && <p className={css.noCarsFound}>No cars found.</p>
+        !isFetching && <p className={css.noCarsFound}>No cars found.</p>
       )}
 
-      {hasCars && !isLastPage && (
+      {hasCars && page < totalPages && (
         <button
           className={css.loadMoreBtn}
-          onClick={() => setPage(prev => prev + 1)}
+          onClick={handleLoadMore}
           disabled={isFetching}
           type="button"
         >
