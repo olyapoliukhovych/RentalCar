@@ -213,7 +213,7 @@ const FilterBar = () => {
         setBrandOptions(formattedBrands);
       } catch (error) {
         console.error('Failed to fetch brands', error);
-        toast.error('Failed to fetch brands');
+        toast.error('Failed to fetch brands', { id: 'fetch-err' });
       }
     };
     fetchOptions();

@@ -24,6 +24,8 @@
   height: 100vh;
   color: var(--main);
   font-family: var(--second-family);
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .title {

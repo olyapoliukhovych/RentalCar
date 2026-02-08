@@ -1,0 +1,22 @@
+.idText {
+  color: var(--gray);
+}
+
+.copyButton {
+  transition:
+    opacity 250ms ease-in-out,
+    transform 250ms ease-in-out;
+  transform: scale(1);
+  opacity: 0.5;
+
+  display: inline-block;
+  padding: 8px;
+}
+
+.copyButton:hover {
+  opacity: 0.8;
+}
+
+.copyButton:active {
+  transform: scale(1.3);
+}

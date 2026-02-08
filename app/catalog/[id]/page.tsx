@@ -3,6 +3,7 @@ import css from './CarDetails.module.css';
 import Image from 'next/image';
 import { Icon } from '@/app/components/Icon/Icon';
 import BookCarForm from '@/app/components/BookCarForm/BookCarForm';
+import { CopyId } from '@/app/components/CopyId/CopyId';
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -31,7 +32,7 @@ const CarDetails = async ({ params }: Props) => {
           src={car.img}
           width={640}
           height={512}
-          alt={car.description}
+          alt={car.brand}
           className={css.detailsCarImg}
         ></Image>
         <BookCarForm />
@@ -43,7 +44,8 @@ const CarDetails = async ({ params }: Props) => {
             <h2 className={css.mainTitle}>
               {car.brand} {car.model}, {car.year}
             </h2>
-            <p className={css.id}>Id: 2983</p>
+
+            <CopyId id={car.id} />
           </div>
           <div className={css.withIcon}>
             <Icon id="location" className={css.icon} />

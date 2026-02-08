@@ -69,7 +69,7 @@ export const useCarListStore = create<CarListStore>()((set, get) => ({
       }));
     } catch (error) {
       console.error('Error:', error);
-      toast.error('Failed to fetch cars');
+      toast.error('Failed to fetch cars', { id: 'fetch-error' });
     } finally {
       set({ isLoading: false });
     }

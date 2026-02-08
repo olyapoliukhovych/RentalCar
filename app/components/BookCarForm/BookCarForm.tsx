@@ -29,7 +29,7 @@ const BookCarForm = () => {
       today.setHours(0, 0, 0, 0);
 
       if (newDate < today) {
-        toast.error('Date cannot be in the past!');
+        toast.error('Date cannot be in the past!', { id: 'past-date' });
         return;
       }
     }
@@ -66,7 +66,7 @@ const BookCarForm = () => {
     setDate(null);
     router.push(pathname, { scroll: false });
 
-    toast.success('Form was sent successfully.');
+    toast.success('Form was sent successfully.', { id: 'form-success' });
   };
 
   return (
