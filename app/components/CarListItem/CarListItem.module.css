@@ -63,7 +63,7 @@
 }
 
 .readMoreBtn {
-  padding: 12px 99px;
+  height: 44px;
   min-width: 276px;
   border-radius: 12px;
   background: var(--button);

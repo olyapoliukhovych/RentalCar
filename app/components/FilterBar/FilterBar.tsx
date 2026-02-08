@@ -270,19 +270,19 @@ const FilterBar = () => {
           onChange={handlePriceChange}
           isSearchable
           isClearable
-          instanceId="brand-select"
+          instanceId="price-select"
           components={{
             IndicatorSeparator: () => null, // remove default separator
             DropdownIndicator: CustomDropdownIndicator,
           }}
           name="select-price"
-          id="select-price"
+          id="choose-price"
         />
       </label>
 
       <div className={css.carMileageInputs}>
         <div className={css.carMileageFirstInput}>
-          <label className={css.label} htmlFor="from">
+          <label className={css.label} htmlFor="select-car-mileage-start">
             Car mileage / km
           </label>
           <NumericFormat
