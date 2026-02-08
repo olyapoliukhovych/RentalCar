@@ -1,10 +1,24 @@
 import Link from 'next/link';
 import css from './page.module.css';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className={css.container}>
-      <div className={css.bgImg}>
+      <div className={css.heroWrapper}>
+        <Image
+          src="/bgImg/picture.jpg"
+          alt="Rental Car Background"
+          fill
+          objectFit="cover"
+          priority
+          quality={100}
+          sizes="(max-width: 1440px) 100vw, 1440px"
+          className={css.bgImage}
+        />
+
+        <div className={css.overlay} />
+
         <div className={css.heroContent}>
           <h1 className={css.heroMainText}>Find your perfect rental car</h1>
           <h2 className={css.heroSecondaryText}>

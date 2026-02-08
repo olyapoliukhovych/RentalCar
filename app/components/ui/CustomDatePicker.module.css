@@ -8,7 +8,6 @@
   border-radius: 12px;
   padding: 12px 20px;
   background: var(--inputs);
-  margin-bottom: 16px;
   width: 282px;
 
   @media only screen and (min-width: 768px) {
@@ -92,6 +91,27 @@
   align-content: center;
 }
 
+.datePickerWrapper :global(.react-datepicker__day--in-range) {
+  background-color: var(--button);
+  opacity: 50%;
+  color: var(--white);
+  border-radius: 32px;
+}
+
+.datePickerWrapper :global(.react-datepicker__day--range-start) {
+  background-color: var(--button) !important;
+  opacity: 50% !important;
+  color: var(--white) !important;
+  border-radius: 32px !important;
+}
+
+.datePickerWrapper :global(.react-datepicker__day--in-selecting-range) {
+  background-color: var(--button) !important;
+  opacity: 50% !important;
+  color: var(--white) !important;
+  border-radius: 32px !important;
+}
+
 .datePickerWrapper :global(.react-datepicker__day--keyboard-selected) {
   background-color: transparent;
 }
@@ -108,10 +128,10 @@
 }
 
 .datePickerWrapper :global(.react-datepicker__day:not([aria-disabled='true']):hover) {
-  background-color: var(--button);
-  opacity: 50%;
-  color: var(--white);
-  border-radius: 32px;
+  background-color: var(--button) !important;
+  opacity: 50% !important;
+  color: var(--white) !important;
+  border-radius: 32px !important;
 }
 
 .datePickerWrapper :global(.react-datepicker__day--today:hover) {

@@ -1,6 +1,6 @@
 .form {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   background: var(--white);
   border: 1px solid var(--gray-light);
   border-radius: 10px;
@@ -16,7 +16,7 @@
 
 .heading {
   margin-bottom: 8px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .paragraph {
@@ -63,6 +63,7 @@
   width: 282px;
   background: var(--inputs);
   height: 88px;
+  margin-top: 16px;
   margin-bottom: 24px;
 
   @media only screen and (min-width: 768px) {
@@ -90,5 +91,6 @@
   line-height: 1.25;
   color: var(--white);
 
-  align-self: center;
+  display: block;
+  margin: 0 auto;
 }

@@ -32,12 +32,21 @@ export const metadata: Metadata = {
     description: 'Rent your dream car in seconds. Best prices, top models, and instant booking.',
     url: 'https://rentalcar.app',
     siteName: 'Rental Car',
+    images: [
+      {
+        url: '/meta-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Rental Car Preview',
+      },
+    ],
     type: 'website',
   },
   twitter: {
-    // card: 'summary_large_image',
+    card: 'summary_large_image',
     title: 'Rental Car - Luxury | Premium | Adventure Car Rental',
     description: 'Rent your dream car in seconds. Best prices, top models, and instant booking.',
+    images: ['/meta-image.png'],
   },
 };
 

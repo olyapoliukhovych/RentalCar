@@ -1,13 +1,22 @@
+.header {
+  background: var(--badges);
+}
+
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 24px 30px;
-  background: var(--badges);
+  /* max-width: 375px; */
 
   @media only screen and (min-width: 768px) {
     padding: 24px 120px;
+    /* max-width: 768px; */
+  }
+
+  @media only screen and (min-width: 1440px) {
+    /* max-width: 1440px; */
   }
 }
 

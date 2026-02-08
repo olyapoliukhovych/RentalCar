@@ -4,15 +4,18 @@
   justify-content: space-between;
   padding: 44px 24px 44px 24px;
   gap: 56px;
+  max-width: 375px;
 
   @media only screen and (min-width: 768px) {
     padding: 44px 65px 64px 65px;
+    max-width: 768px;
   }
 
   @media only screen and (min-width: 1440px) {
     flex-direction: row;
-    padding: 84px 120px 124px 120px;
+    padding: 84px 120px 104px 120px;
     gap: 72px;
+    max-width: 1440px;
   }
 }
 
@@ -31,12 +34,16 @@
   }
 }
 
+.contentR {
+  padding-top: 20px;
+}
+
 .mainDescription {
   margin-bottom: 68px;
 }
 
 .mainTitle {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 24px;
   color: var(--main);
   margin-bottom: 8px;
@@ -66,7 +73,7 @@
 }
 
 .carDetailsList:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 110px;
 }
 
 .listTitle {

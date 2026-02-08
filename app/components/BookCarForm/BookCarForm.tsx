@@ -1,54 +1,27 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import CustomDatePicker from '../ui/CustomDatePicker';
 import css from './BookCarForm.module.css';
 import toast from 'react-hot-toast';
 
 const BookCarForm = () => {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
+  const [dateRange, setDateRange] = useState<[Date | null, Date | null]>([null, null]);
 
-  // initializing state from the URL
-  // when you refresh the page, the calendar remains synchronized with the URL
-  const [date, setDate] = useState<Date | null>(() => {
-    const dateFromUrl = searchParams.get('date');
-    if (!dateFromUrl) return null;
+  const handleDateChange = (range: [Date | null, Date | null]) => {
+    const [startDate] = range;
 
-    const [day, month, year] = dateFromUrl.split('/').map(Number);
-    const parsedDate = new Date(year, month - 1, day);
-
-    return parsedDate.getTime() ? parsedDate : null; // check if the date is valid
-  });
-
-  const handleDateChange = (newDate: Date | null) => {
-    if (newDate) {
+    if (startDate) {
       const today = new Date();
       today.setHours(0, 0, 0, 0);
 
-      if (newDate < today) {
+      if (startDate < today) {
         toast.error('Date cannot be in the past!', { id: 'past-date' });
         return;
       }
     }
 
-    setDate(newDate);
-
-    const params = new URLSearchParams(searchParams.toString());
-
-    if (newDate) {
-      const day = String(newDate.getDate()).padStart(2, '0');
-      const month = String(newDate.getMonth() + 1).padStart(2, '0');
-      const year = newDate.getFullYear();
-      const formattedDate = `${day}/${month}/${year}`;
-
-      params.set('date', formattedDate);
-    } else {
-      params.delete('date');
-    }
-    router.push(`${pathname}?${params.toString()}`, { scroll: false });
+    setDateRange(range);
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -57,14 +30,14 @@ const BookCarForm = () => {
     // const formData = new FormData(e.currentTarget);
     // const data = {
     //   ...Object.fromEntries(formData.entries()),
-    //   date: date ? date.toLocaleDateString('uk-UA') : null,
+    //   startDate: startDate.toLocaleDateString('uk-UA'),
+    //   endDate: endDate.toLocaleDateString('uk-UA'),
     // };
 
     // data is not used right now
 
     e.currentTarget.reset();
-    setDate(null);
-    router.push(pathname, { scroll: false });
+    setDateRange([null, null]);
 
     toast.success('Form was sent successfully.', { id: 'form-success' });
   };
@@ -86,7 +59,7 @@ const BookCarForm = () => {
       />
 
       <CustomDatePicker
-        values={date}
+        values={dateRange}
         setFieldValue={(_, value) => handleDateChange(value)}
         submitForm={() => {}}
       />

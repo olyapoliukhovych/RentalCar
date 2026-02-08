@@ -7,17 +7,20 @@ import css from './CustomDatePicker.module.css';
 import { Icon } from '../Icon/Icon';
 
 interface CustomDatePickerProps {
-  values: Date | null;
-  setFieldValue: (field: string, value: Date | null) => void;
+  values: [Date | null, Date | null];
+  setFieldValue: (field: string, value: [Date | null, Date | null]) => void;
   submitForm: () => void;
 }
 
 const CustomDatePicker = ({ values, setFieldValue, submitForm }: CustomDatePickerProps) => {
+  const [startDate, endDate] = values;
+
   return (
     <div className={css.datePickerWrapper}>
       <DatePicker
-        selected={values}
-        onChange={(date: Date | null) => {
+        startDate={startDate}
+        endDate={endDate}
+        onChange={(date: [Date | null, Date | null]) => {
           setFieldValue('date', date);
           submitForm();
         }}
@@ -26,6 +29,7 @@ const CustomDatePicker = ({ values, setFieldValue, submitForm }: CustomDatePicke
         formatWeekDay={dayName => dayName.substring(0, 3)}
         onKeyDown={event => event.preventDefault()} // keyboard disabled
         autoComplete="off"
+        selectsRange={true} // allow range
         customInput={
           <input
             className={css.dateInput}
