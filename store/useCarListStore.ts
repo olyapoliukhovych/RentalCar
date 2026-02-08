@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { getCars } from '@/lib/api';
 import { Car } from '@/types/car';
+import toast from 'react-hot-toast';
 
 interface Filters {
   brand: string;
@@ -63,12 +64,12 @@ export const useCarListStore = create<CarListStore>()((set, get) => ({
       set(state => ({
         cars: isNewSearch ? data.cars : [...state.cars, ...data.cars],
         page: state.page + 1,
-        // page: data.page + 1,
         totalPages: data.totalPages,
         isSearchPerformed: true,
       }));
     } catch (error) {
       console.error('Error:', error);
+      toast.error('Failed to fetch cars');
     } finally {
       set({ isLoading: false });
     }

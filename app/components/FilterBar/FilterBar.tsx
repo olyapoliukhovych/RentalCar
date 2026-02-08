@@ -13,6 +13,7 @@ import { getBrands } from '@/lib/api';
 import { useCarListStore } from '@/store/useCarListStore';
 import { NumberFormatValues, NumericFormat } from 'react-number-format';
 import { Icon } from '../Icon/Icon';
+import toast from 'react-hot-toast';
 
 interface SelectOption {
   value: string;
@@ -212,7 +213,7 @@ const FilterBar = () => {
         setBrandOptions(formattedBrands);
       } catch (error) {
         console.error('Failed to fetch brands', error);
-        // !delete console.log
+        toast.error('Failed to fetch brands');
       }
     };
     fetchOptions();

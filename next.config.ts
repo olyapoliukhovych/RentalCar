@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  compiler: {
+    removeConsole:
+      process.env.NEXT_PUBLIC_RENTALCAR_TOKEN === 'production' ? { exclude: ['error'] } : false,
+  },
 };
 
 export default nextConfig;
