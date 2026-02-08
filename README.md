@@ -82,4 +82,4 @@ Navigate to `http://localhost:3000` in your browser.
 
 **Olha Poliukhovych** — Frontend Developer
 * [GitHub Profile](https://github.com/olyapoliukhovych) 
-* [LinkedIn Profile](www.linkedin.com/in/olya-poliukhovych) 
+* [LinkedIn Profile](https://www.linkedin.com/in/olya-poliukhovych/) 
