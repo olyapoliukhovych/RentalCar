@@ -20,9 +20,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_RENTALCAR_TOKEN === 'production'
-      ? 'https://rentalcar.app'
-      : 'http://localhost:3000'
+    process.env.NODE_ENV === 'production' ? 'https://rentalcar.app' : 'http://localhost:3000'
   ),
   title: 'Rental Car',
   description: 'Rent your dream car in seconds. Best prices, top models, and instant booking.',
