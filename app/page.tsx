@@ -7,7 +7,7 @@ export default function Home() {
     <div className={css.container}>
       <div className={css.heroWrapper}>
         <Image
-          src="/bgImg/picture.jpg"
+          src="/picture.jpg"
           alt="Rental Car Background"
           fill
           priority
