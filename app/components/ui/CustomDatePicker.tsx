@@ -10,14 +10,17 @@ interface CustomDatePickerProps {
   values: [Date | null, Date | null];
   setFieldValue: (field: string, value: [Date | null, Date | null]) => void;
   submitForm: () => void;
+  name?: string;
 }
 
-const CustomDatePicker = ({ values, setFieldValue, submitForm }: CustomDatePickerProps) => {
+const CustomDatePicker = ({ values, setFieldValue, submitForm, name }: CustomDatePickerProps) => {
   const [startDate, endDate] = values;
 
   return (
     <div className={css.datePickerWrapper}>
       <DatePicker
+        name={name}
+        id="date"
         startDate={startDate}
         endDate={endDate}
         onChange={(date: [Date | null, Date | null]) => {

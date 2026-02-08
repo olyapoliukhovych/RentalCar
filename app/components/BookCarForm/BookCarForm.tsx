@@ -47,23 +47,45 @@ const BookCarForm = () => {
       <h3 className={css.heading}>Book your car now</h3>
       <p className={css.paragraph}>Stay connected! We are always ready to help you.</p>
 
-      <input className={css.simpleInput} type="text" name="name" placeholder="Name*" required />
+      <label htmlFor="user-name" className={css.visuallyHidden}>
+        User name
+      </label>
+      <input
+        className={css.simpleInput}
+        type="text"
+        name="user-name"
+        id="user-name"
+        placeholder="Name*"
+        required
+      />
+
+      <label htmlFor="user-email" className={css.visuallyHidden}>
+        User email
+      </label>
       <input
         className={css.simpleInput}
         type="email"
-        name="email"
+        name="user-email"
+        id="user-email"
         placeholder="Email*"
         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         title="myemail@gmail.com"
         required
       />
 
+      <label htmlFor="date-input" className={css.visuallyHidden}>
+        Booking date
+      </label>
       <CustomDatePicker
         values={dateRange}
         setFieldValue={(_, value) => handleDateChange(value)}
         submitForm={() => {}}
+        name="date-input"
       />
 
+      <label htmlFor="comment" className={css.visuallyHidden}>
+        Comment
+      </label>
       <textarea className={css.textarea} name="comment" placeholder="Comment"></textarea>
 
       <button className={css.sendBtn} type="submit">

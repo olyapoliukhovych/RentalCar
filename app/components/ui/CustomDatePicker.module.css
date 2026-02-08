@@ -9,6 +9,7 @@
   padding: 12px 20px;
   background: var(--inputs);
   width: 282px;
+  height: 48px;
 
   @media only screen and (min-width: 768px) {
     width: 576px;

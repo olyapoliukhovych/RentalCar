@@ -92,6 +92,7 @@
 
 .carsLi {
   position: relative;
+  flex-basis: calc((100% - (3 * 32px)) / 4);
 }
 
 .likeButton {

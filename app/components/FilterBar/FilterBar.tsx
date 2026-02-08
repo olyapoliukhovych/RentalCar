@@ -256,6 +256,8 @@ const FilterBar = () => {
             IndicatorSeparator: () => null, // remove default separator
             DropdownIndicator: CustomDropdownIndicator,
           }}
+          name="select-brand"
+          id="select-brand"
         />
       </label>
 
@@ -273,6 +275,8 @@ const FilterBar = () => {
             IndicatorSeparator: () => null, // remove default separator
             DropdownIndicator: CustomDropdownIndicator,
           }}
+          name="select-price"
+          id="select-price"
         />
       </label>
 
@@ -291,6 +295,8 @@ const FilterBar = () => {
             value={filters.minMileage}
             onValueChange={handleFromChange}
             title="Only positive integers allowed"
+            name="select-car-mileage-start"
+            id="select-car-mileage-start"
           />
         </div>
         <NumericFormat
@@ -303,6 +309,8 @@ const FilterBar = () => {
           value={filters.maxMileage}
           onValueChange={handleToChange}
           title="Only positive integers allowed"
+          name="select-car-mileage-end"
+          id="select-car-mileage-end"
         />
       </div>
 
