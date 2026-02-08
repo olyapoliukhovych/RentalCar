@@ -4,10 +4,40 @@ import Image from 'next/image';
 import { Icon } from '@/app/components/Icon/Icon';
 import BookCarForm from '@/app/components/BookCarForm/BookCarForm';
 import { CopyId } from '@/app/components/CopyId/CopyId';
+import { Metadata } from 'next';
 
 type Props = {
   params: Promise<{ id: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+
+  const car = await getSingleCar(id);
+
+  if (!car) {
+    return { title: 'Car Not Found' };
+  }
+
+  const description = `Rent ${car.brand} ${car.model} ${car.year} for $${car.rentalPrice} per hour. Rental Car - best prices, top models, and instant booking.`;
+
+  return {
+    title: `${car.brand} ${car.model} | Rental Car`,
+    description: description,
+    openGraph: {
+      title: `${car.brand} ${car.model} | Rental Car`,
+      description: description,
+      url: `https://rentalcar.app/catalog/${id}`,
+      images: [car.img || '/picture.jpg'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${car.brand} ${car.model} | Rental Car`,
+      description: description,
+      images: [car.img || '/picture.jpg'],
+    },
+  };
+}
 
 const CarDetails = async ({ params }: Props) => {
   const { id } = await params;
