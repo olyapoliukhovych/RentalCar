@@ -32,6 +32,7 @@ export const DetailsPageSkeleton = () => {
           flexDirection: 'column',
           gap: '68px',
           flexGrow: 1,
+          paddingTop: '20px',
         }}
       >
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -41,7 +42,7 @@ export const DetailsPageSkeleton = () => {
           <Skeleton variant="rectangular" width="100%" height={40} sx={{ borderRadius: '12px' }} />
         </Box>
 
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '90px' }}>
           <Box>
             <Skeleton variant="text" width="40%" sx={{ fontSize: '20px', mb: 2.5 }} />
             <Skeleton variant="text" width="30%" sx={{ fontSize: '16px', mb: 2 }} />
@@ -54,6 +55,17 @@ export const DetailsPageSkeleton = () => {
             <Skeleton variant="text" width="20%" sx={{ fontSize: '16px', mb: 2 }} />
             <Skeleton variant="text" width="20%" sx={{ fontSize: '16px', mb: 2 }} />
             <Skeleton variant="text" width="40%" sx={{ fontSize: '16px', mb: 2 }} />
+            <Skeleton variant="text" width="40%" sx={{ fontSize: '16px', mb: 2 }} />
+          </Box>
+
+          <Box>
+            <Skeleton variant="text" width="70%" sx={{ fontSize: '20px', mb: 2.5 }} />
+            <Skeleton variant="text" width="30%" sx={{ fontSize: '16px', mb: 2 }} />
+            <Skeleton variant="text" width="30%" sx={{ fontSize: '16px', mb: 2 }} />
+            <Skeleton variant="text" width="50%" sx={{ fontSize: '16px', mb: 2 }} />
+            <Skeleton variant="text" width="60%" sx={{ fontSize: '16px', mb: 2 }} />
+            <Skeleton variant="text" width="50%" sx={{ fontSize: '16px', mb: 2 }} />
+            <Skeleton variant="text" width="60%" sx={{ fontSize: '16px', mb: 2 }} />
           </Box>
         </Box>
       </Box>
