@@ -1,0 +1,44 @@
+.errorWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-10%);
+  height: 100vh;
+  color: var(--main);
+  font-family: var(--second-family);
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.title {
+  margin: 0px;
+  margin-bottom: 12px;
+}
+
+.description {
+  margin-bottom: 12px;
+}
+
+.btn {
+  border: 1px solid lightcoral;
+  border-radius: 12px;
+  padding: 12px 51px;
+  min-width: 156px;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main);
+
+  transition: border 250ms ease-in-out;
+
+  &:hover {
+    border: 1px solid red;
+  }
+
+  &:focus {
+    border: 1px solid red;
+  }
+}

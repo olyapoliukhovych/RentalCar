@@ -11,13 +11,17 @@ interface CarListProps {
 }
 
 const CarList = ({ carList, isLoading }: CarListProps) => {
-  const skeletons = Array.from({ length: 12 });
+  const skeletons = Array.from({ length: 8 });
 
   return (
     <>
       <ul className={css.carsList}>
         {isLoading && carList.length === 0
-          ? skeletons.map((_, index) => <ListItemSkeleton key={index} />) /* loader */
+          ? skeletons.map((_, index) => (
+              <li key={index}>
+                <ListItemSkeleton />
+              </li>
+            ))
           : carList.map(car => <CarListItem key={car.id} item={car} />)}
       </ul>
     </>

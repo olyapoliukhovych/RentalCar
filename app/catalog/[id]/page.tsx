@@ -63,6 +63,7 @@ const CarDetails = async ({ params }: Props) => {
           height={512}
           alt={car.brand}
           className={css.detailsCarImg}
+          fetchPriority="high"
         ></Image>
         <BookCarForm />
       </div>
@@ -78,12 +79,12 @@ const CarDetails = async ({ params }: Props) => {
           </div>
           <div className={css.withIcon}>
             <Icon id="location" className={css.icon} />
-            <p className={css.location}>
+            <p>
               {ukrCity}, {country} &nbsp; &nbsp; Mileage: {car.mileage.toLocaleString('uk-UA')} km
             </p>
           </div>
           <h2 className={css.price}>${car.rentalPrice}</h2>
-          <p className={css.description}>{car.description}</p>
+          <p>{car.description}</p>
         </div>
 
         <div className={css.otherCarDetails}>

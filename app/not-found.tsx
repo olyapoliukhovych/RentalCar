@@ -18,7 +18,7 @@ export default function NotFound() {
       <h1 className={css.title}>404 | Page Not Found</h1>
       <p>Sorry, the page you are looking for does not exist.</p>
       <p className={css.description}>You will be redirected to the home page in 5 seconds.</p>
-      <Link href="/" className={css.link}>
+      <Link href="/" className={css.link} prefetch={false}>
         Go back home
       </Link>
     </div>

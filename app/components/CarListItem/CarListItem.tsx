@@ -35,7 +35,12 @@ const CarListItem = ({ item }: CarListItemProps) => {
         height={268}
         alt={item.description}
       ></Image>
-      <button className={css.likeButton} onClick={() => toggleLike(item.id)} type="button">
+      <button
+        className={css.likeButton}
+        onClick={() => toggleLike(item.id)}
+        type="button"
+        aria-label="Save car"
+      >
         <Icon id={isLiked ? 'heart-filled' : 'heart-empty'} className={css.heartIcon} />
       </button>
       <div className={css.topTextPosition}>
@@ -57,7 +62,7 @@ const CarListItem = ({ item }: CarListItemProps) => {
         <span className={css.detailsSpanTwo}>{item.mileage.toLocaleString('uk-UA')} km</span>
       </p>
 
-      <Link href={`/catalog/${item.id}`} className={css.readMoreBtn}>
+      <Link href={`/catalog/${item.id}`} className={css.readMoreBtn} prefetch={false}>
         Read more
       </Link>
     </li>

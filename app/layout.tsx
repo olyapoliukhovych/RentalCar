@@ -13,16 +13,18 @@ const manrope = Manrope({
 });
 
 const inter = Inter({
-  weight: ['300', '400', '500', '600'],
+  weight: ['400', '500', '600'],
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
 });
 
+const baseUrl = process.env.NEXT_PUBLIC_API_URL
+  ? `https://${process.env.NEXT_PUBLIC_API_URL}`
+  : 'https://rental-car-seven-blue.vercel.app';
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NODE_ENV === 'production' ? 'https://rentalcar.app' : 'http://localhost:3000'
-  ),
+  metadataBase: new URL(baseUrl),
   title: 'Rental Car',
   description: 'Rent your dream car in seconds. Best prices, top models, and instant booking.',
   icons: {
@@ -95,7 +97,7 @@ export default function RootLayout({
             }}
           />
           <Header />
-          {children}
+          <main>{children}</main>
         </TanStackProvider>
       </body>
     </html>

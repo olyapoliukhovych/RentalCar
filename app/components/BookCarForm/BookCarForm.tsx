@@ -72,12 +72,18 @@ const BookCarForm = () => {
         setFieldValue={(_, value) => handleDateChange(value)}
         submitForm={() => {}}
         name="date-input"
+        id="date-input"
       />
 
       <label htmlFor="comment" className={css.visuallyHidden}>
         Comment
       </label>
-      <textarea className={css.textarea} name="comment" placeholder="Comment"></textarea>
+      <textarea
+        className={css.textarea}
+        name="comment"
+        id="comment"
+        placeholder="Comment"
+      ></textarea>
 
       <button className={css.sendBtn} type="submit">
         Send

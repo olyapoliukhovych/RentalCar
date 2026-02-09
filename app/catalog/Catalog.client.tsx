@@ -55,10 +55,10 @@ export default function CatalogClient() {
     <div className={css.container}>
       <FilterBar onSearch={handleSearch} />
 
-      {hasCars ? (
-        <CarList carList={allCars} isLoading={isLoading} />
+      {isFetching || hasCars ? (
+        <CarList carList={allCars} isLoading={isFetching} />
       ) : (
-        !isFetching && <p className={css.noCarsFound}>No cars found.</p>
+        !isFetching && <p className={css.noCarsFound}>No cars found. Try different filters.</p>
       )}
 
       {hasCars && page < totalPages && (

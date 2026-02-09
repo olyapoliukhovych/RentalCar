@@ -10,7 +10,7 @@ export default function Home() {
           src="/picture.jpg"
           alt="Rental Car Background"
           fill
-          priority
+          fetchPriority="high"
           className={css.bgImage}
         />
 
@@ -21,7 +21,7 @@ export default function Home() {
           <h2 className={css.heroSecondaryText}>
             Reliable and budget-friendly rentals for any journey
           </h2>
-          <Link href="/catalog" className={css.heroButton}>
+          <Link href="/catalog" className={css.heroButton} prefetch={false}>
             View Catalog
           </Link>
         </div>

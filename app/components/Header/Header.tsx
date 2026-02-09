@@ -11,19 +11,23 @@ const Header = () => {
   return (
     <header className={css.header}>
       <div className={css.container}>
-        <Link href="/" aria-label="Home">
+        <Link href="/" aria-label="Home" prefetch={false}>
           <Icon id="logo" width={104} height={16} />
         </Link>
 
         <nav aria-label="Main Navigation">
           <ul className={css.navigation}>
             <li className={css.navigationItem}>
-              <Link href="/" className={pathname === '/' ? css.active : ''}>
+              <Link href="/" className={pathname === '/' ? css.active : ''} prefetch={false}>
                 Home
               </Link>
             </li>
             <li className={css.navigationItem}>
-              <Link href="/catalog" className={pathname === '/catalog' ? css.active : ''}>
+              <Link
+                href="/catalog"
+                className={pathname === '/catalog' ? css.active : ''}
+                prefetch={false}
+              >
                 Catalog
               </Link>
             </li>
