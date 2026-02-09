@@ -15,7 +15,7 @@ export default function CatalogClient() {
   const [allCars, setAllCars] = useState<Car[]>([]);
   const [totalPages, setTotalPages] = useState(1);
 
-  const { data, isFetching, isLoading } = useQuery({
+  const { data, isFetching } = useQuery({
     queryKey: ['cars', page, filters],
     queryFn: () => getCars(page, 12, filters),
     placeholderData: previousData => previousData,
@@ -38,7 +38,6 @@ export default function CatalogClient() {
   }, [data, page]);
 
   const handleSearch = (newFilters: Filters) => {
-    setAllCars([]);
     setPage(1);
     setFilters(newFilters);
   };

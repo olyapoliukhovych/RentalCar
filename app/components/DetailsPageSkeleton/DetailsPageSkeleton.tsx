@@ -22,6 +22,15 @@ export const DetailsPageSkeleton = () => {
             borderRadius: '19px',
             width: { xs: '329px', sm: '640px' },
             height: { xs: '512px' },
+            mb: '40px',
+          }}
+        />
+        <Skeleton
+          variant="rectangular"
+          sx={{
+            borderRadius: '19px',
+            width: { xs: '329px', sm: '640px' },
+            height: { xs: '512px' },
           }}
         />
       </Box>
