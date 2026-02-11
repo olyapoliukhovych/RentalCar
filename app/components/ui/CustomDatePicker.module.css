@@ -175,3 +175,14 @@
   margin: 0;
   padding-bottom: 12px;
 }
+
+.datePickerWrapper :global(.react-datepicker__close-icon) {
+  padding-right: 20px;
+}
+
+.datePickerWrapper :global(.react-datepicker__close-icon::after) {
+  background: var(--button);
+  width: 26px;
+  height: 22px;
+  border-radius: 32px;
+}

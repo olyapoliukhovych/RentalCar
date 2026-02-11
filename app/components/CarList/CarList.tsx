@@ -11,7 +11,7 @@ interface CarListProps {
 }
 
 const CarList = ({ carList, isLoading }: CarListProps) => {
-  const skeletons = Array.from({ length: 8 });
+  const skeletons = Array.from({ length: 12 });
 
   return (
     <>

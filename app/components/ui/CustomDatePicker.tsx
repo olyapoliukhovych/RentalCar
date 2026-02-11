@@ -39,6 +39,7 @@ const CustomDatePicker = ({
         formatWeekDay={dayName => dayName.substring(0, 3)}
         onKeyDown={event => event.preventDefault()} // keyboard disabled
         autoComplete="off"
+        isClearable
         selectsRange={true} // allow range
         customInput={
           <input
