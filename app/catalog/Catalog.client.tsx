@@ -10,10 +10,17 @@ import css from './page.module.css';
 import { Car, Filters } from '@/types/car';
 
 export default function CatalogClient() {
-  const { filters, setFilters } = useCarListStore();
+  const { filters, setFilters, resetFilters } = useCarListStore();
+
   const [page, setPage] = useState(1);
   const [allCars, setAllCars] = useState<Car[]>([]);
   const [totalPages, setTotalPages] = useState(1);
+
+  useEffect(() => {
+    resetFilters();
+    setAllCars([]);
+    setPage(1);
+  }, [resetFilters]);
 
   const { data, isFetching } = useQuery({
     queryKey: ['cars', page, filters],
