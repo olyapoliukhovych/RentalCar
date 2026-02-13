@@ -17,6 +17,7 @@ export default function CatalogClient() {
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     resetFilters();
     setAllCars([]);
     setPage(1);

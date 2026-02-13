@@ -1,15 +1,36 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CustomDatePicker from '../ui/CustomDatePicker';
 import css from './BookCarForm.module.css';
 import toast from 'react-hot-toast';
+import { useFormDraftStore } from '@/store/useFormDraftStore';
 
 const BookCarForm = () => {
+  const { draft, setDraft, clearDraft } = useFormDraftStore();
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const [dateRange, setDateRange] = useState<[Date | null, Date | null]>([null, null]);
 
+  useEffect(() => {
+    const start = draft.startDate ? new Date(draft.startDate) : null;
+    const end = draft.endDate ? new Date(draft.endDate) : null;
+
+    if (
+      start?.getTime() !== dateRange[0]?.getTime() ||
+      end?.getTime() !== dateRange[1]?.getTime()
+    ) {
+      setDateRange([start, end]);
+    }
+  }, [draft.startDate, draft.endDate, dateRange]);
+
   const handleDateChange = (range: [Date | null, Date | null]) => {
-    const [startDate] = range;
+    const [startDate, endDate] = range;
 
     if (startDate) {
       const today = new Date();
@@ -22,16 +43,34 @@ const BookCarForm = () => {
     }
 
     setDateRange(range);
+
+    setDraft({
+      ...draft,
+      startDate: startDate ? startDate.toISOString() : '',
+      endDate: endDate ? endDate.toISOString() : '',
+    });
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    e.currentTarget.reset();
+    clearDraft();
     setDateRange([null, null]);
+    e.currentTarget.reset();
 
     toast.success('Form was sent successfully.', { id: 'form-success' });
   };
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setDraft({
+      ...draft,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  if (!isMounted) {
+    return null; // prevent hydration mismatch
+  }
 
   return (
     <form className={css.form} onSubmit={handleSubmit}>
@@ -44,10 +83,13 @@ const BookCarForm = () => {
       <input
         className={css.simpleInput}
         type="text"
-        name="user-name"
+        name="name"
         id="user-name"
         placeholder="Name*"
+        autoComplete="on"
         required
+        onChange={handleChange}
+        value={draft.name}
       />
 
       <label htmlFor="user-email" className={css.visuallyHidden}>
@@ -56,12 +98,15 @@ const BookCarForm = () => {
       <input
         className={css.simpleInput}
         type="email"
-        name="user-email"
+        name="email"
         id="user-email"
         placeholder="Email*"
         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         title="myemail@gmail.com"
+        autoComplete="on"
         required
+        onChange={handleChange}
+        value={draft.email}
       />
 
       <label htmlFor="date-input" className={css.visuallyHidden}>
@@ -83,6 +128,8 @@ const BookCarForm = () => {
         name="comment"
         id="comment"
         placeholder="Comment"
+        onChange={handleChange}
+        value={draft.comment}
       ></textarea>
 
       <button className={css.sendBtn} type="submit">
