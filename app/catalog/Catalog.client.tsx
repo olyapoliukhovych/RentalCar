@@ -1,6 +1,5 @@
 'use client';
 
-import { getCars } from '@/lib/api';
 import { useCarListStore } from '@/store/useCarListStore';
 import { useQuery } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
@@ -8,6 +7,7 @@ import FilterBar from '../components/FilterBar/FilterBar';
 import CarList from '../components/CarList/CarList';
 import css from './page.module.css';
 import { Car, Filters } from '@/types/car';
+import { getCarsClient } from '@/lib/api/clientApi';
 
 export default function CatalogClient() {
   const { filters, setFilters, resetFilters } = useCarListStore();
@@ -25,7 +25,7 @@ export default function CatalogClient() {
 
   const { data, isFetching } = useQuery({
     queryKey: ['cars', page, filters],
-    queryFn: () => getCars(page, 12, filters),
+    queryFn: () => getCarsClient(page, 12, filters),
     placeholderData: previousData => previousData,
     refetchOnMount: false,
   });

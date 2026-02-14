@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { dehydrate, HydrationBoundary, QueryClient } from '@tanstack/react-query';
-import { getCars } from '@/lib/api';
 import CatalogClient from './Catalog.client';
+import { getCarsServer } from '@/lib/api/serverApi';
 
 export const metadata: Metadata = {
   title: 'Catalog | Rental Car',
@@ -24,7 +24,7 @@ const Catalog = async () => {
 
   await queryClient.prefetchQuery({
     queryKey: ['cars', 1, '', '', '', ''],
-    queryFn: () => getCars(1, 12),
+    queryFn: () => getCarsServer(1, 12),
   });
 
   return (

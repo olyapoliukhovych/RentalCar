@@ -9,12 +9,12 @@ import Select, {
   StylesConfig,
   GroupBase,
 } from 'react-select';
-import { getBrands } from '@/lib/api';
 import { useCarListStore } from '@/store/useCarListStore';
 import { NumberFormatValues, NumericFormat } from 'react-number-format';
 import { Icon } from '../Icon/Icon';
 import toast from 'react-hot-toast';
 import { Filters } from '@/types/car';
+import { getBrandsClient } from '@/lib/api/clientApi';
 
 interface SelectOption {
   value: string;
@@ -218,7 +218,7 @@ const FilterBar = ({ onSearch }: FilterBarProps) => {
   useEffect(() => {
     const fetchOptions = async () => {
       try {
-        const brands = await getBrands();
+        const brands = await getBrandsClient();
         const formattedBrands = brands.map(brand => ({ value: brand, label: brand }));
         setBrandOptions(formattedBrands);
       } catch (error) {

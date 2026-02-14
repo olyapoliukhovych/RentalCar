@@ -86,6 +86,8 @@ const BookCarForm = () => {
         name="name"
         id="user-name"
         placeholder="Name*"
+        pattern="^[a-zA-Zа-яА-ЯіІїЇєЄґҐ\s]+$" // allow only letters and space
+        title="Enter letters only."
         autoComplete="on"
         required
         onChange={handleChange}

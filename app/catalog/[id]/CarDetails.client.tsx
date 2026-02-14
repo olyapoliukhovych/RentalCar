@@ -9,7 +9,7 @@ import css from './CarDetails.module.css';
 import { useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import { useQuery } from '@tanstack/react-query';
-import { getSingleCar } from '@/lib/api';
+import { getSingleCarClient } from '@/lib/api/clientApi';
 
 export default function CarDetailsClient() {
   const { id } = useParams();
@@ -24,7 +24,7 @@ export default function CarDetailsClient() {
     error,
   } = useQuery({
     queryKey: ['car', id],
-    queryFn: () => getSingleCar(id as string),
+    queryFn: () => getSingleCarClient(id as string),
     refetchOnMount: false,
   });
 

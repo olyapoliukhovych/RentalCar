@@ -1,7 +1,7 @@
-import { getSingleCar } from '@/lib/api';
 import { Metadata } from 'next';
 import CarDetailsClient from './CarDetails.client';
 import { dehydrate, HydrationBoundary, QueryClient } from '@tanstack/react-query';
+import { getSingleCarServer } from '@/lib/api/serverApi';
 
 export type Props = {
   params: Promise<{ id: string }>;
@@ -9,7 +9,7 @@ export type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
-  const car = await getSingleCar(id);
+  const car = await getSingleCarServer(id);
 
   if (!car) {
     return { title: 'Car Not Found' };
@@ -35,7 +35,7 @@ export default async function CarDetailsPage({ params }: Props) {
 
   await queryClient.prefetchQuery({
     queryKey: ['car', id],
-    queryFn: () => getSingleCar(id),
+    queryFn: () => getSingleCarServer(id),
   });
 
   return (
